@@ -2,8 +2,9 @@
     position: relative;
     background: #fff;
     padding:30px 0px;
-    width:1000px;
-    margin:0 auto
+    max-width:1000px;
+    width: 90%;
+    margin:0 auto;
 }
 .categories-c {
     float:left;
@@ -79,7 +80,7 @@
 }
 .items .title-c a {
     color:#000000;
-    text-decoration: none
+    text-decoration: none;
 }
 .items .info-c {
     font-size: 11px;
@@ -124,7 +125,7 @@
     background: url("../images/sort_bg.png") no-repeat;
     position: absolute;
     right: 2px;
-    top:-1px
+    top:-1px;
 }
 .sort-by a.active {
     margin-left:15px;

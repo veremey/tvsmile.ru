@@ -1,0 +1,2477 @@
+$n: transparent
+
+
+body
+	min-width: 300px
+	+r(768)
+		background: #FFF
+
+
+
+// problem slider
+
+
+
++r(427)
+	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a,
+	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+		width: 90vw
+	.category_slider_inner li.double_slide, .category_slider_item.double_slide
+		width: 100vw
+
+	.category_slider .slider_nav
+		padding: 0
+
+
+
+.category_slider_inner li.double_slide .thumb img, .category_slider_item.double_slide .thumb img
+	+r(500)
+		width: 94vw
+		height: auto
+.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+	+r(500)
+		height: auto
+		width: 94vw !important
+
+.category_slider_inner
+	min-width: 320px
+
++r(600)
+
+	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+		// width: 94vw
+		text-align: left//19.08
+	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+		// width: 94vw
+		text-align: center
+
+
+
+
+
+	.owl-item .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide span
+		text-align: center
+
+	.category_slider .slider_nav
+		padding: 0
+	.slider_nav > span:before
+		+s(dotted_480_r)
+		right: -115px
+	.slider_nav > span:after
+		+s(dotted_480_l)
+		left: -115px
+
+	.double_slide .category_slider_title, .double_slide .category_slider_text
+		width: 100%
+		font-size: 16px
+	.double_slide .category_slider_title
+		font-size: 18px
+
+
+
+
+
+
+
+
+
+
+
+.footer_bottom_propose
+	display: none
+.tabs
+	padding-top: 5px
+.film_descr
+	float: left
+.film_descr_width
+	width: 63%
+	+r(585)
+		width: 100%
+.film_title
+	p,
+	.sort_tags
+		display: inline-block
+	p
+		margin-right: 45px
+	.sort_tags
+		vertical-align: middle
+		+r(655)
+			margin: 15px 0 0
+		+r(585)
+			width: 100%
+
+
+.extended_search
+	+r(500)
+		form
+			margin-bottom: 20px
+			background-color: #FFF
+.recommend__search .title
+	+r(500)
+		margin-bottom: 0
+
+
+//слайдер мы рекоммендуем
+
+//удалить
+.client__slider
+	position: relative
+	+clr
+.cycle-slideshow
+	// background-color: #fff
+	// margin-bottom: 60px
+	width: 100%
+	height: 390px
+	position: relative
+	+clr
+.dotr_box
+	position: relative
+	float: left
+	vertical-align: top
+	width: 215px
+	margin: 0 10px
+	a
+		display: block
+		text-align: center
+		text-decoration: none
+//удалить
+
+
+
+
+//слайдер мы рекоммендуем
+
+.ui-field-contain
+	+r(500)
+		label
+			position: relative
+			display: none
+		#select-native-1
+			margin-bottom: 0
+			display: block
+			// opacity: 0
+			position: relative
+			width: 100%
+			// top: -45px
+			height: 45px !important
+			min-height: 0 !important
+			margin: 0 !important
+			padding: 0 !important
+			z-index: 15
+			border: none
+			font-size: 20px
+			font-weight: 400
+			color: #52AFE9
+			border: 1px solid #d1e3fa
+			background: #eff6ff
+			-webkit-border-radius: 3px
+			border-radius: 3px
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+			border-bottom: $n
+			border-right: $n
+			option
+				font-size: 16px
+		.ui-btn
+			position: relative
+			font-size: 20px
+			font-weight: 400
+			color: #52AFE9
+			border: 1px solid #d1e3fa
+			background: #eff6ff
+			-webkit-border-radius: 3px
+			border-radius: 3px
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+			border-bottom: $n
+			border-right: $n
+			height: 45px
+			line-height: 45px
+			padding: 0 15px!important
+			text-align: left
+			&:after
+				content: ""
+				position: absolute
+				top: 20px
+				right: 20px
+				+arr(9,5,#52AFE9,b)
+		.ui-select
+			margin-bottom: 0
+
+.extended_search:before, .extended_search:after
+	+r(500)
+		display: none
+
+
+.ui-field-contain
+	+iphone5
+		label
+			position: relative
+			display: none
+		#select-native-1
+			margin-bottom: 0
+			display: block
+			// opacity: 0
+			position: relative
+			width: 100%
+			// top: -45px
+			height: 45px !important
+			min-height: 0 !important
+			margin: 0 !important
+			padding: 0 !important
+			z-index: 15
+			border: none
+			font-size: 20px
+			font-weight: 400
+			color: #52AFE9
+			border: 1px solid #d1e3fa
+			background: #eff6ff
+			-webkit-border-radius: 3px
+			border-radius: 3px
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+			border-bottom: $n
+			border-right: $n
+			option
+				font-size: 16px
+		.ui-btn
+			position: relative
+			font-size: 20px
+			font-weight: 400
+			color: #52AFE9
+			border: 1px solid #d1e3fa
+			background: #eff6ff
+			-webkit-border-radius: 3px
+			border-radius: 3px
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+			border-bottom: $n
+			border-right: $n
+			height: 45px
+			line-height: 45px
+			padding: 0 15px!important
+			text-align: left
+			&:after
+				content: ""
+				position: absolute
+				top: 20px
+				right: 20px
+				+arr(9,5,#52AFE9,b)
+		.ui-select
+			margin-bottom: 0
+
+.extended_search:before, .extended_search:after
+	+iphone5
+		display: none
+
+.extended_search
+	+iphone5
+		form
+			margin-bottom: 20px
+			background-color: #FFF
+.recommend__search .title
+	+iphone5
+		font-size: 14px
+		margin-bottom: 0
+
+.extended_search:before, .extended_search:after
+	+iphone5
+		display: none
+
+.slick__box
+	margin: 0 15px
+	text-align: center
+	img
+		margin-bottom: 25px
+
+.input-row__field
+	display: inline-block
+	vertical-align: middle
+	width: 100%
+	margin-top: 10px
+.select
+	position: relative
+	cursor: pointer
+	font-size: 20px
+.select.is-active .select__text:after
+	+rotate(180)
+.select__text
+	position: relative
+	display: inline-block
+	width: 100%
+	padding: 0 50px 0 11px
+	text-decoration-style: dotted
+	height: 45px
+	font-size: 20px
+	font-weight: 400
+	color: #52AFE9
+	line-height: 45px
+	border: 1px solid #d1e3fa
+	background: #eff6ff
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	border-bottom: $n
+	border-right: $n
+	&:after
+		content: ""
+		position: absolute
+		top: 20px
+		right: 20px
+		+arr(9, 5, #67b8ec, b)
+
+
+.select__list
+	position: absolute
+	display: none
+	list-style: none
+	left: 0
+	right: 0
+	top: 44px
+	z-index: 10
+	border: 1px solid #d1e3fa
+	background: #eff6ff
+	font-weight: 400
+	border-right: $n
+
+.select__list li
+	font-size: 16px
+	line-height: 33px
+	background: #f5f5f5
+	padding: 2px 11px
+	cursor: pointer
+	color: #52AFE9
+	border-bottom: 1px solid #d1e3fa
+	-webkit-transition: background 0.2s linear
+	-moz-transition: background 0.2s linear
+	-o-transition: background 0.2s linear
+	transition: background 0.2s linear
+	&:hover
+		background-color: #C3DAF7
+	a
+		font-family: Arial, sans-serif
+		font-size: 16px
+		color: #52AFE9
+		border-bottom: 1px dotted #52AFE9
+		text-decoration: none
+
+.sort_btn span
+	+r(580)
+		padding: 10px 0
+		width: 100%
+		font-size: 16px
+		&:hover
+			padding-top: 9px
+
+.menu
+	+clr
+	+r(1000)
+		ul
+			&:after
+				content: none
+		> li
+			+r(500)
+				height: 44px
+			+iphone5
+				height: 44px
+			&:first-child
+				border-left: 1px solid $n
+				&:before
+					display: none
+			&:last-child
+				display: none
+			a
+				padding: 0 30px
+		.submenu
+			+r(925)
+				top: 84px
+			+r(500)
+				top: 44px
+			+iphone5
+				top: 44px
+			li a
+				padding: 8px 25px 10px 17px
+		li:hover .submenu
+			z-index: 10
+		li a
+			padding: 0 15px
+	+r(925)
+		position: relative
+		left: 0
+		> ul
+			width: 100%
+			display: table
+			position: relative
+			> li
+				display: table-cell
+				float: none
+				text-align: center
+				height: 84px
+				> a
+					line-height: 84px
+					height: 84px
+	i
+		display: none
+		+r(768)
+			display: inline-block
+			position: absolute
+			top: 12px
+			left: 50%
+			+translate(-50%, 0)
+		+r(500)
+			position: relative
+			top: 5px
+			left: 5px
+			padding-right: 10px
+			+translate(0, 0)
+		+iphone5
+			position: relative
+			top: 5px
+			left: 5px
+			padding-right: 10px
+			+translate(0, 0)
+		+r(444)
+			+scale(.7)
+			top: 8px
+		+r(400)
+			// +scale(.6)
+			top: 10px
+			padding-right: 5px
+		+r(381)
+			left: 0px
+			padding-right: 2px
+		+r(360)
+			padding-right: 0
+			// +scale(.7)
+	.show480
+		+r(500)
+			display: inline-block !important
+		+iphone5
+			display: inline-block !important
+	+r(768)
+		> ul
+			+r(500)
+				display: block
+				font-size: 0
+				height: auto
+			+iphone5
+				display: block
+				font-size: 0
+				height: auto
+			> li
+				a
+					padding: 0
+				> a
+					height: 84px
+					line-height: 110px
+				+iphone5
+					display: inline-block
+					vertical-align: top
+					text-align: left
+					height: 44px
+					display: inline-block
+					> a
+						font-size: 12px
+						height: 44px
+						line-height: 50px
+						font-size: 18px
+						padding-right: 8px
+						+r(438)
+							font-size: 15px
+						+r(400)
+							padding-right: 3%
+						+r(360)
+							font-size: 14px
+						+r(340)
+							font-size: 13px
+						+r(320)
+							padding-right: 2%
+				+r(500)
+					display: inline-block
+					vertical-align: top
+					text-align: left
+					height: 44px
+					display: inline-block
+					> a
+						font-size: 12px
+						height: 44px
+						line-height: 50px
+						font-size: 18px
+						padding-right: 7px
+						+r(438)
+							font-size: 15px
+						+r(400)
+							padding-right: 3%
+						+r(360)
+							font-size: 14px
+						+r(340)
+							font-size: 13px
+						+r(320)
+							padding-right: 2%
+
+			.submenu__right_coner
+				right: 0
+				left: -100%
+
+.menu__pad_1,
+.menu__pad_2,
+.menu__pad_3
+	+r(500)
+		width: 33%
+		text-align: center !important
+	+iphone5
+		width: 33%
+		text-align: center !important
+.menu__pad_4
+	+r(500)
+		width: 27%
+		text-align: center !important
+	+iphone5
+		width: 27%
+		text-align: center !important
+.menu__pad_5
+	+r(500)
+		width: 50%
+		text-align: center !important
+	+iphone5
+		width: 50%
+		text-align: center !important
+.menu__pad_6
+	text-align: center!important
+	+r(500)
+		width: 22%
+
+
+
+@each $s in icon_kino, icon_serial, icon_mult, icon_tele, icon_sport
+	.#{$s}
+		+s(#{$s})
+		li:hover &,
+		.active &
+			+s(#{$s}_h)
+		+r(500)
+			+s(#{$s}_480)
+			li:hover &,
+			.active &
+				+s(#{$s}_480_h)
+		+iphone5
+			+s(#{$s}_480)
+			li:hover &,
+			.active &
+				+s(#{$s}_480_h)
+		+r(465)
+			+scale(.8)
+
+
+.menu__pad_4
+	+r(500)
+		border-left: 0!important
+		&:before
+			content: none
+			display: none
+	+iphone5
+		border-left: 0!important
+		&:before
+			content: none
+			display: none
+
+.recommend__search .title
+	font-weight: 500
+	+r(400)
+		font-size: 14px
+		// font-weight: bold
+
+
+.side__menu
+	display: none
+
+#header
+	+g(#fff, #d5e6f9)
+	+r(925)
+		height: auto
+	+r(768)
+		.fixed
+			width: 100%
+	+r(500)
+		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g')
+		background-size: 100%
+		background-image: -moz-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+		background-image: -webkit-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+		background-image: linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+	+iphone5
+		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g')
+		background-size: 100%
+		background-image: -moz-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+		background-image: -webkit-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+		background-image: linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+
+
++r(600)
+	.show480
+		display: block!important
+	.hide480,
+	.account_icon_1,
+	.account_icon_2,
+	.account_name
+		display: none!important
+	.account_exit
+		font-size: 20px
+		margin-right: 4px
+	.account_name + .account_exit
+		border-left: 1px solid $n
+	.side__bread
+		display: none
+		position: absolute
+		top: 134px
+		left: 0
+		width: 413px
+		background-color: #1E3450
+		z-index: 36
+		li
+			border-bottom: 1px solid #27415e
+			list-style: none
+			height: 43px
+		h3
+			position: relative
+			display: inline-block
+			color: #fff
+			font: 20px Arial, sans-serif
+			font-weight: bold
+			line-height: 43px
+			margin-left: 11px
+			i
+				position: absolute
+				top: 19px
+				right: -15px
+				+arr(7,4,#fff,t)
+		a
+			display: inline-block
+			margin-left: 36px
+			color: #7BB4D8
+			font: 18px "Ubuntu", Arial, sans-serif
+			text-decoration: none
+			line-height: 43px
+			&:hover
+				text-decoration: underline
+	.recommend__search
+		width: 100%
+		.more_video
+			display: none
+	.tab_check_first
+		margin-left: 90px
+		margin-right: 40px
+		+r(390)
+			margin-left: 10px
+	.sort_item
+		width: 90%
+		margin: 0 auto
+	.sort_tags span
+		+r(400)
+			margin-bottom: 5px
+			font-size: 14px
+	.slider_long
+		padding: 20px 0
+		&_text
+			font-size: 16px
+			font-weight: 300
+	.tags a
+		font-size: 16px
+	.category_slider
+		margin-bottom: 25px
+
+
+
+
+
+	//on top
+
+	// .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+	// 	// width: 94vw
+	// 	text-align: left//19.08
+	// .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+	// 	// width: 94vw
+	// 	text-align: center
+	// .owl-item .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide span
+	// 	text-align: center
+
+	// .category_slider .slider_nav
+	// 	padding: 0
+	// .slider_nav > span:before
+	// 	+s(dotted_480_r)
+	// 	right: -115px
+	// .slider_nav > span:after
+	// 	+s(dotted_480_l)
+	// 	left: -115px
+
+	// .double_slide .category_slider_title, .double_slide .category_slider_text
+	// 	width: 100%
+	// 	font-size: 16px
+	// .double_slide .category_slider_title
+	// 	font-size: 18px
+
+
+	.extended_search
+		background-color: #FFF
+		padding-top: 0
+		+g(#FFF 55%, #e8f1fc 120%)
+	.sort_btn
+		margin-top: 10px
+		margin-bottom: 0
+		span
+			&:after,
+			&:before
+				display: none
+	.footer_bottom_propose
+		display: none
+		margin-left: 10px
+	.footer__butter
+		display: none
+	#footer_r
+		margin-right: 12px
+	#search
+		position: relative
+		input[type="text"]
+			width: 61%
+		input[type="submit"]
+			width: 31%
+
+	.slider_tabs span, .slider_tabs a
+		margin: 0 15px
+
+	.slider_long + .category_slider.white, .flexi_slider + .white
+		padding-top: 20px
+	.category_slider.white .slider_nav
+		margin-bottom: 15px
+	.actor_slider_inner
+		margin-top: 30px
+		li a
+			margin-bottom: 20px
+	.comments
+		padding: 20px 10px
+		width: 95%
+		margin: 0 auto
+	.topic
+		margin-bottom: 15px
+	.comment .comment_l, .reply .comment_l
+		width: 100%
+		text-align: left
+		margin-bottom: 5px
+	.comment .comment_r, .reply .comment_r
+		margin-left: 0
+	.comment .author, .reply .author
+		margin: 0
+	.comment .comment
+		margin-left: 50px
+	.reply form
+		margin: 0 auto
+		&:after
+			display: none
+	.reply_body .author
+		margin-left: 20px
+	.category_tabs span
+		margin: 0 6px
+	.video_info span
+		font-size: 16px
+
+// +iphone5
+// 	.show480
+// 		display: block!important
+// 	.hide480,
+// 	.account_icon_1,
+// 	.account_icon_2,
+// 	.account_name
+// 		display: none!important
+// 	.side__bread
+// 		display: none
+// 		position: absolute
+// 		top: 134px
+// 		left: 0
+// 		width: 413px
+// 		background-color: #1E3450
+// 		z-index: 36
+// 		li
+// 			border-bottom: 1px solid #27415e
+// 			list-style: none
+// 			height: 43px
+// 		h3
+// 			position: relative
+// 			display: inline-block
+// 			color: #fff
+// 			font: 20px Arial, sans-serif
+// 			font-weight: bold
+// 			line-height: 43px
+// 			margin-left: 11px
+// 			i
+// 				position: absolute
+// 				top: 19px
+// 				right: -15px
+// 				+arr(7,4,#fff,t)
+// 		a
+// 			display: inline-block
+// 			margin-left: 36px
+// 			color: #7BB4D8
+// 			font: 18px "Ubuntu", Arial, sans-serif
+// 			text-decoration: none
+// 			line-height: 43px
+// 			&:hover
+// 				text-decoration: underline
+// 	.account_exit
+// 		font-size: 20px
+// 		margin-right: 4px
+// 	.account_name + .account_exit
+// 		border-left: 1px solid $n
+// 	.recommend__search
+// 		width: 100%
+// 		.more_video
+// 			display: none
+// 	.tab_check_first
+// 		margin-left: 90px
+// 		margin-right: 40px
+// 		+r(390)
+// 			margin-left: 10px
+// 	.sort_item
+// 		width: 90%
+// 		margin: 0 auto
+// 	.sort_tags span
+// 		+r(400)
+// 			margin-bottom: 5px
+// 			font-size: 14px
+// 	.slider_long
+// 		padding: 20px 0
+// 		&_text
+// 			font-size: 16px
+// 			font-weight: 300
+// 	.category_slider
+// 		margin-bottom: 25px
+
+
+.actor
+	.award
+		width: 100%
+
+
+
+
+
+
+
+
+
+	// .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+	// 	// width: 460px
+	// 	width: 94vw
+	// .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+	// 	width: 460px
+
+
+
+
+
+
+
+
+	.category_slider .slider_nav
+		padding: 0
+	.slider_nav > span:before
+		+s(dotted_480_r)
+		right: -115px
+	.slider_nav > span:after
+		+s(dotted_480_l)
+		left: -115px
+
+	.double_slide .category_slider_title, .double_slide .category_slider_text
+		width: 100%
+		font-size: 16px
+	.double_slide .category_slider_title
+		font-size: 18px
+	.extended_search
+		background-color: #FFF
+		padding-top: 0
+		+g(#FFF 55%, #e8f1fc 120%)
+	.sort_btn
+		margin-top: 10px
+		margin-bottom: 0
+		span
+			&:after,
+			&:before
+				display: none
+	.footer_bottom_propose
+		display: none
+		margin-left: 10px
+	.footer__butter
+		display: none
+	#footer_r
+		margin-right: 12px
+	#search
+		position: relative
+		input[type="text"]
+			width: 61%
+		input[type="submit"]
+			width: 31%
+
+	.slider_tabs span, .slider_tabs a
+		margin: 0 15px
+
+	.slider_long + .category_slider.white, .flexi_slider + .white
+		padding-top: 20px
+	.category_slider.white .slider_nav
+		margin-bottom: 15px
+	.actor_slider_inner li a
+		margin-bottom: 20px
+	.comments
+		padding: 20px 10px
+		width: 95%
+		margin: 0 auto
+	.topic
+		margin-bottom: 15px
+	.comment .comment_l, .reply .comment_l
+		width: 100%
+		text-align: left
+		margin-bottom: 5px
+	.comment .comment_r, .reply .comment_r
+		margin-left: 0
+	.comment .author, .reply .author
+		margin: 0
+	.comment .comment
+		margin-left: 50px
+	.reply form
+		margin: 0 auto
+		&:after
+			display: none
+	.reply_body .author
+		margin-left: 20px
+	.category_tabs span
+		margin: 0 6px
+	.video_info span
+		font-size: 16px
+
+
+
+
+
+
+
+
+
+.slider_large li
+	overflow: hidden
+.img__wrap
+	position: absolute
+	top: 0
+	left: 50%
+	margin-left: -960px
+	width: 1920px
+	img
+		width: auto
+		height: 465px
++r(925)
+	.top_social
+		display: none
+	.top__logo_768
+		float: left
+		margin: 11px 0 0 71px
+		+s(logo_768)
+		+r(500)
+			margin: 6px 0 0 60px
+			+s(logo_480)
+	.burger__menu
+		position: absolute
+		top: 11px
+		left: 7px
+		z-index: 151
+		+s(burger__menu)
+		+r(500)
+			+s(burger__menu_480)
+	.side__menu
+		display: none
+		position: absolute
+		top: 46px
+		left: 0
+		width: 246px
+		height: 100%
+		min-height: 760px
+		background-color: #1E3450
+		font-size: 0
+		font-family: 'ubuntu', sans-serif
+		z-index: 52
+		a
+			display: block
+			font-size: 16px
+			line-height: 40px
+			text-decoration: none
+			border-bottom: 1px solid #27415E
+		.side__menu_link
+			font-weight: 400
+			color: #7bb4d8
+			padding-left: 33px
+		li
+			&:hover
+				.side__menu_link
+					font-weight: 500
+					color: #B8D4E6
+		.side__submenu_link
+			font-weight: 300
+			color: #B8D4E6
+			padding-left: 68px
+		#top_search,
+		.side__menu_search
+			display: none
+	#top_search
+		top: 9px
+		left: 242px
+		input[type="text"]
+			display: block
+			width: 169px
+			height: 9px
+		input[type="submit"]
+			top: -4px
+	.account
+		position: absolute
+		top: 7px
+		right: 0
+	.account_icon_2
+		width: 31px
+		height: 31px
+	#top_line .fixed
+		height: 46px
+
+	#logo
+		display: none
+	// .menu
+	// 	ul
+	// 		&:after
+	// 			content: none
+	// 	> li
+	// 		&:first-child
+	// 			border-left: 1px solid $n
+	// 			&:before
+	// 				display: none
+	// 		&:last-child
+	// 			display: none
+	// 		a
+	// 			padding: 0 30px
+	// 	.submenu li a
+	// 		padding: 8px 25px 10px 17px
+	// .menu li:hover .submenu
+	// 	z-index: 10
+
++r(480)
+	.side__menu a
+		line-height: 45px
+		font-size: 18px
+	.side__menu  #top_search input[type="text"]
+		font-size: 15px
+
+
+
++r(700)
+	#top_search
+		display: none
+	.side__menu
+		.side__menu_search
+			display: block
+			height: 36px
+			border-bottom: 1px solid #27415E
+		#top_search
+			top: 4px
+			left: 12px
+			input[type="text"]
+				background-color: #14263D
+		#top_search,
+		.side__menu_search
+			display: block
+
++r(1060)
+	#footer .nav
+		width: 120px
+		margin-right: 10px
++r(900)
+	#container
+		padding-bottom: 265px
+	#footer_bottom .nav
+		display: none
+
+	#footer_bottom
+		padding: 0
+		height: 125px
+	#footer_r
+		padding-top: 30px
+
+	.footer_bottom_propose
+		display: block
+		width: 220px
+		margin-left: 20px
+		float: left
+		li
+			width: 100px
+			list-style: none
+			display: inline-block
+		a
+			font: 12px Arial, sans-serif
+		+r(500) // 478
+			display: none
+			position: absolute
+			left: -16px
+			bottom: 126px
+			width: 235px
+			overflow: hidden
+			padding: 5px 0
+			background-color: #0B1A2C
+			li
+				width: 100%
+				padding: 5px 0 5px 15px
+				background-color: #0B1A2C
+				&:hover
+					background-color: #2A394A
+					a
+						text-decoration: underline
+			a
+				color: #7BB4D8
+				text-decoration: none
+				line-height: 20px
+				font-size: 15px
+	.footer_bottom_propos_white
+		display: inline-block
+		color: #FFF
+		font-weight: bold
+		margin: 20px 0
+		+r(500)//478
+			display: block
+			margin: 0
+
+	.footer_bottom_propos_link
+		color: #7BB4D8
+		text-decoration: none
+		line-height: 20px
+		&:hover
+			text-decoration: underline
+	.footer__butter
+		display: none
+		+r(500)//480
+			display: inline-block
+			+s(burger__menu)
+
+
+			//CATLOG
+.video_info span
+	display: block
+	margin-bottom: 5px
+
+.has_description
+	+r(768)
+		// width: 50vw!important
+		height: 216px
+		> a
+			// .thumb
+			// 	height: 216px
+			img
+				height: 216px
+		.category_slider_title,
+		.category_slider_text
+			display: none
+		.description
+			background: none
+			-webkit-box-shadow: none
+			box-shadow: none
+			background-color: $n
+			float: left
+			margin-left: 5%
+	+r(550)
+		// width: 100vw !important
+		height: 440px
+		> a
+			width: 95%!important
+			height: 344px
+			// +r(380)
+			// 	height: 285px
+			// +r(320)
+			// 	min-height: 240px
+			.thumb
+				height: 315px
+				-webkit-box-shadow: none
+				box-shadow: none
+			img
+				// height: 315px!important //23.07
+		.description
+			margin: 0
+			width: 95%
+			span
+				text-align: left
+.double_slide// .has_description.double_slide
+	+clr
+	+r(500)
+		width: 100vw !important
+		height: auto !important
+.category_slider_inner
+	+r(500)
+		height: auto !important
+
+
+// can delete
+
+// .category__description
+// 	height: 390px
+// 	overflow: hidden
+// 	+r(768)
+// 		height: 300px
+// 	+r(550)
+// 		height: 530px
+// top can dell
+
+
+
++r(768)
+	.category_slider_inner li.has_description > a, .category_slider_item.has_description > a, .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+		width: 80%
+		float: left
+		padding: 0
+		.thumb
+			width: 100%
+			height: auto
+		img
+			height: auto //23.07
+	.category_slider_inner li.has_description > a, .category_slider_item.double_slide.has_description > a,
+		width: 90%
+	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+		width: 100%
+	.description
+		background-color: $n
+		position: relative
+		width: 80%
+		float: right
+		padding: 0
+		display: block
+		top: 0
+		vertical-align: top
+	.descr_title
+		font-size: 18px
+		font-family: Arial
+	.video_info span + span
+		display: block
+		margin-left: 0
+		margin-top: 5px
+	.descr_info,
+	.descr_bottom
+		display: none
+
+
+
++r(1130)
+	// .catalog
+	// 	width: 704px
+	// .items .item-c:nth-child(odd)
+	// 	margin-left: 0px
+	// .items .item-c:nth-child(even)
+	// 	margin-left: 26px
+	.catalog .topic + .show480
+		margin-bottom: 20px
+	.items
+		text-align: justify
+		position: relative
+		+clr
+		.item-c
+			width: 31%
+			display: inline-block
+			// padding-right: 15px
+			margin: 0 0 26px
+			vertical-align: top
+			+box
+			.pic
+				width: 100%
+				height: auto
+				a
+					display: block
+					position: relative
+					height: 0
+					border: none
+					padding-top: 100%
+					img
+						+coverdiv
+		.item-c__center
+			margin: 0 3% 0
+			+r(850)
+				margin: 0 2% 0
+	.topic span:before
+		+s(dotted_480_l)
+	.topic span:after
+		+s(dotted_480_r)
++r(600)
+	.topic span:before
+		left: -140px
+	.topic span:after
+		right: -140px
+	.categories-c,
+	.sort-by
+		display: none
+	.content-c
+		margin-left: 0
+	.items
+		.item-c
+			width: 48%
+			&:nth-child(odd)
+				margin-left: 0px
+			&:nth-child(even)
+				margin-left: 3%
+			.pic
+				width: 100%
+				img
+					width: 100%
+		.item-c__center
+			margin: 0
+
++r(768)
+	.tags
+		a
+			background: #DCE9FB
++r(360)
+	.items
+		.item-c
+			width: 100%
+			margin: 0 0 26px
+			&:nth-child(even)
+				margin-left: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ####################################################################################################################################################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+.video_info
+	.rating
+		display: inline-block
+
++r(580)
+	.actor_l
+		width: 160px
+	.actor_l .thumb
+		width: 100%
+		img
+			width: 100%
+	.actor_rating
+		.up
+			width: 63px
+			padding: 0 0 0 15px
+			font-size: 14px
+			line-height: 44px
+			+r(400)
+				width: 40px
+				padding: 0 0 0 8px
+				height: 30px
+				line-height: 30px
+				font-size: 12px
+			span
+				+s(like-icon_480)
+				margin: 9px 10px 0
+				+r(400)
+					margin: 5px 0 0
+					+scale(.7)
+			&:hover
+				width: 62px
+				padding: 0 0 0 15px
+				font-size: 14px
+				line-height: 44px
+				span
+					+scale(1.2)
+		.down
+			width: 63px
+			padding: 0 15px 0 0
+			font-size: 14px
+			line-height: 44px
+			+r(400)
+				width: 40px
+				padding: 0 8px 0 0
+				height: 30px
+				font-size: 12px
+				line-height: 30px
+			span
+				+s(unlike-icon_480)
+				margin: 13px 10px 0
+				+r(400)
+					margin: 5px 0 0
+					+scale(.7)
+			&:hover
+				width: 62px
+				padding: 0 15px 0 0
+				font-size: 14px
+				line-height: 44px
+				span
+					+scale(1.2)
+	.actor_info
+		margin-left: 175px
+		+r(400)
+			margin-left: 115px
+	.prize_title
+		font-size: 18px
+		font-weight: 400
+	.actor_r
+		.more_prize
+			margin-top: 5px
+			+r(400)
+				margin-left: 0
+				padding-left: 0
+.more_prize:before
+	+r(480)
+		content: none
+
+
+
+
+// ####################################################################################################################################################################################################################################################
+
+
+
+
+
++r(900)
+	.actor_r
+		margin-left: 0
+	.actor_l
+		margin: 0 15px 15px 0
+
++r(1190)
+	.prize_title
+		vertical-align: top
+		display: block
+		margin-bottom: 20px
+	// .more_prize
+	// 	transform: translate(-125px, -50px)
++r(900)
+	.prize_title
+		vertical-align: middle
+		display: inline-block
+		margin-bottom: 0
+	.more_prize
+		transform: translate(0, 0)
++r(700)
+	.prize_title
+		vertical-align: top
+		float: left
+		width: 100%
+		margin: 0
++r(350)
+	.more_prize
+		// transform: translate(0, 0)
+		margin-right: 0
+		// margin-top: 20px
+		// width: 100%
+	.prize .award
+		margin-bottom: 5px
++r(400)
+	.actor_l
+		width: 100px !important
+// 		// float: none
+// 		.thumb
+// 			margin: 0 auto
+	.actor_rating
+		width: 160px
+		margin: 10px auto
+// 	.actor_r
+// 		width: 95%
+// 		margin: 0 auto
+	.actor_info
+		margin-left: 0 !important
+
+
+
+
+// .award
+	// width: 36%
+	// +r(480)
+		// width: 42%
+.clear
+	clear: both
+	display: table
+	height: 0
+.awards
+	width: 445px
+	+r(990)
+		width: 345px
+	+r(725)
+		width: 320px
+.prize .awards
+	+r(700)
+		width: 100%
+		display: block
+		position: relative
+		+clr
+		.award
+			width: 50%
+			max-width: 50%
+			margin: 10px 0 10px
+			display: block
+			float: left
+	+r(405)
+		.award
+			width: 100%
+			max-width: 100%
+.prize
+	+r(700)
+		padding: 30px
+.more_prize
+	+r(700)
+		float: right
+		width: 50%
+		transform: translate(0, -80px)
+	+r(480)
+		width: 28%
+		transform: translate(0, 0px)
+		margin-right: 40px
+		float: none
+		width: 100%
+		padding-left: 0
+		margin-left: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider_nav > span
+	+r(425)
+		padding: 0 50px
+	+r(360)
+		font-size: 22px
+	+r(340)
+		font-size: 19px
+
+#container
+	+r(615)
+		padding-bottom: 220px
+//film__poster
+
+.film
+	+r(768)
+		padding: 20px 0
+.film_l
+	width: 29%
+	margin: 0 4% 4% 0
+	.thumb
+		width: 100%
+		img
+			width: 100%
+	.buy
+		width: 100%
+		+box
+	.name
+		width: 65%
+		+box
+	.price
+		width: 35%
+		+box
+	.soc_block
+		img
+			width: 100%
+	+r(585)
+		width: 100%
+		.thumb
+			width: 80%
+			margin: 0 auto 15px
+
+.film_rating,
+.film_nav
+	// +r(905)
+	// 	float: left
+	// 	width: 100%
+	+clr
+.film_rating
+	position: relative
+	+r(905)
+		+g(#82b8da, #b4d3ec)
+		margin-bottom: 10px
+		background-color: #FFF
+		.stars
+			height: 33px
+			border-bottom: 2px solid #1e3450
+			border-top: 2px solid #1e3450
+			padding-top: 1px
+			width: 170px
+			background-color: #FFF
+			&:after
+				top: -3px
+				right: -15px
+				+s(rate_triagle_768)
+			.descr
+				width: 38px
+				padding-right: 0
+		.result
+			width: 35px
+			color: #1e3450
+			background-color: $n
+			+g($n, $n)
+			float: left
+			margin-left: 20px
+			line-height: 38px
+			height: 38px
+			padding: 0
+	+r(850)
+		.stars
+			width: 160px
+			.star
+				margin-top: 5px
+			.descr
+				float: left
+				margin: 0 0 0 10px
+		+r(525)
+			width: 100%
+			.stars
+				width: 145px
+	+r(680)
+		.stars
+			float: left
+			width: 33%
+			height: 50px
+			padding-top: 8px
+			text-align: center
+			border-bottom: 5px solid #1e3450
+			border-top: 5px solid #1e3450
+			&:after
+				top: -5px
+				bottom: -5px
+				right: -20px
+				background: url(../images/corner.png) 0 0 no-repeat
+				width: 20px
+				height: 68px
+			.descr
+				width: 100%
+				text-align: center
+				margin: 0
+		.result
+			width: 12.2%
+			height: 68px
+			line-height: 68px
+	+r(585)
+		overflow: visible
+		.stars
+			padding-top: 4px
+			height: 54px
+			.descr
+				font-size: 16px
+	// +r(530)
+	// 	.stars
+	// 		height: 51px
+	// 		width: 145px
+	// 		background-color: #fff
+	// 		border-width: 2px
+	// 		&:after
+	// 			+s(rate_triagle_480)
+	// 			right: -20px
+	// 			top: -2px
+	// 		.descr
+	// 			width: 100%
+	// 			text-align: center
+	// 			font-size: 18px
+	// 			margin-bottom: 5px
+	// 	.result
+	// 		height: 64px
+	// 		line-height: 64px
+	// 		margin-right: 7px
+	// 		background-color: $n
+	+r(480)
+		.stars
+			width: 33%
+			height: 57px
+			border-bottom: 2px solid #1e3450
+			border-top: 2px solid #1e3450
+			&:after
+				top: -2px
+				right: -20px
+				+s(rate_triagle_480)
+			.star
+				display: none
+			.descr
+				line-height: 52px
+		.result
+			height: 64px
+			line-height: 64px
+	+r(350)
+		.stars
+			width: 27%
+			.descr
+				font-size: 14px
+.stars__show
+	cursor: pointer
+	position: relative
+.stars__rank
+	display: none
+	position: absolute
+	top: 61px
+	left: -2px
+	width: 101%
+	padding-bottom: 10px
+	background-color: #fff
+	border: 2px solid #1e3450
+	border-top: none
+	z-index: 4
+	+box
+	li
+		display: block
+		list-style: none
+.radio
+	display: inline-block
+	input
+		position: absolute
+		left: 0
+		top: 4px
+		opacity: 0
+		z-index: 2
+		&:checked
+			+ span
+				&:after
+					content: ""
+					position: absolute
+					left: -23px
+					top: 5px
+					width: 8px
+					height: 8px
+					z-index: 12
+					+s(check)
+	span
+		position: relative
+		display: inline-block
+		padding-left: 0px
+		margin-left: 25px
+		margin-bottom: 5px
+		font-size: 15px
+		background-image: url("../images/star_a.png")
+		height: 18px
+		width: 19px
+		&:before
+			content: ""
+			position: absolute
+			left: -25px
+			top: 4px
+			+s(non_check)
+			z-index: 10
+.voice
+	+r(905)
+		min-width: 66px
+		width: 107px
+		border: 2px solid #79bc38
+		height: 29px
+		padding-top: 5px
+		padding-left: 9px
+		text-align: left
+		background-color: #FFF
+		&_1
+			font-size: 16px
+		&_2
+			margin-left: 5px
+			margin-top: -3px
+			+r(850)
+				margin-left: 0
+	+r(850)
+		+box
+		height: 38px
+		padding-left: 2px
+	+r(680)
+		width: 23%
+		height: 53px
+		padding-top: 5px
+		text-align: center
+		border: 5px solid #79bc38
+		-webkit-box-sizing: none
+		-moz-box-sizing: content-box
+		box-sizing: content-box
+		&_1
+			font-size: 18px
+			padding-left: 25px
+			background: url(../images/star_a.png) 0 50% no-repeat
+		&_2
+			width: 70px
+			vertical-align: middle
+			margin-left: 10px
+			margin-top: 3px
+			text-align: left
+	+r(605)
+		width: 21%
+		&_2
+			margin-left: 0
+	+r(585)
+		&_2
+			width: 100%
+			font-size: 14px
+	// +r(530)
+		height: 55px
+		padding-top: 5px
+		background-color: #fff
+		border: 2px solid #79bc38
+		&_1
+			display: inline-block
+			font-size: 18px
+			margin-left: -12px
+			padding-top: 5px
+		&_2
+			display: block
+			font-size: 16px
+			width: 110px
+			// margin: 5px 0 0
+	+r(480)
+		min-width: 77px
+		padding: 0
+		border: 2px solid #79bc38
+		height: 61px
+		&_2
+			line-height: 100%
+			text-align: center
+			font-size: 16px
+.rank
+	+r(905)
+		width: 138px
+		padding-top: 6px
+		border: 2px solid #1e3450
+		border-left: none
+		height: 28px
+		width: 143px
+		background-color: #FFF
+		+r(885)
+			width: 120px
+		+r(860)
+			width: 110px
+		span
+			font-size: 16px
+			padding-left: 75px
+			margin-left: 0
+	+r(805)
+		width: 95px
+		span
+			padding-left: 60px
+	+r(680)
+		position: relative
+		width: 23%
+		height: 58px
+		border: 5px solid #1e3450
+		border-right-width: 2px
+		border-left: none
+		padding-top: 0
+		span
+			font-size: 28px
+			display: inline-block
+			vertical-align: middle
+			margin-left: 0px
+			padding-left: 0px
+			padding-top: 25px
+			background: none
+		i
+			position: absolute
+			top: 5px
+			left: 23px
+			width: 55px
+			height: 22px
+			background: url(../images/rank.png) 0 50% no-repeat
+	+r(605)
+		width: 18%
+		min-width: 69px
+		i
+			left: 9px
+	+r(585)
+		i
+			left: 22px
+	// +r(530)
+		width: 115px
+		height: 42px
+		padding-top: 18px
+		background-color: #fff
+		border: 2px solid #1e3450
+		border-left: none
+		span
+			padding-left: 63px
+	+r(480)
+		width: 23%
+		border: 2px solid #1e3450
+		border-left: none
+		height: 61px
+		i
+			left: 13px
+	+r(350)
+		width: 21%
+		i
+			left: 8px
+.film_nav
+	+r(905)
+		margin-bottom: 15px
+	+r(480)
+		width: 100%
+	+r(400)
+		a
+			width: 50%
+		> a + a
+			border-left: none
+
+
+.film_nav > a:first-child,
+.film_nav > a:last-child
+	+r(400)
+		-webkit-border-radius: 0
+		border-radius: 0
+
+.film_about
+	+r(905)
+		padding-bottom: 15px
+		margin-top: 15px
+.film_about_details
+	display: none
+	position: relative
+	margin-bottom: 0
+	padding: 3px
+	border-top-left-radius: 5px
+	border-top-right-radius: 5px
+	color: #3888E4
+	+r(768)
+		display: inline-block!important
+	&:after
+		content: ""
+		position: absolute
+		bottom: 6px
+		right: -12px
+		+s(bird__top)
+	+r(905)
+		// float: left
+		// display: inline-block
+		position: relative
+		// margin-right: 55%
+		// width: 65%
+		font-size: 11px
+		color: #3888E4
+		padding-right: 15px
+		// float: left
+		&:after
+			left: 90%
+			+r(585)
+				left: 16%
+			+r(580)
+				display: none
+		+r(768)
+			&:after
+				bottom: 8px
+		// +r(680)
+		// 	float: left
+.film_about_details.is_active
+	background-color: #D9EAF8
+.film_about_details.is_active::after
+	+rotate(180)
+	left: 90%
+	+r(585)
+		left: 17%
+.film_info
+	+r(1030)
+		width: 440px
+		margin-bottom: 30px
+	+r(768)
+		background-color: #D9EAF8
+		width: 67%
+		padding: 10px
+		float: right
+		+box
+	+r(585)
+		width: 100%
+
+.bird__bottom
+	+r(905)
+		+s(bird__bottom)
+// .film_info
+// 	+clr
+.film_prize
+	+r(1030)
+		float: left
+		width: 100%
+		padding: 0 20px 25px 0
+		&:after
+			content: none
+		.award
+			display: inline-block
+			margin-right: 15px
+.film_prize_width
+	width: 63%
+	+r(585)
+		width: 90%
+		margin: 0 auto
+	// padding: 0 20px 25px 0
+
+#popup_prize
+	+r(920)
+		width: 705px
+		margin-left: -353px
+
+.film_r
+	+clr
+	+r(1000)
+		margin-left: 0
+	+r(850)
+		.stars .star
+			padding-top: 5px
+			float: left
+	+r(768)
+		// margin-left: 235px
+		margin-left: 0
+	+r(680)
+		margin-left: 0
+	+r(530)
+		.stars
+			padding-top: 9px
+			.descr
+				margin: 0
+			.star
+				float: none
+
+
+.slider_tabs span,
+.slider_tabs a
+	+r(590)
+		margin: 0 15px
+	+r(460)
+		margin: 10px 0
+		width: 47%
+
+#flexi_soundtracks
+	+r(990)
+		padding: 60px 0
+	+r(745)
+		padding: 30px 0 60px
+.soundtracks
+	+r(990)
+		width: 750px
+		.cover
+			width: 320px
+			margin-right: 20px
+			margin-left: 20px
+	+r(745)
+		width: 440px
+		.cover
+			display: none
+	+r(460)
+		width: 300px
+.soundtracks .cover + .playlist
+	+r(990)
+		margin-left: 380px
+	+r(745)
+		margin: 0 auto
+.track
+	+r(990)
+		margin-right: 20px
+.soundtracks .playlist,
+.soundtracks .playlist_inner
+	+r(990)
+		width: 340px
+	+r(745)
+		width: 440px
+	+r(460)
+		width: 300px
+.track .track_number
+	+r(990)
+		width: 30px
+	+r(745)
+		width: 50px
+.track .track_info
+	+r(990)
+		width: 320px
+	+r(745)
+		width: 380px
+	+r(460)
+		width: 230px
+.track .track_name
+	+r(460)
+		width: 80%
+
+	//TRAILERS
+
+#flexi_trailers .flexi_slider_inner
+	+r(1040)
+		width: 800px
+		margin: 0 auto
+	+r(885)
+		width: 650px
+	+r(770)
+		width: 515px
+	+r(580)
+		width: 450px
+		height: 1000px
+	+r(479)
+		width: 350px
+	+r(390)
+		width: 290px
+
+.trailer
+	+r(1040)
+		width: 800px
+	+r(885)
+		width: 650px
+	+r(770)
+		width: 515px
+	+r(580)
+		width: 450px
+	+r(479)
+		width: 350px
+	+r(390)
+		width: 290px
+
+
+.trailer_video
+	+r(1040)
+		width: 48%
+	+r(580)
+		width: 90%
+		display: block
+		margin: 0 auto 20px
+.trailer .trailer_thumb
+	+r(1040)
+		width: 48%
+	+r(580)
+		width: 90%
+#flexi_trailers .small_arrow_l
+	+r(1000)
+		margin-left: -440px
+		background-color: $n
+		span
+			background: url(../images/arrows_white.png) 10px 0 no-repeat
+			width: 26px
+	+r(885)
+		margin-left: -365px
+	+r(770)
+		margin-left: -295px
+	+r(580)
+		margin-left: -240px
+	+r(479)
+		margin-left: -195px
+	+r(390)
+		margin-left: -163px
+#flexi_trailers .small_arrow_r
+	+r(1000)
+		margin-right: -440px
+		background-color: $n
+		span
+			background: url(../images/arrows_white.png) -16px 0 no-repeat
+	+r(885)
+		margin-right: -365px
+	+r(770)
+		margin-right: -295px
+	+r(580)
+		margin-right: -240px
+	+r(479)
+		margin-right: -195px
+	+r(390)
+		margin-right: -163px
+
+
+.trailer .trailer_info
+	+r(580)
+		display: block
+#flexi_trailers .flexi_slider_inner, #flexi_trailers ul, #flexi_trailers li,
+.trailer
+	height: auto
+.trailer .trailer_info_inner
+	+r(580)
+		display: block
+		width: 90%
+		margin: 0 auto
+
+
+	// VHOD
+
+
+.user_soc
+	+r(900)
+		width: 54%
+		margin-left: 20px
+		padding-left: 15px
+		+box
+		a + a
+			margin-left: 7px
+	+r(825)
+		width: 48%
+		span
+			margin-top: 20px
+			margin-left: 0
+			display: block
+.user_l
+	+r(800)
+		width: 48%
+
+
+
+/////###########
+
+
+.footer_bottom_white,
+.show768
+	display: none
+
+.hide600
+	+r(600)
+		display: none
+.enter_600,
+.registration_600
+	position: relative
+	left: 0
+	top: 0
+	+r(600)
+		display: block
+		padding: 40px 0
+		width: 100%
+		z-index: 34
+		// margin-bottom: 220px
+		&:after
+			content: none
+		.subtitle
+			width: 100%
+			margin: 0 0 25px
+		input[type="text"],
+		input[type="password"]
+			width: 350px
+			margin: 0 auto 18px
+		.error span
+			left: 72%
+		input[type="submit"]
+			width: 395px
+			margin: 0 auto 18px
+	+r(460)
+		input[type="text"],
+		input[type="password"]
+			width: 80%
+			margin: 0 auto 18px
+		.error span
+			left: 75%
+		input[type="submit"]
+			width: 90%
+			margin: 0 auto 18px
+			+box
+
+
+.entrance_body
+	div:nth-child(n+3) input
+		+r(990)
+			margin-top: 20px
+		+r(665)
+			margin-top: 0
+
+
+#site
+	.enter480:after,
+	.registration_480:after
+		content: none
+.entrance_body
+	+r(665)
+		div
+			margin-bottom: 20px
+.login.hide600
+	+r(768)
+		padding-bottom: 0
+	+r(615)
+		padding-bottom: 60px
+
+.skip_placeholder .entrance_body
+	div
+		span
+			+r(480)
+				font-size: 13px
+	input
+		+r(1040)
+			width: 135px
+	.entrance_item_1
+		+r(950)
+			margin-right: 0
+		+r(935)
+			margin-top: 20px
+		+r(480)
+			span
+				width: 70px
+				margin-bottom: 10px
+
+//profile
+
+
+// .user_name
+// 		font-size: 22px
+.user_l
+	width: 32%
+	+r(478)
+		width: 42%
+.user_pic
+	width: 20%
+	margin: 0
+	text-align: center
+	img
+		position: relative
+		display: block
+		margin: 0 auto
+	.pic_nav
+		width: 125px
+		left: 50%
+		margin-left: -63px
+	+r(950)
+		margin: 0
+	+r(768)
+		height: 94px
+		line-height: 95px
+		img
+			width: 94px
+			height: 94px
+		.pic_nav
+			width: 94px
+			margin-left: -47px
+	+r(478)
+		width: 32%
+.user_r
+	width: 34%
+	+r(478)
+		width: 75%
+		margin-top: 15px
+.user_name
+	+r(950)
+		font-size: 22px
+.user_title
+	+r(768)
+		font-size: 14px
+.user_info
+	p
+		+r(768)
+			font-size: 11px
+
++r(735)
+	.entrance_body
+		margin-bottom: 20px
+	.entrance_footer:before
+		display: none
+	.entrance_footer .tab_check
+		width: 40%
+		margin-top: 10px
+	.profile_tabs div
+		width: 50%
+		border: 1px solid #cedbec
+		border-top: none
+		border-right: none
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		&:nth-child(odd)
+			border-left: none
+	.profile_tabs div:before
+		content: none
+.profile_tabs div
+	+r(370)
+		height: 46px
+.tab_icon_1
+	+r(370)
+		background-position-x: 25px
+.entrance_footer
+	.tab_check
+		+r(570)
+			width: 100%
+			text-align: center
+			margin: 0 0 10px
+	.white_bg
+		+r(570)
+			width: 100%
+			text-align: center
+			padding: 0
+			input
+				padding: 0
+				width: 100%
+				height: 45px
+.blue .list_item .thumb + .list_body
+	+r(600)
+		padding-right: 0
+.list_item .btn_yellow
+	+r(600)
+		position: relative
+		top: 0
+		margin-top: 10px
+		margin-left: -15px
+	+r(472)
+		margin-left: 45px
+
+
+.show720
+	display: none
+	margin-top: 0
+
+
+
+
+
+
+// +r(768)
+// 	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+// 		width: auto
+// 	.category_slider_item
+// 		.thumb
+// 			width: 100%!important
+// 			height: auto!important
+// 			img
+// 				width: 100%!important
+// 				height: auto!important
+// 				margin-bottom: 10px
+
+@media only screen and (min-width: 768px)
+	// .category_slider_item.double_slide
+	// 	width: 500px!important
+	// .category_slider_item.double_slide.has_description
+	// 	width: 500px!important
+	// .category_slider_item.double_slide a
+	// 	width: 480px!important
+	// .category_slider_item.double_slide.has_description a
+	// 	width: 480px!important
+
+	.category_slider_inner li.double_slide, .category_slider_item.double_slide
+		width: 480px !important
+
+	.category_slider_inner li > a, .category_slider_item > a
+		display: block!important
+		width: 100%!important
+
+	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+		width: 460px!important

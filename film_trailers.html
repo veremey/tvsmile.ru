@@ -2,11 +2,16 @@
 <html xml:lang="ru" lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Home page</title>
+	<!-- + -->
+	<meta name="viewport" content="width=device-width", user-scalable='no'/>
+	 <!-- + -->
+	<title>TRAILERS</title>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css' />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 	<link href="scripts/owl.carousel.css" type="text/css" rel="stylesheet" />
+	<!-- + -->
+	<link href="css/baxazar.css" type="text/css" rel="stylesheet" />
+	<!-- + -->
 	<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.scrollTo.min.js"></script>
@@ -15,14 +20,62 @@
 </head>
 <body>
 
-	<div id="site">	
-	
+	<div id="site">
+
 		<div id="container">
-	
-			<div id="top_line">
-				
+
+			<div class="everybody_in_shadow"></div><!--  +эта строка -->
+			<a href="#" class="burger__menu"></a><!--  +эта строка -->
+			<ul class="side__menu"><!--  +эта строка -->
+				<li class="side__menu_search">
+
+						<div id="top_search">
+							<form action="mail.php" method="get" >
+								<input type="text" value="Искать на сайте" />
+								<input type="submit" value="" />
+							</form>
+						</div>
+
+				</li>
+				<li><a href="#" class="side__menu_link">Главная</a></li>
+				<li><a href="#" class="side__menu_link">Кино</a></li>
+				<li><a href="#" class="side__menu_link has__sub">Сериалы</a>
+					<ul class="side__submenu">
+						<li><a href="#" class="side__submenu_link">Зарубежные</a></li>
+						<li><a href="#" class="side__submenu_link">Русские</a></li>
+						<li><a href="#" class="side__submenu_link">Ситкомы</a></li>
+						<li><a href="#" class="side__submenu_link">Комедии</a></li>
+						<li><a href="#" class="side__submenu_link">Семейные</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="side__menu_link has__sub">Телешоу</a>
+					<ul class="side__submenu">
+						<li><a href="#" class="side__submenu_link">Зарубежные</a></li>
+						<li><a href="#" class="side__submenu_link">Русские</a></li>
+						<li><a href="#" class="side__submenu_link">Ситкомы</a></li>
+						<li><a href="#" class="side__submenu_link">Комедии</a></li>
+						<li><a href="#" class="side__submenu_link">Семейные</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="side__menu_link">Мультфильмы</a></li>
+				<li><a href="#" class="side__menu_link">Рекомендуемые</a></li>
+				<li><a href="#" class="side__menu_link">Коментарии</a></li>
+				<li><a href="#" class="side__menu_link">Главная</a></li>
+				<li><a href="#" class="side__menu_link">Кино</a></li>
+				<li><a href="#" class="side__menu_link">Сериалы</a></li>
+				<li><a href="#" class="side__menu_link">Телешоу</a></li>
+				<li><a href="#" class="side__menu_link">Мультфильмы</a></li>
+				<li><a href="#" class="side__menu_link">Рекомендуемые</a></li>
+				<li><a href="#" class="side__menu_link">Коментарии</a></li>
+			</ul>
+			<ul class="side__bread "> <!--  +эта строка -->
+				<li><h3>Зеленая миля <i></i></h3></li>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Кино</a></li>
+			</ul>
+			<div id="top_line"> <!--  +эта строка -->
 				<div class="fixed">
-					
+
 					<div class="top_social">
 						<a href="/" class="icon_soc_small_1"></a>
 						<a href="/" class="icon_soc_small_2"></a>
@@ -30,16 +83,16 @@
 						<a href="/" class="icon_soc_small_4"></a>
 						<span>Присоиденяйтесь к нам!</span>
 					</div>
-					
+					<a href="#" class="top__logo_768"></a>
+
 					<div id="top_search">
-					
-						<form action="mail.php" method="get" >
+						<form action="mail.php" method="get" class="hide480" >
 							<input type="text" value="Искать на сайте" />
 							<input type="submit" value="" />
 						</form>
-						
-						<div class="list">
-						
+
+						<div class="list hide480">
+
 							<a href="/" class="list_item">
 								<span class="thumb"><img src="images/pic_1.jpg" alt="" /></span>
 								<span class="list_body">
@@ -52,7 +105,7 @@
 									</span>
 								</span>
 							</a>
-							
+
 							<a href="/" class="list_item">
 								<span class="thumb"><img src="images/pic_2.jpg" alt="" /></span>
 								<span class="list_body">
@@ -65,7 +118,7 @@
 									</span>
 								</span>
 							</a>
-							
+
 							<a href="/" class="list_item">
 								<span class="thumb"><img src="images/pic_3.jpg" alt="" /></span>
 								<span class="list_body">
@@ -78,35 +131,30 @@
 									</span>
 								</span>
 							</a>
-							
+
 						</div>
-						
+
 					</div>
-					
+
 					<div class="account">
 						<a href="/" class="account_icon_1"></a>
 						<a href="/" class="account_icon_2"></a>
 						<a href="/" class="account_name">Наталья</a>
 						<a href="/" class="account_exit">Выйти</a>
 					</div>
-					
+
 				</div>
-				
 			</div>
-			
+
 			<div id="header">
-				
+
 				<div class="fixed">
-					
+
 					<a id="logo" href="/"></a>
-					
+
 					<div class="menu">
-						<ul>	
-							<li class="active"><a href="/">Фильмы</a></li>
-							<li><a href="/">Сериалы</a></li>
-							<li><a href="/">Мультфильмы</a></li>
-							<li><a href="/">Телепередачи</a></li>
-							<li><a href="/">Спорт</a>
+						<ul>
+							<li class="active menu__pad_1"><a href="/"><i class="icon_kino"></i>Кино</a>
 								<ul class="submenu">
 									<li><a href="/">Футбол</a></li>
 									<li><a href="/">Баскетбол</a></li>
@@ -115,14 +163,28 @@
 									<li><a href="/">Программы</a></li>
 								</ul>
 							</li>
-							<li><a href="/">Рейтинг</a></li>
+							<li class="menu__pad_2"><a href="/"><i class="icon_serial"></i>Сериалы</a></li>
+							<li class="menu__pad_3"><a href="/"><i class="icon_tele"></i>Телешоу</a></li>
+							<li class="menu__pad_4"><a href="/"><i class="icon_sport"></i>Спорт</a>
+								<ul class="submenu submenu__right_coner">
+									<li><a href="/">Футбол</a></li>
+									<li><a href="/">Баскетбол</a></li>
+									<li><a href="/">Хокей</a></li>
+									<li><a href="/">Теннис</a></li>
+									<li><a href="/">Программы</a></li>
+								</ul>
+							</li>
+							<li class="menu__pad_5"><a href="/"><i class=" icon_mult"></i>Мультфильмы</a></li>
+
+							<li class='show480 menu__pad_6'><a href="#" class="js_gime__more">Еще</a></li><!--  +эта строка -->
+							<li class="hide768"><a href="/">Рейтинг</a></li>
 						</ul>
 					</div>
-					
+
 				</div>
-				
+
 			</div>
-			
+
 			<div class="breadcrumbs">
 				<div class="fixed">
 					<a href="/">Главная</a>&#8250;
@@ -130,42 +192,49 @@
 					<span>Зеленая миля</span>
 				</div>
 			</div>
-			
+
 			<div class="film">
-			
+
 				<div class="fixed">
-				
+
 					<div class="film_l">
-						
+
 						<div class="thumb"><img src="images/pic_20.jpg" alt="" /></div>
-						
+
 						<div class="remember"><span>Отложить</span></div>
-						
+
 						<div class="buy">
 							<span class="name">Купить на <b>DVD, Bluray</b></span>
 							<span class="price"><span>99</span> р.</span>
 						</div>
-						
+
 						<div class="soc_block"><img src="images/soc.jpg" alt="" /></div>
-						
+
 					</div>
-					
-					<div class="film_r">
-						
+
+					<!-- <div class="film_r"> -->
+
 						<div class="film_title">
 							<h1>Зеленая Миля</h1>
 							<p>Green mile, США, 1999</p>
+							<!-- + -->
+							<div class="sort_tags">
+								<span  class="active">драма</span>
+								<span  class="active">комедия</span>
+								<span class="active">мелодрама</span>
+							</div>
+							<!-- + -->
 						</div>
-						
+
 						<div class="film_rating">
-						
+
 							<div class="voice">
 								<span class="voice_1">4,4</span>
 								<span class="voice_2">1,257 голосов</span>
 							</div>
-							
-							<div class="rank"><span>8,3</span></div>
-							
+
+							<div class="rank"><i><!-- + --></i><span>8,3</span></div>
+
 							<div class="stars">
 								<span class="descr">Моя оценка</span>
 								<span class="star">
@@ -188,21 +257,55 @@
 									<span class="star_l"></span>
 									<span class="star_r"></span>
 								</span>
+									<!-- + -->
+								<ul class="stars__rank">
+									<li>
+										<label  class="radio">
+											<input type="radio" name='star' />
+											<span></span>
+										</label>
+									</li>
+									<li>
+										<label  class="radio">
+											<input type="radio" name='star' />
+											<span></span>
+										</label>
+									</li>
+									<li>
+										<label  class="radio">
+											<input type="radio" name='star' />
+											<span></span>
+										</label>
+									</li>
+									<li>
+										<label  class="radio">
+											<input type="radio" name='star' />
+											<span></span>
+										</label>
+									</li>
+									<li>
+										<label  class="radio">
+											<input type="radio" name='star' />
+											<span></span>
+										</label>
+									</li>
+								</ul>
+								<!-- + -->
+
 							</div>
-							
+
 							<div class="result">3.5</div>
-							
 						</div>
-					
+
 						<div class="film_nav">
 							<a href="#tab_actors"><span>Актеры</span></a>
 							<a href="#tab_reviews"><span>Отзывы</span></a>
 							<a href="#tab_books"><span>Книги</span></a>
 							<a href="#tab_recense"><span>Рецензии</span></a>
 						</div>
-			
-						<div class="film_about">
-						
+						<a href="#" class="film_about_details show768" onclick='$(this).toggleText("<span>Показать детали</span>","<span>Скрыть детали</span>")'>Скрыть детали </a> <!--  +эта строка -->
+						<!-- <div class="film_about"> -->
+
 							<div class="film_info">
 								<div>
 									<span>Режисер</span>
@@ -264,15 +367,16 @@
 									<span>Продолжительность</span>
 									<p>2 ч. 41 мин.</p>
 								</div>
-								
+
 							</div>
-						
+						<!-- </div> -->
+
 							<div class="film_prize">
-							
+
 								<div class="prize_title">Награды и премии:</div>
-								
+
 								<div class="awards">
-								
+
 									<div class="award">
 										<img src="images/award_1.png" alt="" />
 										<div>
@@ -282,7 +386,7 @@
 											</span>
 										</div>
 									</div>
-									
+
 									<div class="award">
 										<img src="images/award_2.png" alt="" />
 										<div>
@@ -292,28 +396,94 @@
 											</span>
 										</div>
 									</div>
-									
+
 								</div>
-								
+
 								<span class="more_prize">Все награды и номинации</span>
-								
+
 							</div>
-						
-						</div>
-						
+							<!-- + -->
+							<div class="clear"></div>
+							<div class="all_awards show720">
+
+								<div class="award">
+									<img src="images/award_1.png" alt="" />
+									<div>
+										<span class="award_title">Оскар</span>
+										<span class="award_info">
+											<span>2 номинации</span>
+										</span>
+									</div>
+								</div>
+
+								<div class="award">
+									<img src="images/award_2.png" alt="" />
+									<div>
+										<span class="award_title">Золотой глобус</span>
+										<span class="award_info">
+											<span>2 номинации</span>
+										</span>
+									</div>
+								</div>
+
+								<div class="award">
+									<img src="images/award_3.png" alt="" />
+									<div>
+										<span class="award_title">Эмми</span>
+										<span class="award_info">
+											<span>5 наград</span>
+											<span>2 номинации</span>
+										</span>
+									</div>
+								</div>
+
+								<div class="award">
+									<img src="images/award_4.png" alt="" />
+									<div>
+										<span class="award_title">BAFTA</span>
+										<span class="award_info">
+											<span>2 номинации</span>
+										</span>
+									</div>
+								</div>
+
+								<div class="award">
+									<img src="images/award_5.png" alt="" />
+									<div>
+										<span class="award_title">Премия гильдии киноактеров</span>
+										<span class="award_info">
+											<span>2 номинации</span>
+										</span>
+									</div>
+								</div>
+
+								<div class="award">
+									<img src="images/award_6.png" alt="" />
+									<div>
+										<span class="award_title">Тони</span>
+										<span class="award_info">
+											<span>2 номинации</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!-- + -->
+						<!-- </div> -->
+
+
 						<div class="film_descr">
 							<h3>О фильме</h3>
 							<p>Двухметровый необразованный Джон Коффи (Майкл Кларк Дункан) обвиняется в страшном преступлении — изнасиловании и убийстве двух маленьких девочек — и приговорен к смерти на электрическом стуле. Его сажают в камеру смертников в блоке Зеленая миля, которым руководит Пол (Том Хэнкс). В ожидании смерти Джон излечивает Пола от тяжелой болезни и вообще творит чудеса. Угрюмые надсмотрщики постепенно проникаются симпатией к неуклюжему верзиле, но час смертной казни все ближе, и сделать уже ничего нельзя. <a href="#" class="expand">подробнее &rsaquo;</a></p>
-							
+
 							<p class="hidden">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.Двухметровый необразованный Джон Коффи (Майкл Кларк Дункан) обвиняется в страшном преступлении — изнасиловании и убийстве двух маленьких девочек — и приговорен к смерти <a href="#" class="collapse">&lsaquo; скрыть</a></p>
 						</div>
-						
-					</div>
-					
+
+					<!-- </div> -->
+
 				</div>
-				
+
 			</div>
-			
+
 			<div class="slider_tabs">
 				<div class="fixed">
 					<a href="film_trailers.html" class="active">Трейлеры</a>
@@ -322,17 +492,17 @@
 					<a href="film_soundtrack.html">Саундтреки</a>
 				</div>
 			</div>
-			
+
 			<div class="flexi_slider" id="flexi_trailers">
-			
+
 				<div class="flexi_slider_inner">
-				
+
 					<ul>
-						
+
 						<li>
 							<div class="trailer">
 								<div class="trailer_video">
-									<iframe width="480" height="338" src="//www.youtube.com/embed/da_h1eKUYPM?feature=player_detailpage&amp;autoplay=0" frameborder="0" allowfullscreen></iframe>
+									<iframe  src="//www.youtube.com/embed/da_h1eKUYPM?feature=player_detailpage&amp;autoplay=0" frameborder="0" allowfullscreen></iframe>
 									<img class="trailer_thumb" src="images/trailer_video.jpg" alt="" />
 									<div class="trailer_play"><div class="trailer_button"></div></div>
 								</div>
@@ -349,11 +519,11 @@
 								</div>
 							</div>
 						</li>
-						
+
 						<li>
 							<div class="trailer">
 								<div class="trailer_video">
-									<iframe width="480" height="338" src="//www.youtube.com/embed/da_h1eKUYPM?feature=player_detailpage&amp;autoplay=0" frameborder="0" allowfullscreen></iframe>
+									<iframe  src="//www.youtube.com/embed/da_h1eKUYPM?feature=player_detailpage&amp;autoplay=0" frameborder="0" allowfullscreen></iframe>
 									<img class="trailer_thumb" src="images/trailer_video.jpg" alt="" />
 									<div class="trailer_play"><div class="trailer_button"></div></div>
 								</div>
@@ -370,11 +540,11 @@
 								</div>
 							</div>
 						</li>
-						
+
 						<li>
 							<div class="trailer">
 								<div class="trailer_video">
-									<iframe width="480" height="338" src="//www.youtube.com/embed/da_h1eKUYPM?feature=player_detailpage&amp;autoplay=0" frameborder="0" allowfullscreen></iframe>
+									<iframe  src="//www.youtube.com/embed/da_h1eKUYPM?feature=player_detailpage&amp;autoplay=0" frameborder="0" allowfullscreen></iframe>
 									<img class="trailer_thumb" src="images/trailer_video.jpg" alt="" />
 									<div class="trailer_play"><div class="trailer_button"></div></div>
 								</div>
@@ -391,27 +561,27 @@
 								</div>
 							</div>
 						</li>
-						
+
 					</ul>
-				
+
 				</div>
-				
+
 				<div class="small_arrow_l"><span></span></div>
 				<div class="small_arrow_r"><span></span></div>
-			
+
 			</div>
-			
+
 			<div class="category_slider white">
-				
+
 				<div class="fixed" id="tab_actors">
-					
+
 					<div class="slider_nav">
 						<span>Актеры
 							<span class="arrow_l"><span></span></span>
 							<span class="arrow_r"><span></span></span>
 						</span>
 					</div>
-					
+
 					<div class="actor_slider_inner">
 						<ul>
 							<li>
@@ -534,23 +704,23 @@
 									</span>
 								</a>
 							</li>
-						</ul>						
+						</ul>
 					</div>
-					
+
 				</div>
-				
+
 			</div>
-			
+
 			<div class="comments">
-				
+
 				<div class="fixed" id="tab_reviews">
-				
+
 					<div class="topic">
 						<span>Отзывы</span>
 					</div>
-					
+
 					<div class="comment extended">
-					
+
 						<div class="comment_l">
 							<div class="author">Иван Сидоров</div>
 							<div class="video_info">
@@ -558,7 +728,7 @@
 								<span>25 июля 2014</span>
 							</div>
 						</div>
-						
+
 						<div class="comment_r">
 							<div class="comment_text">
 								<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы </p>
@@ -568,7 +738,7 @@
 								<span class="comment_more"><span>Показать комментарии</span> (1)</span>
 							</div>
 						</div>
-						
+
 						<div class="comment">
 							<div class="comment_top">
 								<span>Петр Власов</span>
@@ -578,11 +748,11 @@
 								<p>Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный</p>
 							</div>
 						</div>
-						
+
 					</div>
-						
+
 					<div class="comment extended">
-					
+
 						<div class="comment_l">
 							<div class="author">Константин Бондаренко</div>
 							<div class="video_info">
@@ -590,7 +760,7 @@
 								<span>25 июля 2014</span>
 							</div>
 						</div>
-						
+
 						<div class="comment_r">
 							<div class="comment_text">
 								<p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum</p>
@@ -600,7 +770,7 @@
 								<span class="comment_more"><span>Скрыть комментарии</span></span>
 							</div>
 						</div>
-						
+
 						<div class="comment">
 							<div class="comment_top">
 								<span>Петр Власов</span>
@@ -610,11 +780,11 @@
 								<p>Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный</p>
 							</div>
 						</div>
-							
+
 					</div>
-					
+
 					<div class="comment">
-					
+
 						<div class="comment_l">
 							<div class="author">Иван Сидоров</div>
 							<div class="video_info">
@@ -622,7 +792,7 @@
 								<span>25 июля 2014</span>
 							</div>
 						</div>
-						
+
 						<div class="comment_r">
 							<div class="comment_text">
 								<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы </p>
@@ -632,7 +802,7 @@
 								<span class="comment_more"><span>Показать комментарии</span> (2)</span>
 							</div>
 						</div>
-						
+
 						<div class="comment">
 							<div class="comment_top">
 								<span>Петр Власов</span>
@@ -642,7 +812,7 @@
 								<p>В результате он нашёл неоспоримый первоисточник Lorem Ipsum</p>
 							</div>
 						</div>
-					
+
 						<div class="comment">
 							<div class="comment_top">
 								<span>Петр Власов</span>
@@ -652,9 +822,9 @@
 								<p>Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный</p>
 							</div>
 						</div>
-					
+
 					</div>
-					
+
 					<div class="pagination">
 						<span>1</span>
 						<a href="/">2</a>
@@ -664,7 +834,7 @@
 						<b>...</b>
 						<a href="/">14</a>
 					</div>
-					
+
 					<div class="reply mini">
 						<form action="post.php" method="post">
 							<textarea cols="70" rows="8">Текст комментария...</textarea>
@@ -674,7 +844,7 @@
 							</div>
 						</form>
 					</div>
-					
+
 					<div class="reply">
 						<div class="text_1">Оставить отзыв</div>
 						<div class="text_2">Опишите ваши впечетления от данного актера и оцените его</div>
@@ -709,32 +879,32 @@
 											<span class="star_l"></span>
 											<span class="star_r"></span>
 										</span>
-										
+
 									</div>
 								</form>
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
-				
+
 			</div>
-			
+
 			<div class="slider_long">
-				
+
 				<div class="fixed" id="tab_books">
-					
+
 					<div class="slider_nav">
 						<span>Книги
 							<span class="arrow_l"><span></span></span>
 							<span class="arrow_r"><span></span></span>
 						</span>
 					</div>
-					
+
 				</div>
-				
+
 				<div class="slide_long_inner">
-				
+
 					<ul>
 						<li>
 							<a href="/">
@@ -814,18 +984,18 @@
 							</a>
 						</li>
 					</ul>
-					
+
 				</div>
-				
+
 				<div class="shadow_l"></div>
 				<div class="shadow_r"></div>
-				
+
 			</div>
-			
+
 			<div class="category_slider">
-				
+
 				<div class="fixed" id="tab_recense">
-					
+
 					<div class="slider_nav">
 						<span>Похожие фильмы
 							<span class="arrow_l"><span></span></span>
@@ -833,9 +1003,9 @@
 						</span>
 						<a href="/" class="more_video">Сотреть все &#8250;</a>
 					</div>
-					
+
 					<div class="category_slider_inner">
-						
+
 						<div class="category_slider_item double_slide">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_05.jpg" alt="" /></span>
@@ -862,7 +1032,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
@@ -889,7 +1059,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_07.jpg" alt="" /></span>
@@ -916,7 +1086,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
@@ -943,7 +1113,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_07.jpg" alt="" /></span>
@@ -970,7 +1140,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
@@ -997,7 +1167,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_07.jpg" alt="" /></span>
@@ -1024,17 +1194,17 @@
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
-				
+
 				</div>
-				
+
 			</div>
-			
+
 			<div class="category_slider">
-				
+
 				<div class="fixed">
-					
+
 					<div class="slider_nav">
 						<span>Фильмы с теми же актерами
 							<span class="arrow_l"><span></span></span>
@@ -1042,9 +1212,9 @@
 						</span>
 						<a href="/" class="more_video">Сотреть все &#8250;</a>
 					</div>
-					
+
 					<div class="category_slider_inner">
-						
+
 						<div class="category_slider_item double_slide">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_05.jpg" alt="" /></span>
@@ -1052,7 +1222,7 @@
 								<span class="category_slider_text">США, Великобритания.. , 2011</span>
 							</a>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
@@ -1060,7 +1230,7 @@
 								<span class="category_slider_text">США, 2004</span>
 							</a>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_07.jpg" alt="" /></span>
@@ -1068,7 +1238,7 @@
 								<span class="category_slider_text">США, 2008</span>
 							</a>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
@@ -1076,7 +1246,7 @@
 								<span class="category_slider_text">США, 2004</span>
 							</a>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_07.jpg" alt="" /></span>
@@ -1084,7 +1254,7 @@
 								<span class="category_slider_text">США, 2008</span>
 							</a>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
@@ -1092,7 +1262,7 @@
 								<span class="category_slider_text">США, 2004</span>
 							</a>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_07.jpg" alt="" /></span>
@@ -1100,7 +1270,7 @@
 								<span class="category_slider_text">США, 2008</span>
 							</a>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
@@ -1108,7 +1278,7 @@
 								<span class="category_slider_text">США, 2004</span>
 							</a>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_07.jpg" alt="" /></span>
@@ -1116,7 +1286,7 @@
 								<span class="category_slider_text">США, 2008</span>
 							</a>
 						</div>
-						
+
 						<div class="category_slider_item">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
@@ -1124,34 +1294,34 @@
 								<span class="category_slider_text">США, 2004</span>
 							</a>
 						</div>
-						
+
 					</div>
-					
+
 				</div>
-				
+
 			</div>
-			
+
 		</div>
-		
+
 		<div id="footer">
-			
+
 			<div id="footer_top">
-				
+
 				<div class="subs fixed">
-					
+
 					<span>Узнавайте о новинках первыми!</span>
-					
+
 					<form action="mail.php" method="post" >
 						<input type="text" value="E-mail" />
 						<input type="submit" value="" />
 					</form>
-				
+
 				</div>
-				
+
 			</div>
-		
+
 			<div id="footer_bottom" class="fixed">
-				
+
 				<div class="nav">
 					<p>Фильмы</p>
 					<ul>
@@ -1164,7 +1334,7 @@
 						<li><a href="/">Триллер</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Сериалы</p>
 					<ul>
@@ -1176,7 +1346,7 @@
 						<li><a href="/">Триллер</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Мультфильмы</p>
 					<ul>
@@ -1188,7 +1358,7 @@
 						<li><a href="/">Советские</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Телепередачи</p>
 					<ul>
@@ -1204,7 +1374,7 @@
 						<li><a href="/"></a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Спорт</p>
 					<ul>
@@ -1214,79 +1384,92 @@
 						<li><a href="/">Баскетбол</a></li>
 					</ul>
 				</div>
-				
+
+				<a href="#" class="footer__butter"></a> <!--  +эта строка -->
+				<ul class="footer_bottom_propose"> <!--  +эта строка -->
+					<li><a class="footer_bottom_propos_white" href="#">Войти</a></li>
+					<li><a class="footer_bottom_propos_white" href="#">Полная версия</a></li>
+					<li><a class="footer_bottom_propos_link" href="#">Кино</a></li>
+					<li><a class="footer_bottom_propos_link" href="#">Сериалы</a></li>
+					<li><a class="footer_bottom_propos_link" href="#">Спорт</a></li>
+
+					<li><a class="footer_bottom_propos_link" href="#">Телешоу</a></li>
+					<li><a class="footer_bottom_propos_link" href="#">Мультфильмы</a></li>
+					<li><a class="footer_bottom_propos_link" href="#">Рейтинг</a></li>
+				</ul>
+
 				<div id="footer_r">
-				
+
 					<div class="footer_social">
 						<a href="/" class="icon_soc_1"></a>
 						<a href="/" class="icon_soc_2"></a>
 						<a href="/" class="icon_soc_3"></a>
 						<a href="/" class="icon_soc_4"></a>
 					</div>
-					
+
 					<div id="copyright">Все права защищены<br />&copy; 2014</div>
-					
+
 				</div>
-				
+
 			</div>
-		
+
 		</div>
-		
+
 		<div id="modal"></div>
-		
+
 		<div class="popup" id="popup_login">
-		
+
 			<div class="title">Войти</div>
 			<div class="about">Зарегистрируйтесь если у вас нет логина и пароля</div>
-		
+
 			<form action="mail.php" method="post">
 				<p class="error"><input type="text" value="Логин" /><span>Ошибка</span></p>
 				<p><input type="password" value="Пароль" /><span>Ошибка</span></p>
 				<input type="submit" value="Войти на сайт" class="btn_yellow" />
 			</form>
-			
+
 			<div class="subtitle"><span>Войти с помощью:</span></div>
-			
+
 			<div class="popup_social">
 				<a href="/" class="icon_soc_big_1"></a>
 				<a href="/" class="icon_soc_big_2"></a>
 				<a href="/" class="icon_soc_big_3"></a>
 				<a href="/" class="icon_soc_big_4"></a>
 			</div>
-					
+
 		</div>
-		
+
 		<div class="popup" id="popup_register">
-		
+
 			<div class="title">Регистрация</div>
 			<div class="about">Зарешистрируйтесь если у вас нет логина и пароля</div>
-		
+
 			<form action="mail.php" method="post">
 				<p><input type="text" value="Логин" /><span>Ошибка</span></p>
 				<p><input type="password" value="Пароль" /><span>Ошибка</span></p>
 				<p><input type="text" value="E-mail" /><span>Ошибка</span></p>
 				<input type="submit" value="Зарегистрироваться" class="btn_yellow" />
 			</form>
-			
+
 			<div class="subtitle"><span>Или войдите с помощью:</span></div>
-			
+
 			<div class="popup_social">
 				<a href="/" class="icon_soc_big_1"></a>
 				<a href="/" class="icon_soc_big_2"></a>
 				<a href="/" class="icon_soc_big_3"></a>
 				<a href="/" class="icon_soc_big_4"></a>
 			</div>
-					
+
 		</div>
-		
+
 		<div id="popup_prize" class="simple_popup">
-			
+
 			<span class="close"></span>
-			
+
 			<div class="title">Награды и номинации</div>
-			
+
 			<div class="all_awards">
-			
+
 				<div class="award">
 					<img src="images/award_1.png" alt="" />
 					<div>
@@ -1296,7 +1479,7 @@
 						</span>
 					</div>
 				</div>
-				
+
 				<div class="award">
 					<img src="images/award_2.png" alt="" />
 					<div>
@@ -1306,7 +1489,7 @@
 						</span>
 					</div>
 				</div>
-				
+
 				<div class="award">
 					<img src="images/award_3.png" alt="" />
 					<div>
@@ -1317,7 +1500,7 @@
 						</span>
 					</div>
 				</div>
-				
+
 				<div class="award">
 					<img src="images/award_4.png" alt="" />
 					<div>
@@ -1327,7 +1510,7 @@
 						</span>
 					</div>
 				</div>
-				
+
 				<div class="award">
 					<img src="images/award_5.png" alt="" />
 					<div>
@@ -1337,7 +1520,7 @@
 						</span>
 					</div>
 				</div>
-				
+
 				<div class="award">
 					<img src="images/award_6.png" alt="" />
 					<div>
@@ -1347,98 +1530,105 @@
 						</span>
 					</div>
 				</div>
-				
+
 			</div>
-					
+
 		</div>
-		
+
 		<div id="popup_pic" class="simple_popup">
 			<span class="close"></span>
 			<img src="images/pic_5.jpg" alt="" />
 		</div>
-		
-	</div>		
-	
+
+	</div>
+
 	<script type="text/javascript">//<![CDATA[
-	
+
 	$(function(){
-		
+
 		/* Разворачивание и сворачивание описания */
-		
+
 		$('.film_descr .expand').click(function(){
-			
+
 			$('.film_descr .hidden').slideDown();
 			$('.film_descr .expand').fadeOut();
 			$('.film_descr .collapse').fadeIn();
-			
+
 			return false;
-		
+
 		});
-		
+
 		$('.film_descr .collapse').click(function(){
-			
+
 			$('.film_descr .hidden').slideUp();
 			$('.film_descr .expand').fadeIn();
 			$('.film_descr .collapse').fadeOut();
-			
+
 			return false;
-			
+
 		});
-		
+
 		/* Скрипт для рейтинга */
-		
+
 		$('.stars').each(function(){
-			
+
 			var rating = $(this);
 			var rating_input = rating.parents('form').find('input[name="rating"]');
 			var stars = $('.star > span', rating);
 			var result = $('.film_rating .result');
-			
+
 			rating.find('.descr').hover(function(){
 				stars.removeClass('active');
 				rating_input.val(0);
 				result.text('0.0');
 			});
-			
+
 			stars.each(function(index){
-				
+
 				var current = index + 1;
-				
+
 				$(this).hover (
 					function(){
 						stars.removeClass('active').slice(0, current).addClass('active');
-					}, 
+					},
 					function(){
 						rating_input.val(parseFloat($('.active', rating).length/2));
 						result.text(parseFloat($('.active', rating).length/2).toFixed(1));
 					}
 				);
-				
-			});		
-			
+
+			});
+
 		});
-		
-		
+
+			//#####
+			//Закомментированно baxazar
+			//#####
+
 		/* Плавная прокрутка для ссылок */
-		
-		$('a[href^="#"]').click(function(){
-			var idscroll = $(this).attr('href');
-			var offset_top = -30;
-			$.scrollTo(idscroll, 500, {offset: {top: offset_top}});
-			return false;
-		});
-		
-		
+
+		// $('a[href^="#"]').click(function(){
+		// 	var idscroll = $(this).attr('href');
+		// 	var offset_top = -30;
+		// 	$.scrollTo(idscroll, 500, {offset: {top: offset_top}});
+		// 	return false;
+		// });
+
+
+			//#####
+			//Закомментированно baxazar
+			//#####
+
 		/* Разворачивание и сворачивание комментариев и формы ответа */
-		
+
 		$('.comment .comment').parent('.comment').each(function(){
-			
+
 			var comment = $(this);
 			var comments = $('.comment', this);
 			var button = $('.comment_more', comment);
-			
+
 			button.click(function(){
-				
+
 				if (comment.hasClass('extended')) {
 					comment.removeClass('extended');
 					comments.show().slideUp(300);
@@ -1448,17 +1638,17 @@
 					comments.hide().slideDown(300);
 					button.html('<span>Скрыть комментарии</span>');
 				}
-				
+
 			});
-			
+
 		});
-		
+
 		$('.comment .add_comment').click(function(){
-			
+
 			var button = $(this);
 			var comment = button.parents('.comment');
 			var form = $('.reply.mini');
-			
+
 			if (button.hasClass('active')) {
 				button.text('Комментировать').removeClass('active');
 				form.slideUp(300);
@@ -1470,27 +1660,33 @@
 					form.slideDown();
 				});
 			}
-			
+
 		});
-		
-		
+
+
 		/* Появление списка наград */
-		
-		$('.more_prize').click(function(){
-			var window_height = $('body').height();
-			var popup = $('#popup_prize');
-			var popup_height = popup.show().outerHeight();
-			popup.hide().css('top', (window_height-popup_height)/2);
-			$('#popup_prize, #modal').fadeIn();
-		});
-		
-		
+
+		if ($(document).width() > 720) {
+			$('.more_prize').click(function(){
+				var window_height = $('body').height();
+				var popup = $('#popup_prize');
+				var popup_height = popup.show().outerHeight();
+				popup.hide().css('top', (window_height-popup_height)/2);
+				$('#popup_prize, #modal').fadeIn();
+			});
+		} else {
+			$('.more_prize').click(function(){
+				$('.all_awards').slideToggle(500);
+			});
+		};
+
+
 		/* Слайдер с книгами */
-		
+
 		var carousel_recommend = $('.slide_long_inner');
-		
+
 		reload_carousel(carousel_recommend);
-		
+
 		carousel_recommend.on('jcarousel:reload jcarousel:create', function(){
 			reload_carousel(this);
 			center_carousel(this);
@@ -1501,35 +1697,35 @@
 			},
 			vertical: false
 		});
-		
+
 		$('.slider_long .arrow_r').jcarouselControl({
 			target: '+=1',
 			carousel: carousel_recommend
 		});
-						
+
 		$('.slider_long .arrow_l').jcarouselControl({
 			target: '-=1',
 			carousel: carousel_recommend
 		});
-	
-		
+
+
 		/* Скрывание и всплывание теней на слайдере */
-		
+
 		$('.shadow_l, .shadow_r').mouseenter(function(){
 			$(this).stop().fadeOut(300);
 		});
-		
+
 		$('.slider_long, .flexi_slider').mouseleave(function(){
 			$('.shadow_l, .shadow_r', this).stop().fadeIn(300);
 		});
-		
-		
+
+
 		/* Слайдер с актёрами */
-		
+
 		var carousel_actor = $('.actor_slider_inner');
-		
+
 		reload_carousel(carousel_actor);
-		
+
 		carousel_actor.on('jcarousel:reload jcarousel:create', function(){
 			reload_carousel(this);
 		}).jcarousel({
@@ -1539,24 +1735,24 @@
 			},
 			vertical: false
 		});
-		
+
 		$('.category_slider.white .arrow_r').jcarouselControl({
 			target: '+=1',
 			carousel: carousel_actor
 		});
-						
+
 		$('.category_slider.white .arrow_l').jcarouselControl({
 			target: '-=1',
 			carousel: carousel_actor
 		});
-		
-				
+
+
 		/* Слайдер для трейлеров фильмов */
-		
+
 		var flexi_carousel = $('.flexi_slider_inner');
-		
+
 		reload_carousel(flexi_carousel);
-		
+
 		flexi_carousel.on('jcarousel:reload jcarousel:create', function(){
 			reload_carousel(this);
 		}).jcarousel({
@@ -1566,37 +1762,37 @@
 			},
 			vertical: false
 		});
-		
+
 		$('.flexi_slider .small_arrow_r').jcarouselControl({
 			target: '+=1',
 			carousel: flexi_carousel
 		});
-						
+
 		$('.flexi_slider .small_arrow_l').jcarouselControl({
 			target: '-=1',
 			carousel: flexi_carousel
 		});
-		
+
 
 		/* Скрипт для запуска видео */
-		
+
 		$('.trailer .trailer_button').click(function(){
-		
+
 			var trailer = $(this).parents('.trailer');
-			
+
 			var frame = trailer.find('iframe');
-			
+
 			if (frame.length) {
 				trailer.find('.trailer_play, .trailer_thumb').fadeOut(300);
 				frame[0].src = frame[0].src.replace('autoplay=0','autoplay=1');
 				frame.delay(300).fadeIn();
 			}
-			
+
 		});
-			
+
 	});
-	
+
 	//]]></script>
-	
+
 </body>
 </html>

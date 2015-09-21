@@ -1,26 +1,107 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xml:lang="ru" lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Home page</title>
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css' />
-	<link href="css/style.css" type="text/css" rel="stylesheet" />
-	<link href="css/common.css" type="text/css" rel="stylesheet" />
+	<meta charset="utf-8">
+
+	<!-- + -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	 <!-- + -->
+	<title>catalog</title>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css' >
+	<link href="css/style.css" type="text/css" rel="stylesheet" >
+
+	<link href="css/baxazar.css" type="text/css" rel="stylesheet" >
+	<link href="css/jquery.mobile.custom.structure.css" type="text/css" rel="stylesheet" >
+	<script type="text/javascript" src="scripts/jquery.mobile-1.4.5.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui-1.10.3.custom.js"></script>
+
 	<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.nouislider.all.min.js"></script>
+	<script type="text/javascript" src="scripts/scripts.js"></script>  -->
+	<link href="css/common.css" type="text/css" rel="stylesheet" >
+
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css' >
+	<link href="css/style.css" type="text/css" rel="stylesheet" >
+	<!--  -->
+	<!-- <link href="css/jquery.mobile.custom.structure.css" type="text/css" rel="stylesheet" > -->
+	<!--  -->
+	<link href="css/jquery.mobile.custom.structure.css" type="text/css" rel="stylesheet" >
+	<!-- // -->
+	<link href="scripts/owl.carousel.css" type="text/css" rel="stylesheet" >
+	<!-- // -->
+	<link href="css/baxazar.css" type="text/css" rel="stylesheet" >
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<!-- + -->
+	<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.nouislider.all.min.js"></script>
+	<script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui-1.10.3.custom.js"></script>
+	<script type="text/javascript" src="scripts/jquery.mobile-1.4.5.js"></script>
+	<script type="text/javascript" src="scripts/slick.min.js"></script>
+
 	<script type="text/javascript" src="scripts/scripts.js"></script>
+
 </head>
 <body>
 
-	<div id="site" class="white_bg">	
-	
+	<div id="site" class="white_bg">
+
 		<div id="container">
-	
-			<div id="top_line">
-				
+
+			<div class="everybody_in_shadow"></div><!--  +эта строка -->
+			<a href="#" class="burger__menu"></a><!--  +эта строка -->
+			<ul class="side__menu"><!--  +эта строка -->
+				<li class="side__menu_search">
+
+						<div id="top_search">
+							<form action="mail.php" method="get" >
+								<input type="text" value="Искать на сайте" />
+								<input type="submit" value="" />
+							</form>
+						</div>
+
+				</li>
+				<li><a href="#" class="side__menu_link">Главная</a></li>
+				<li><a href="#" class="side__menu_link">Кино</a></li>
+				<li><a href="#" class="side__menu_link has__sub">Сериалы</a>
+					<ul class="side__submenu">
+						<li><a href="#" class="side__submenu_link">Зарубежные</a></li>
+						<li><a href="#" class="side__submenu_link">Русские</a></li>
+						<li><a href="#" class="side__submenu_link">Ситкомы</a></li>
+						<li><a href="#" class="side__submenu_link">Комедии</a></li>
+						<li><a href="#" class="side__submenu_link">Семейные</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="side__menu_link has__sub">Телешоу</a>
+					<ul class="side__submenu">
+						<li><a href="#" class="side__submenu_link">Зарубежные</a></li>
+						<li><a href="#" class="side__submenu_link">Русские</a></li>
+						<li><a href="#" class="side__submenu_link">Ситкомы</a></li>
+						<li><a href="#" class="side__submenu_link">Комедии</a></li>
+						<li><a href="#" class="side__submenu_link">Семейные</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="side__menu_link">Мультфильмы</a></li>
+				<li><a href="#" class="side__menu_link">Рекомендуемые</a></li>
+				<li><a href="#" class="side__menu_link">Коментарии</a></li>
+				<li><a href="#" class="side__menu_link">Главная</a></li>
+				<li><a href="#" class="side__menu_link">Кино</a></li>
+				<li><a href="#" class="side__menu_link">Сериалы</a></li>
+				<li><a href="#" class="side__menu_link">Телешоу</a></li>
+				<li><a href="#" class="side__menu_link">Мультфильмы</a></li>
+				<li><a href="#" class="side__menu_link">Рекомендуемые</a></li>
+				<li><a href="#" class="side__menu_link">Коментарии</a></li>
+			</ul>
+			<ul class="side__bread "> <!--  +эта строка -->
+				<li><h3>Зеленая миля <i></i></h3></li>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Кино</a></li>
+			</ul>
+			<div id="top_line"> <!--  +эта строка -->
 				<div class="fixed">
-					
+
 					<div class="top_social">
 						<a href="/" class="icon_soc_small_1"></a>
 						<a href="/" class="icon_soc_small_2"></a>
@@ -28,16 +109,16 @@
 						<a href="/" class="icon_soc_small_4"></a>
 						<span>Присоиденяйтесь к нам!</span>
 					</div>
-					
+					<a href="#" class="top__logo_768"></a>
+
 					<div id="top_search">
-					
-						<form action="mail.php" method="get" >
+						<form action="mail.php" method="get" class="hide480" >
 							<input type="text" value="Искать на сайте" />
 							<input type="submit" value="" />
 						</form>
-						
-						<div class="list">
-						
+
+						<div class="list hide480">
+
 							<a href="/" class="list_item">
 								<span class="thumb"><img src="images/pic_1.jpg" alt="" /></span>
 								<span class="list_body">
@@ -50,7 +131,7 @@
 									</span>
 								</span>
 							</a>
-							
+
 							<a href="/" class="list_item">
 								<span class="thumb"><img src="images/pic_2.jpg" alt="" /></span>
 								<span class="list_body">
@@ -63,7 +144,7 @@
 									</span>
 								</span>
 							</a>
-							
+
 							<a href="/" class="list_item">
 								<span class="thumb"><img src="images/pic_3.jpg" alt="" /></span>
 								<span class="list_body">
@@ -76,35 +157,30 @@
 									</span>
 								</span>
 							</a>
-							
+
 						</div>
-						
+
 					</div>
-					
+
 					<div class="account">
 						<a href="/" class="account_icon_1"></a>
 						<a href="/" class="account_icon_2"></a>
 						<a href="/" class="account_name">Наталья</a>
 						<a href="/" class="account_exit">Выйти</a>
 					</div>
-					
+
 				</div>
-				
 			</div>
-			
+
 			<div id="header">
-				
+
 				<div class="fixed">
-					
+
 					<a id="logo" href="/"></a>
-					
+
 					<div class="menu">
-						<ul>	
-							<li class="active"><a href="/">Фильмы</a></li>
-							<li><a href="/">Сериалы</a></li>
-							<li><a href="/">Мультфильмы</a></li>
-							<li><a href="/">Телепередачи</a></li>
-							<li><a href="/">Спорт</a>
+						<ul>
+							<li class="active menu__pad_1"><a href="/"><i class="icon_kino"></i>Кино</a>
 								<ul class="submenu">
 									<li><a href="/">Футбол</a></li>
 									<li><a href="/">Баскетбол</a></li>
@@ -113,120 +189,138 @@
 									<li><a href="/">Программы</a></li>
 								</ul>
 							</li>
-							<li><a href="/">Рейтинг</a></li>
+							<li class="menu__pad_2"><a href="/"><i class="icon_serial"></i>Сериалы</a></li>
+							<li class="menu__pad_3"><a href="/"><i class="icon_tele"></i>Телешоу</a></li>
+							<li class="menu__pad_4"><a href="/"><i class="icon_sport"></i>Спорт</a>
+								<ul class="submenu submenu__right_coner">
+									<li><a href="/">Футбол</a></li>
+									<li><a href="/">Баскетбол</a></li>
+									<li><a href="/">Хокей</a></li>
+									<li><a href="/">Теннис</a></li>
+									<li><a href="/">Программы</a></li>
+								</ul>
+							</li>
+							<li class="menu__pad_5"><a href="/"><i class=" icon_mult"></i>Мультфильмы</a></li>
+
+							<li class='show480 menu__pad_6'><a href="#" class="js_gime__more">Еще</a></li><!--  +эта строка -->
+							<li class="hide768"><a href="/">Рейтинг</a></li>
 						</ul>
 					</div>
-					
+
 				</div>
-				
+
 			</div>
-				
+
 			<div class="extended_search">
-				
+
 				<div class="fixed">
-					
-					<div class="tabs">
-					
-						<span class="tab active">
-							<img src="images/icon_1.png" alt="" />
-							Фильм
-						</span>
-						<span class="tab">
-							<img src="images/icon_2.png" alt="" />
-							Сериал
-						</span>
-						<span class="tab">
-							<img src="images/icon_3.png" alt="" />
-							Телешоу
-						</span>
-						<span class="tab">
-							<img src="images/icon_4.png" alt="" />
-							Мультфильм
-						</span>
-						<span class="tab">
-							<img src="images/icon_5.png" alt="" />
-							Спорт
-						</span>
-						
-						<div class="tab_check"><input type="checkbox" name="newsletter_1" id="newsletter_1" value="1" /><label for="newsletter_1">Онлайн просмотр</label></div>
-						<div class="tab_check"><input type="checkbox" name="newsletter_2" id="newsletter_2" value="2" /><label for="newsletter_2">Бесплатные</label></div>
-						
-					</div>
-					
-					<div class="year">
-						<span>Год выпуска</span>
-						<div class="ruler"></div>
-						<input type="hidden" name="year_start" value="" />
-						<input type="hidden" name="year_end" value="" />
-					</div>
-					
-					<div class="sort">
-						
-						<div class="sort_item">
-							<div class="sort_title">Жанр:</div>
-							<div class="sort_tags">
-								<span>драма</span>
-								<span>комедия</span>
-								<span class="active">мелодрама</span>
-								<span>триллер</span>
-								<span>боевик</span>
-								<span>криминал</span>
-								<span>ужасы</span>
-								<span>приключения</span>
-								<span class="active">семейный</span>
-								<span>фэнтези</span>
-								<span>фантастика</span>
-								<div class="more">ещё &#8250;</div>
-							</div>
+
+					<div class="hide480"> <!-- + -->
+						<div class="tabs">
+
+							<span class="tab active">
+								<img src="images/icon_1.png" alt="" />
+								Фильм
+							</span>
+							<span class="tab">
+								<img src="images/icon_2.png" alt="" />
+								Сериал
+							</span>
+							<span class="tab">
+								<img src="images/icon_3.png" alt="" />
+								Телешоу
+							</span>
+							<span class="tab">
+								<img src="images/icon_4.png" alt="" />
+								Мультфильм
+							</span>
+							<span class="tab">
+								<img src="images/icon_5.png" alt="" />
+								Спорт
+							</span>
+
+							<div class="tab_check tab_check_first"><input type="checkbox" name="newsletter_1" id="newsletter_1" value="1" /><label for="newsletter_1">Онлайн просмотр</label></div>
+							<div class="tab_check"><input type="checkbox" name="newsletter_2" id="newsletter_2" value="2" /><label for="newsletter_2">Бесплатные</label></div>
+
 						</div>
-						
-						<div class="sort_item">
-							<div class="sort_title">Страна:</div>
-							<div class="sort_tags">
-								<span>США</span>
-								<span>Россия</span>
-								<span>СССР</span>
-								<span>Франция</span>
-								<span>Великобритания</span>
-								<span>Беларусь</span>
-								<span>Германия</span>
-								<span>Гонконг</span>
-								<span>Индия</span>
-								<span>Испания</span>
-								<span>Италия</span>
-								<span>Казахстан</span>
-								<div class="more">ещё &#8250;</div>
-							</div>
+
+						<div class="year">
+							<span>Год выпуска</span>
+							<div class="ruler"></div>
+							<input type="hidden" name="year_start" value="" />
+							<input type="hidden" name="year_end" value="" />
 						</div>
-						
+
+						<div class="sort">
+
+							<div class="sort_item">
+								<div class="sort_title">Жанр:</div>
+								<div class="sort_tags">
+									<span>драма</span>
+									<span>комедия</span>
+									<span class="active">мелодрама</span>
+									<span>триллер</span>
+									<span>боевик</span>
+									<span>криминал</span>
+									<span>ужасы</span>
+									<span>приключения</span>
+									<span class="active">семейный</span>
+									<span>фэнтези</span>
+									<span>фантастика</span>
+									<div class="more">ещё &#8250;</div>
+								</div>
+							</div>
+
+							<div class="sort_item">
+								<div class="sort_title">Страна:</div>
+								<div class="sort_tags">
+									<span>США</span>
+									<span>Россия</span>
+									<span>СССР</span>
+									<span>Франция</span>
+									<span>Великобритания</span>
+									<span>Беларусь</span>
+									<span>Германия</span>
+									<span>Гонконг</span>
+									<span>Индия</span>
+									<span>Испания</span>
+									<span>Италия</span>
+									<span>Казахстан</span>
+									<div class="more">ещё &#8250;</div>
+								</div>
+							</div>
+
+						</div>
 					</div>
-					
+
+
+
 					<div class="sort_btn"><span>Подобрать</span></div>
-					
+
 				</div>
-					
+
 			</div>
-			
+
 			<div class="breadcrumbs">
 				<div class="fixed">
 					<a href="/">Главная</a>&#8250;
 					<span>Поиск</span>
 				</div>
 			</div>
-			
-			<div id="search_box">
-				
+
+			<div id="search_box" class="hide480">
+
 				<div class="fixed">
-				
+
 					<div id="search">
-					
+
 						<form action="mail.php" method="get" >
 							<input type="text" value="Введите название фильма, сериала или передачи" />
 							<input type="submit" value="Найти" />
 						</form>
-						
+
 						<div class="list" style="display: none;">
-						
+
 							<div class="list_item">
 								<span class="thumb"><img src="images/pic_11.jpg" alt="" /></span>
 								<span class="list_body">
@@ -246,7 +340,7 @@
 								</span>
 								<a href="/" class="btn_yellow">Смотреть</a>
 							</div>
-							
+
 							<div class="list_item">
 								<span class="thumb"><img src="images/pic_22.jpg" alt="" /></span>
 								<span class="list_body">
@@ -266,7 +360,7 @@
 								</span>
 								<a href="/" class="btn_yellow">Смотреть</a>
 							</div>
-							
+
 							<div class="list_item">
 								<span class="thumb"><img src="images/pic_33.jpg" alt="" /></span>
 								<span class="list_body">
@@ -286,22 +380,75 @@
 								</span>
 								<a href="/" class="btn_yellow">Смотреть</a>
 							</div>
-							
+
 						</div>
-						
-						<div class="search_link"><span>Расширеный</span><span>поиск</span></div>
-						
+
+						<div class="search_link "><span>Расширеный</span><span>поиск</span></div>
+
 					</div>
-					
+
 				</div>
-			
+
 			</div>
-			
+
 			<div class="catalog">
-                <div class="fixed">
-                    <div class="topic">
-                        <span>Фильмы</span>
-                    </div>
+				<div class="fixed">
+					<div class="topic">
+						<span>Фильмы</span>
+					</div>
+
+					<div class="show480">
+						<form>
+							<div class="ui-field-contain">
+							 <label for="select-native-1">Категория</label>
+							 <select name="select-native-1" class="select-native-1" id="select-native-1">
+								<option value="1">Категория</option>
+								<option value="2">the 2 option</option>
+								<option value="3">the 3 option</option>
+								<option value="4">the 4 option</option>
+								<option value="5">the 5 option</option>
+								<option value="6">the 6 option</option>
+								<option value="7">the 7 option</option>
+								<option value="8">the 8 option</option>
+								<option value="9">the 9 option</option>
+								<option value="10">the 10 option</option>
+								<option value="11">the 11 option</option>
+								<option value="12">the 12 option</option>
+								<option value="13">the 13 option</option>
+								<option value="14">the 14 option</option>
+								<option value="15">the 15 option</option>
+								<option value="16">the 16 option</option>
+								<option value="17">the 17 option</option>
+								<option value="18">the 18 option</option>
+								<option value="19">the 19 option</option>
+							 </select>
+
+							 <label for="select-native-2">Год выпуска</label>
+							 <select name="select-native-2" class="select-native-1" id="select-native-1">
+								<option value="1">Год выпуска</option>
+								<option value="2">the 2 option</option>
+								<option value="3">the 3 option</option>
+								<option value="4">the 4 option</option>
+								<option value="5">the 5 option</option>
+								<option value="6">the 6 option</option>
+								<option value="7">the 7 option</option>
+								<option value="8">the 8 option</option>
+								<option value="9">the 9 option</option>
+								<option value="10">the 10 option</option>
+								<option value="11">the 11 option</option>
+								<option value="12">the 12 option</option>
+								<option value="13">the 13 option</option>
+								<option value="14">the 14 option</option>
+								<option value="15">the 15 option</option>
+								<option value="16">the 16 option</option>
+								<option value="17">the 17 option</option>
+								<option value="18">the 18 option</option>
+								<option value="19">the 19 option</option>
+							 </select>
+						</div>
+					</form>
+					</div> <!-- + -->
+
                     <div class="categories-c">
                         <ul>
                             <li><a href="#">Мелодрама</a></li>
@@ -421,7 +568,7 @@
                                     <span>США, 1991</span>
                                 </div>
                             </div>
-                            <div class="item-c">
+                            <div class="item-c item-c__center">
                                 <div class="pic">
                                     <a href="#">
                                         <img src="images/catalog2.jpg" alt="" title="" width="259px" height="188px"/>
@@ -455,26 +602,26 @@
 			</div>
 
 		</div>
-		
+
 		<div id="footer">
-			
+
 			<div id="footer_top">
-				
+
 				<div class="subs fixed">
-					
+
 					<span>Узнавайте о новинках первыми!</span>
-					
+
 					<form action="mail.php" method="post" >
 						<input type="text" value="E-mail" />
 						<input type="submit" value="" />
 					</form>
-				
+
 				</div>
-				
+
 			</div>
-		
+
 			<div id="footer_bottom" class="fixed">
-				
+
 				<div class="nav">
 					<p>Фильмы</p>
 					<ul>
@@ -487,7 +634,7 @@
 						<li><a href="/">Триллер</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Сериалы</p>
 					<ul>
@@ -499,7 +646,7 @@
 						<li><a href="/">Триллер</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Мультфильмы</p>
 					<ul>
@@ -511,7 +658,7 @@
 						<li><a href="/">Советские</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Телепередачи</p>
 					<ul>
@@ -527,7 +674,7 @@
 						<li><a href="/"></a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Спорт</p>
 					<ul>
@@ -537,79 +684,92 @@
 						<li><a href="/">Баскетбол</a></li>
 					</ul>
 				</div>
-				
+
+				<a href="#" class="footer__butter"></a>
+				<ul class="footer_bottom_propose">
+					<li><a class="footer_bottom_propos_white" href="#">Войти</a></li>
+					<li><a class="footer_bottom_propos_white" href="#">Полная версия</a></li>
+					<li><a class="footer_bottom_propos_link" href="#">Кино</a></li>
+					<li><a class="footer_bottom_propos_link" href="#">Сериалы</a></li>
+					<li><a class="footer_bottom_propos_link" href="#">Спорт</a></li>
+
+					<li><a class="footer_bottom_propos_link" href="#">Телешоу</a></li>
+					<li><a class="footer_bottom_propos_link" href="#">Мультфильмы</a></li>
+					<li><a class="footer_bottom_propos_link" href="#">Рейтинг</a></li>
+				</ul>
+
 				<div id="footer_r">
-				
+
 					<div class="footer_social">
 						<a href="/" class="icon_soc_1"></a>
 						<a href="/" class="icon_soc_2"></a>
 						<a href="/" class="icon_soc_3"></a>
 						<a href="/" class="icon_soc_4"></a>
 					</div>
-					
+
 					<div id="copyright">Все права защищены<br />&copy; 2014</div>
-					
+
 				</div>
-				
+
 			</div>
-		
+
 		</div>
-		
+
 		<div id="modal"></div>
-		
+
 		<div class="popup" id="popup_login">
-		
+
 			<div class="title">Войти</div>
 			<div class="about">Зарегистрируйтесь если у вас нет логина и пароля</div>
-		
+
 			<form action="mail.php" method="post">
 				<p class="error"><input type="text" value="Логин" /><span>Ошибка</span></p>
 				<p><input type="password" value="Пароль" /><span>Ошибка</span></p>
 				<input type="submit" value="Войти на сайт" class="btn_yellow" />
 			</form>
-			
+
 			<div class="subtitle"><span>Войти с помощью:</span></div>
-			
+
 			<div class="popup_social">
 				<a href="/" class="icon_soc_big_1"></a>
 				<a href="/" class="icon_soc_big_2"></a>
 				<a href="/" class="icon_soc_big_3"></a>
 				<a href="/" class="icon_soc_big_4"></a>
 			</div>
-					
+
 		</div>
-		
+
 		<div class="popup" id="popup_register">
-		
+
 			<div class="title">Регистрация</div>
 			<div class="about">Зарешистрируйтесь если у вас нет логина и пароля</div>
-		
+
 			<form action="mail.php" method="post">
 				<p><input type="text" value="Логин" /><span>Ошибка</span></p>
 				<p><input type="password" value="Пароль" /><span>Ошибка</span></p>
 				<p><input type="text" value="E-mail" /><span>Ошибка</span></p>
 				<input type="submit" value="Зарегистрироваться" class="btn_yellow" />
 			</form>
-			
+
 			<div class="subtitle"><span>Или войдите с помощью:</span></div>
-			
+
 			<div class="popup_social">
 				<a href="/" class="icon_soc_big_1"></a>
 				<a href="/" class="icon_soc_big_2"></a>
 				<a href="/" class="icon_soc_big_3"></a>
 				<a href="/" class="icon_soc_big_4"></a>
 			</div>
-					
+
 		</div>
-		
-	</div>		
-	
+
+	</div>
+
 	<script type="text/javascript">//<![CDATA[
-	
+
 	$(function(){
-		
+
 		/* Слайдер для выбора года */
-		
+
 		var price_slider = $('.ruler').noUiSlider({
 			start: [1990, 2014],
 			step: 1,
@@ -624,22 +784,22 @@
 				postfix: '',
 			})
 		});
-			
+
 		price_slider.Link('lower').to($('input[name="year_start"]'));
-		
+
 		price_slider.Link('lower').to($('.noUi-handle-lower'), 'text');
-		
+
 		price_slider.Link('upper').to($('input[name="year_end"]'));
-		
+
 		price_slider.Link('upper').to($('.noUi-handle-upper'), 'text');
-		
+
 		$('.search_link').click(function(){
 			$('.extended_search').slideToggle();
 		});
-		
+
 	});
-	
+
 	//]]></script>
-	
+
 </body>
 </html>

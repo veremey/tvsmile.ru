@@ -2,23 +2,76 @@
 <html xml:lang="ru" lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Home page</title>
+	<!-- + -->
+	<meta name="viewport" content="width=device-width", user-scalable='no'/>
+	 <!-- + -->
+	<title>reg</title>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css' />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<!-- + -->
+	<link href="css/baxazar.css" type="text/css" rel="stylesheet" />
+	<!-- + -->
 	<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="scripts/scripts.js"></script>
 </head>
 <body>
 
-	<div id="site" class="white_bg">	
-	
+	<div id="site" class="white_bg">
+
 		<div id="container">
-	
-			<div id="top_line">
-				
+
+			<div class="everybody_in_shadow"></div><!--  +эта строка -->
+			<a href="#" class="burger__menu"></a><!--  +эта строка -->
+			<ul class="side__menu"><!--  +эта строка -->
+				<li class="side__menu_search">
+
+						<div id="top_search">
+							<form action="mail.php" method="get" >
+								<input type="text" value="Искать на сайте" />
+								<input type="submit" value="" />
+							</form>
+						</div>
+
+				</li>
+				<li><a href="#" class="side__menu_link">Главная</a></li>
+				<li><a href="#" class="side__menu_link">Кино</a></li>
+				<li><a href="#" class="side__menu_link has__sub">Сериалы</a>
+					<ul class="side__submenu">
+						<li><a href="#" class="side__submenu_link">Зарубежные</a></li>
+						<li><a href="#" class="side__submenu_link">Русские</a></li>
+						<li><a href="#" class="side__submenu_link">Ситкомы</a></li>
+						<li><a href="#" class="side__submenu_link">Комедии</a></li>
+						<li><a href="#" class="side__submenu_link">Семейные</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="side__menu_link has__sub">Телешоу</a>
+					<ul class="side__submenu">
+						<li><a href="#" class="side__submenu_link">Зарубежные</a></li>
+						<li><a href="#" class="side__submenu_link">Русские</a></li>
+						<li><a href="#" class="side__submenu_link">Ситкомы</a></li>
+						<li><a href="#" class="side__submenu_link">Комедии</a></li>
+						<li><a href="#" class="side__submenu_link">Семейные</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="side__menu_link">Мультфильмы</a></li>
+				<li><a href="#" class="side__menu_link">Рекомендуемые</a></li>
+				<li><a href="#" class="side__menu_link">Коментарии</a></li>
+				<li><a href="#" class="side__menu_link">Главная</a></li>
+				<li><a href="#" class="side__menu_link">Кино</a></li>
+				<li><a href="#" class="side__menu_link">Сериалы</a></li>
+				<li><a href="#" class="side__menu_link">Телешоу</a></li>
+				<li><a href="#" class="side__menu_link">Мультфильмы</a></li>
+				<li><a href="#" class="side__menu_link">Рекомендуемые</a></li>
+				<li><a href="#" class="side__menu_link">Коментарии</a></li>
+			</ul>
+			<ul class="side__bread "> <!--  +эта строка -->
+				<li><h3>Зеленая миля <i></i></h3></li>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Кино</a></li>
+			</ul>
+			<div id="top_line"> <!--  +эта строка -->
 				<div class="fixed">
-					
+
 					<div class="top_social">
 						<a href="/" class="icon_soc_small_1"></a>
 						<a href="/" class="icon_soc_small_2"></a>
@@ -26,16 +79,16 @@
 						<a href="/" class="icon_soc_small_4"></a>
 						<span>Присоиденяйтесь к нам!</span>
 					</div>
-					
+					<a href="#" class="top__logo_768"></a>
+
 					<div id="top_search">
-					
-						<form action="mail.php" method="get" >
+						<form action="mail.php" method="get" class="hide480" >
 							<input type="text" value="Искать на сайте" />
 							<input type="submit" value="" />
 						</form>
-						
-						<div class="list">
-						
+
+						<div class="list hide480">
+
 							<a href="/" class="list_item">
 								<span class="thumb"><img src="images/pic_1.jpg" alt="" /></span>
 								<span class="list_body">
@@ -48,7 +101,7 @@
 									</span>
 								</span>
 							</a>
-							
+
 							<a href="/" class="list_item">
 								<span class="thumb"><img src="images/pic_2.jpg" alt="" /></span>
 								<span class="list_body">
@@ -61,7 +114,7 @@
 									</span>
 								</span>
 							</a>
-							
+
 							<a href="/" class="list_item">
 								<span class="thumb"><img src="images/pic_3.jpg" alt="" /></span>
 								<span class="list_body">
@@ -74,35 +127,30 @@
 									</span>
 								</span>
 							</a>
-							
+
 						</div>
-						
+
 					</div>
-					
+
 					<div class="account">
 						<a href="/" class="account_icon_1"></a>
 						<a href="/" class="account_icon_2"></a>
 						<a href="/" class="account_name">Наталья</a>
 						<a href="/" class="account_exit">Выйти</a>
 					</div>
-					
+
 				</div>
-				
 			</div>
-			
+
 			<div id="header">
-				
+
 				<div class="fixed">
-					
+
 					<a id="logo" href="/"></a>
-					
+
 					<div class="menu">
-						<ul>	
-							<li class="active"><a href="/">Фильмы</a></li>
-							<li><a href="/">Сериалы</a></li>
-							<li><a href="/">Мультфильмы</a></li>
-							<li><a href="/">Телепередачи</a></li>
-							<li><a href="/">Спорт</a>
+						<ul>
+							<li class="active menu__pad_1"><a href="/"><i class="icon_kino"></i>Кино</a>
 								<ul class="submenu">
 									<li><a href="/">Футбол</a></li>
 									<li><a href="/">Баскетбол</a></li>
@@ -111,32 +159,46 @@
 									<li><a href="/">Программы</a></li>
 								</ul>
 							</li>
-							<li><a href="/">Рейтинг</a></li>
+							<li class="menu__pad_2"><a href="/"><i class="icon_serial"></i>Сериалы</a></li>
+							<li class="menu__pad_3"><a href="/"><i class="icon_tele"></i>Телешоу</a></li>
+							<li class="menu__pad_4"><a href="/"><i class="icon_sport"></i>Спорт</a>
+								<ul class="submenu submenu__right_coner">
+									<li><a href="/">Футбол</a></li>
+									<li><a href="/">Баскетбол</a></li>
+									<li><a href="/">Хокей</a></li>
+									<li><a href="/">Теннис</a></li>
+									<li><a href="/">Программы</a></li>
+								</ul>
+							</li>
+							<li class="menu__pad_5"><a href="/"><i class=" icon_mult"></i>Мультфильмы</a></li>
+
+							<li class='show480 menu__pad_6'><a href="#" class="js_gime__more">Еще</a></li><!--  +эта строка -->
+							<li class="hide768"><a href="/">Рейтинг</a></li>
 						</ul>
 					</div>
-					
+
 				</div>
-				
+
 			</div>
-			
-			<div class="breadcrumbs">
+
+			<div class="breadcrumbs hide600">
 				<div class="fixed">
 					<a href="/">Главная</a>&#8250;
 					<span>Личный кабинет</span>
 				</div>
 			</div>
-			
-			<div class="login">
-			
+
+			<div class="login hide600">
+
 				<div class="fixed">
-				
+
 					<div class="user">
-					
+
 						<div class="user_l">
 							<p class="user_name">Регистрация</p>
 							<p><span class="user_mail">Регистрация позволит вам покупать и просматривать материалы на нашем сайта, а также  оставлять рицензии к ним.</span></p>
 						</div>
-						
+
 						<div class="user_soc">
 							<a href="/" class="user_soc_1"></a>
 							<a href="/" class="user_soc_2"></a>
@@ -144,9 +206,9 @@
 							<a href="/" class="user_soc_4"></a>
 							<span>Вы можете войти с помощью ваших соц. сетей</span>
 						</div>
-						
+
 					</div>
-											
+
 					<div class="entrance">
 						<form action="" method="post">
 							<div class="entrance_body">
@@ -162,32 +224,55 @@
 							</div>
 						</form>
 					</div>
-						
+
 				</div>
-				
+
 			</div>
-			
+
+				<div class="popup registration_600" id="popup_register">
+
+					<div class="title">Регистрация</div>
+					<div class="about">Зарешистрируйтесь если у вас нет логина и пароля</div>
+
+					<form action="mail.php" method="post">
+						<p><input type="text" value="Логин" /><span>Ошибка</span></p>
+						<p><input type="password" value="Пароль" /><span>Ошибка</span></p>
+						<p><input type="text" value="E-mail" /><span>Ошибка</span></p>
+						<input type="submit" value="Зарегистрироваться" class="btn_yellow" />
+					</form>
+
+					<div class="subtitle"><span>Или войдите с помощью:</span></div>
+
+					<div class="popup_social">
+						<a href="/" class="icon_soc_big_1"></a>
+						<a href="/" class="icon_soc_big_2"></a>
+						<a href="/" class="icon_soc_big_3"></a>
+						<a href="/" class="icon_soc_big_4"></a>
+					</div>
+
+			</div>
+
 		</div>
-		
+
 		<div id="footer">
-			
+
 			<div id="footer_top">
-				
+
 				<div class="subs fixed">
-					
+
 					<span>Узнавайте о новинках первыми!</span>
-					
+
 					<form action="mail.php" method="post" >
 						<input type="text" value="E-mail" />
 						<input type="submit" value="" />
 					</form>
-				
+
 				</div>
-				
+
 			</div>
-		
+
 			<div id="footer_bottom" class="fixed">
-				
+
 				<div class="nav">
 					<p>Фильмы</p>
 					<ul>
@@ -200,7 +285,7 @@
 						<li><a href="/">Триллер</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Сериалы</p>
 					<ul>
@@ -212,7 +297,7 @@
 						<li><a href="/">Триллер</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Мультфильмы</p>
 					<ul>
@@ -224,7 +309,7 @@
 						<li><a href="/">Советские</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Телепередачи</p>
 					<ul>
@@ -240,7 +325,7 @@
 						<li><a href="/"></a></li>
 					</ul>
 				</div>
-				
+
 				<div class="nav">
 					<p>Спорт</p>
 					<ul>
@@ -250,72 +335,72 @@
 						<li><a href="/">Баскетбол</a></li>
 					</ul>
 				</div>
-				
+
 				<div id="footer_r">
-				
+
 					<div class="footer_social">
 						<a href="/" class="icon_soc_1"></a>
 						<a href="/" class="icon_soc_2"></a>
 						<a href="/" class="icon_soc_3"></a>
 						<a href="/" class="icon_soc_4"></a>
 					</div>
-					
+
 					<div id="copyright">Все права защищены<br />&copy; 2014</div>
-					
+
 				</div>
-				
+
 			</div>
-		
+
 		</div>
-		
+
 		<div id="modal"></div>
-		
+
 		<div class="popup" id="popup_login">
-		
+
 			<div class="title">Войти</div>
 			<div class="about">Зарегистрируйтесь если у вас нет логина и пароля</div>
-		
+
 			<form action="mail.php" method="post">
 				<p class="error"><input type="text" value="Логин" /><span>Ошибка</span></p>
 				<p><input type="password" value="Пароль" /><span>Ошибка</span></p>
 				<input type="submit" value="Войти на сайт" class="btn_yellow" />
 			</form>
-			
+
 			<div class="subtitle"><span>Войти с помощью:</span></div>
-			
+
 			<div class="popup_social">
 				<a href="/" class="icon_soc_big_1"></a>
 				<a href="/" class="icon_soc_big_2"></a>
 				<a href="/" class="icon_soc_big_3"></a>
 				<a href="/" class="icon_soc_big_4"></a>
 			</div>
-					
+
 		</div>
-		
+
 		<div class="popup" id="popup_register">
-		
+
 			<div class="title">Регистрация</div>
 			<div class="about">Зарешистрируйтесь если у вас нет логина и пароля</div>
-		
+
 			<form action="mail.php" method="post">
 				<p><input type="text" value="Логин" /><span>Ошибка</span></p>
 				<p><input type="password" value="Пароль" /><span>Ошибка</span></p>
 				<p><input type="text" value="E-mail" /><span>Ошибка</span></p>
 				<input type="submit" value="Зарегистрироваться" class="btn_yellow" />
 			</form>
-			
+
 			<div class="subtitle"><span>Или войдите с помощью:</span></div>
-			
+
 			<div class="popup_social">
 				<a href="/" class="icon_soc_big_1"></a>
 				<a href="/" class="icon_soc_big_2"></a>
 				<a href="/" class="icon_soc_big_3"></a>
 				<a href="/" class="icon_soc_big_4"></a>
 			</div>
-					
+
 		</div>
-		
+
 	</div>
-	
+
 </body>
 </html>
