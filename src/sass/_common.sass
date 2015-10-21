@@ -1,0 +1,352 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)
+// =book
+// 	font-family: "book", Arial, sans-serif
+// insert pics into css
+// div
+// 	+pic("blabla.png")
+// span
+// 	+png(blabla)
+// p
+// 	+jpg(bla)
+
+body
+	font-family: Arial, sans-serif
+	font-size: 12px
+	line-height: 1.5
+	color: #606060
+	min-width: 000px
+
+.out
+	width: 768px
+	margin: 0 auto
+	+clr
+
+
+
+$n: transparent
+$tc: #606060
+
+.container
+	width: 754px
+	margin: 0 auto
+	+clr
+
+
++font(Ubuntu, Ubuntu)
+
+=ul
+	font-family: Ubuntu, Arial, sas-serif
+	font-weight: 300
+=ur
+	font-family: Ubuntu, Arial, sas-serif
+	font-weight: 400
+=ub
+	font-family: Ubuntu, Arial, sas-serif
+	font-weight: 600
+=ue
+	font-family: Ubuntu, Arial, sas-serif
+	font-weight: 700
+
+
+
+// #################
+// -------------
+// header
+// _____________
+
+.header
+	+clr
+.header__top
+	height: 45px
+	position: relative
+	background-color: #0b1a2c
+	+clr
+
+.burger
+	background-color: $n
+	display: inline-block
+	margin-top: 10px
+	width: 30px
+	height: 27px
+	background-image: url("../img/icons/burger__menu.png")
+
+.header__nav
+	position: relative
+	float: left
+	height: 45px
+	+clr
+.logo
+	display: inline-block
+	background-image: url("../img/icons/logo.png")
+	width: 87px
+	height: 26px
+	vertical-align: top
+	margin: 10px 0 0 35px
+	h1
+		+hidetext
+.form__header
+	position: relative
+	display: inline-block
+	margin: 7px 0 0 85px
+	vertical-align: top
+	input
+		background-color: #1E3450
+		width: 230px
+		height: 30px
+		-webkit-border-radius: 30px
+		border-radius: 30px
+.icon__lupa
+	position: absolute
+	top: 2px
+	right: 10px
+	width: 28px
+	height: 26px
+	background-image: url("../img/icons/search_icon_1.png")
+	background-color: $n
+
+.navigation
+	display: none
+	position: absolute
+	width: 245px
+	background-color: #1E3450
+	font-size: 0
+	top: 45px
+	left: -10px
+	z-index: 400
+	&.is_active
+		display: block
+	&__item
+		a
+			border-bottom: 1px solid #27415e
+			display: block
+			padding: 0 30px
+			font-size: 16px
+			line-height: 33px
+			color: #7BB4D8
+			+ul
+			+tr(.3s)
+			&:hover
+				color: #B8D4E6
+				+ub
+	&__subitem a
+		padding: 0 60px
+		border-bottom: 1px solid #27415e
+.enter
+	float: right
+	vertical-align: top
+	margin-top: 7px
+	+clr
+	&__box
+		float: left
+		width: 21px
+		height: 20px
+		margin-top: 5px
+		display: inline-block
+		background-image: url("../img/icons/account_icon_1.png")
+	&__user
+		display: inline-block
+		+clr
+		span
+			display: inline-block
+			color: #FFF
+			text-decoration: underline
+			margin-right: 5px
+			padding-top: 5px
+		&:hover
+			span
+				text-decoration: none
+	&__exit
+		padding-left: 5px
+		border-left: 1px solid #243244
+		color: #5B829A
+		&:hover
+			color: lighten(#5B829A, 15%)
+
+.user__ava
+	width: 32px
+	height: 32px
+	display: inline-block
+	margin: 0 15px 0
+	-webkit-border-radius: 100%
+	border-radius: 100%
+	vertical-align: top
+	img
+		max-width: 100%
+		vertical-align: top
+
+
+.header__bottom
+	width: 768px
+	background-image: linear-gradient(#ffffff, #d5e6f9);
+	+clr
+
+.menu__bottom
+	position: relative
+	top: 0
+	left: 0
+	width: 100%
+	display: table
+	+clr
+	> li
+		display: table-cell
+		position: relative
+		text-align: center
+		height: 84px
+		// border-left: 1px solid #bbd6f2
+		&:hover
+			.menu__bottom_submenu
+				display: block
+				z-index: 10
+		&:before
+			content: ' '
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			left: -1px
+			width: 1px
+			background-color: #cae0f3
+			background: linear-gradient(to bottom, #e5f0f7, #bbd6f2)
+		&:first-child:before
+			content: none
+		> a
+			// padding: 0 15px
+			display: block
+			font-size: 14px
+			height: 84px
+			line-height: 110px
+			color: #000
+			text-transform: uppercase
+			position: relative
+			+ub
+			i
+				display: inline-block
+				position: absolute
+				top: 12px
+				left: 50%
+				transform: translate(-50%, 0)
+			&:hover
+				+gh3(#7eb5d9, #afd0eb, #7eb5d9)
+.menu__bottom_submenu
+	position: absolute
+	top: 84px
+	left: 0
+	min-width: 100%
+	max-width: 200px
+	height: auto
+	padding: 10px 0
+	background-color: #7eb6d9
+	border-top: 1px solid #73a6c5
+	border-radius: 0 0 3px 3px
+	box-shadow: 0 18px 22px rgba(0,0,0,0.6)
+	display: none
+	li
+		a
+			text-transform: uppercase
+			display: block
+			padding: 0 20px 0 15px
+			color: #FFF
+			font-size: 11px
+			line-height: 33px
+			text-align: left
+			&:hover
+				background-color: #71a4c5
+				text-decoration: underline
+
+
+.menu__pad_1,
+.menu__pad_2,
+.menu__pad_3
+	+r(500)
+		width: 33%
+		text-align: center !important
+	// +iphone5
+	// 	width: 33%
+	// 	text-align: center !important
+.menu__pad_4
+	+r(500)
+		width: 27%
+		text-align: center !important
+	// +iphone5
+	// 	width: 27%
+	// 	text-align: center !important
+.menu__pad_5
+	+r(500)
+		width: 50%
+		text-align: center !important
+	// +iphone5
+	// 	width: 50%
+	// 	text-align: center !important
+.menu__pad_6
+	text-align: center!important
+	+r(500)
+		width: 22%
+	// +r(768)
+	// 	display: none!important
+	// +iphone5
+	// 	width: 22%
+.menu__pad_4
+	+r(500)
+		border-left: 0!important
+		&:before
+			content: none
+			display: none
+
+.icon_kino
+	width: 24px
+	height: 34px
+	background-image: url("../img/icons/icon_kino.png")
+.icon_serial
+	width: 30px
+	height: 32px
+	background-image: url("../img/icons/icon_serial.png")
+.icon_tele
+	width: 27px
+	height: 30px
+	background-image: url("../img/icons/icon_tele.png")
+.icon_sport
+	width: 30px
+	height: 30px
+	background-image: url("../img/icons/icon_sport.png")
+.icon_mult
+	width: 37px
+	height: 33px
+	background-image: url("../img/icons/icon_mult.png")

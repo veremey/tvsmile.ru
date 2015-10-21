@@ -1,19 +1,16 @@
-# tvsmile.ru
+# Как использовать
+Почитать как это готовить можно [тут](http://habrahabr.ru/post/250569/ "Readme")
 
-Делаю респонсив версию
+Для начала установить [Bower](http://bower.io/) и [Gulp](http://gulpjs.com/) глобально.
 
-## Tehnologies
+Установить локально gulp и bower выполнив следующие команды:
 
-* HTML
-* Sass
-* jQuery
+1. *npm install gulp*
 
-## Contacts
+2. *npm install bower*
 
-Skype: baxazar
+Установить плагины
 
-Email: [veremey4uk@gmail.com](mailto:veremey4uk@gmail.com)
+1. *npm install*
 
-GitHub: [https://github.com/veremey](https://github.com/veremey)
-
-myCV:  [google drive](https://drive.google.com/open?id=1TK9mt61RCe0p68Jt_lBX8pRnAtXPieYcpJr0OF9VwT0)
+2. *bower install*
