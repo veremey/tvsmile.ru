@@ -47,16 +47,20 @@
 // p
 // 	+jpg(bla)
 
+
+
 body
 	font-family: Arial, sans-serif
 	font-size: 12px
 	line-height: 1.5
 	color: #606060
-	min-width: 000px
+
 
 .out
+	position: relative
+	min-height: 100%
 	width: 768px
-	margin: 0 auto
+	margin: 0 auto -205px
 	+clr
 
 
@@ -350,3 +354,55 @@ $tc: #606060
 	width: 37px
 	height: 33px
 	background-image: url("../img/icons/icon_mult.png")
+
+
+// #################
+// ----------------
+// footer
+// ________________
+
+
+.footer
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 100%
+	height: 205px
+	background-color: #0b1a2c
+
+.footer__top
+	position: relative
+	height: 78px
+	+g(#1e497b, #0b1b2e)
+	+clr
+.footer__form_wrap
+	+vcenter
+	label
+		float: left
+		display: inline-block
+		font-size: 18px
+		color: #DCE9FB
+		line-height: 1
+		text-align: right
+		vertical-align: top
+		margin-right: 23px
+	input
+		float: left
+		width: 498px
+		height: 38px
+		padding: 0 60px 0 20px
+		-webkit-border-radius: 3px
+		border-radius: 3px
+		border: 1px solid #516c84
+		+box
+
+.btn_check
+	position: absolute
+	top: 1px
+	right: 1px
+	width: 40px
+	height: 36px
+	background-color: #f4e570
+
+
+
