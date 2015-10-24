@@ -1,2 +1,30 @@
 a
 	text-decoration: none
+
+// buttons
+
+.btn__soc
+	position: relative
+	display: inline-block
+	vertical-align: top
+	margin-right: 10px
+	width: 30px
+	height: 30px
+	-webkit-border-radius: 100%
+	border-radius: 100%
+	background-color: #25343F
+	+tr(.3s)
+	&:hover
+		background-color: lighten(#25343F, 60%)
+	&:active
+		-webkit-box-shadow: 0 0 5px 0px #fff inset, 0 0 9px #fff
+		box-shadow: 0 0 5px 0px #fff inset, 0 0 9px #fff
+	&:last-child
+		margin-right: 0
+	i
+		+vcenter
+	&_you
+		@extend .btn__soc
+		background-color: #D64242
+		&:hover
+			background-color: lighten(#D64242, 10%)

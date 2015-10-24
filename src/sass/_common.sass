@@ -59,7 +59,7 @@ body
 .out
 	position: relative
 	min-height: 100%
-	width: 768px
+	max-width: 768px
 	margin: 0 auto -205px
 	+clr
 
@@ -69,7 +69,7 @@ $n: transparent
 $tc: #606060
 
 .container
-	width: 754px
+	width: 98%
 	margin: 0 auto
 	+clr
 
@@ -111,32 +111,50 @@ $tc: #606060
 	width: 30px
 	height: 27px
 	background-image: url("../img/icons/burger__menu.png")
+	+r(400)
+		width: 36px
+		height: 26px
+		background-color: $n
+		background-image: url("../img/icons/burger__menu_480.png")
 
 .header__nav
 	position: relative
 	float: left
+	width: 60%
 	height: 45px
 	+clr
+	+r(680)
+		width: 150px
+	+r(360)
+		width: 120px
 .logo
 	display: inline-block
 	background-image: url("../img/icons/logo.png")
 	width: 87px
 	height: 26px
 	vertical-align: top
-	margin: 10px 0 0 35px
+	margin: 10px 0 0 7%
+	+r(360)
+		margin-left: 0
+		+scale(.7)
 	h1
 		+hidetext
 .form__header
 	position: relative
+	float: right
 	display: inline-block
-	margin: 7px 0 0 85px
+	margin-top: 7px
 	vertical-align: top
+	+r(680)
+		display: none
 	input
 		background-color: #1E3450
 		width: 230px
 		height: 30px
 		-webkit-border-radius: 30px
 		border-radius: 30px
+		+r(710)
+			width: 180px
 .icon__lupa
 	position: absolute
 	top: 2px
@@ -185,6 +203,8 @@ $tc: #606060
 		margin-top: 5px
 		display: inline-block
 		background-image: url("../img/icons/account_icon_1.png")
+		+r(360)
+			display: none
 	&__user
 		display: inline-block
 		+clr
@@ -218,9 +238,11 @@ $tc: #606060
 
 
 .header__bottom
-	width: 768px
-	background-image: linear-gradient(#ffffff, #d5e6f9);
+	width: 100%
+	+g(#fff, #d5e6f9)
 	+clr
+	+r(505)
+		+g4(#fff 5%, #d5e6f9 50%, #fff 50%, #d5e6f9 100%)
 
 .menu__bottom
 	position: relative
@@ -235,6 +257,9 @@ $tc: #606060
 		text-align: center
 		height: 84px
 		// border-left: 1px solid #bbd6f2
+		+r(505)
+			display: inline-block
+			height: 45px
 		&:hover
 			.menu__bottom_submenu
 				display: block
@@ -248,7 +273,9 @@ $tc: #606060
 			left: -1px
 			width: 1px
 			background-color: #cae0f3
-			background: linear-gradient(to bottom, #e5f0f7, #bbd6f2)
+			// background: linear-gradient(to bottom, #e5f0f7, #bbd6f2)
+			+g(#bbd6f2, #e5f0f7)
+
 		&:first-child:before
 			content: none
 		> a
@@ -261,12 +288,28 @@ $tc: #606060
 			text-transform: uppercase
 			position: relative
 			+ub
+			+r(505)
+				height: 45px
+				line-height: 45px
+			+r(425)
+				padding-left: 10px
+			+r(390)
+				padding-left: 20px
 			i
 				display: inline-block
 				position: absolute
 				top: 12px
 				left: 50%
 				transform: translate(-50%, 0)
+				+r(505)
+					top: 5px
+					left: 5px
+					transform: translate(0, 0)
+				+r(490)
+					+scale(.7)
+				+r(340)
+					+scale(.5)
+					left: 0
 			&:hover
 				+gh3(#7eb5d9, #afd0eb, #7eb5d9)
 .menu__bottom_submenu
@@ -282,6 +325,8 @@ $tc: #606060
 	border-radius: 0 0 3px 3px
 	box-shadow: 0 18px 22px rgba(0,0,0,0.6)
 	display: none
+	+r(505)
+		top: 44px
 	li
 		a
 			text-transform: uppercase
@@ -299,36 +344,48 @@ $tc: #606060
 .menu__pad_1,
 .menu__pad_2,
 .menu__pad_3
-	+r(500)
+	+r(505)
 		width: 33%
 		text-align: center !important
 	// +iphone5
 	// 	width: 33%
 	// 	text-align: center !important
+.menu__pad_1
+	+r(365)
+		width: 27%
+.menu__pad_2
+	+r(365)
+		width: 36%
+.menu__pad_3
+	+r(365)
+		width: 36%
 .menu__pad_4
-	+r(500)
+	+r(505)
 		width: 27%
 		text-align: center !important
-	// +iphone5
-	// 	width: 27%
-	// 	text-align: center !important
+	+r(365)
+		width: 30%
 .menu__pad_5
-	+r(500)
+	+r(505)
 		width: 50%
 		text-align: center !important
+	+r(365)
+		width: 52%
 	// +iphone5
 	// 	width: 50%
 	// 	text-align: center !important
 .menu__pad_6
 	text-align: center!important
-	+r(500)
+	+r(505)
 		width: 22%
+	+r(365)
+		width: 18%
 	// +r(768)
 	// 	display: none!important
 	// +iphone5
 	// 	width: 22%
 .menu__pad_4
-	+r(500)
+	+r(505)
 		border-left: 0!important
 		&:before
 			content: none
@@ -355,6 +412,18 @@ $tc: #606060
 	height: 33px
 	background-image: url("../img/icons/icon_mult.png")
 
+.menu__bottom
+	li:hover
+		.icon_kino
+			background-image: url('../img/icons/icon_kino_h.png')
+		.icon_serial
+			background-image: url('../img/icons/icon_serial_h.png')
+		.icon_tele
+			background-image: url('../img/icons/icon_tele_h.png')
+		.icon_sport
+			background-image: url('../img/icons/icon_sport_h.png')
+		.icon_mult
+			background-image: url('../img/icons/icon_mult_h.png')
 
 // #################
 // ----------------
@@ -363,6 +432,7 @@ $tc: #606060
 
 
 .footer
+	width: 100%
 	position: absolute
 	left: 0
 	bottom: 0
@@ -373,10 +443,15 @@ $tc: #606060
 .footer__top
 	position: relative
 	height: 78px
-	+g(#1e497b, #0b1b2e)
+	+g( #0b1b2e 50%, #1e497b)
 	+clr
 .footer__form_wrap
-	+vcenter
+	height: 35px
+	padding: 17px 0 0 20px
+	+clr
+	+box
+	+r(715)
+		padding-top: 5px
 	label
 		float: left
 		display: inline-block
@@ -385,24 +460,106 @@ $tc: #606060
 		line-height: 1
 		text-align: right
 		vertical-align: top
-		margin-right: 23px
+		width: 27%
+		+r(715)
+			width: 100%
+			margin-bottom: 5px
+			text-align: left
 	input
-		float: left
-		width: 498px
+		float: right
+		max-width: 498px
+		width: 70%
 		height: 38px
 		padding: 0 60px 0 20px
+		margin-right: 10px
 		-webkit-border-radius: 3px
 		border-radius: 3px
 		border: 1px solid #516c84
 		+box
+		+r(715)
+			width: 100%
+			max-width: 100%
+			margin-right: 0
 
 .btn_check
 	position: absolute
-	top: 1px
-	right: 1px
+	top: 18px
+	right: 11px
+	-webkit-border-radius: 0 3px 3px 0
+	border-radius: 0 3px 3px 0
 	width: 40px
 	height: 36px
 	background-color: #f4e570
+	+r(715)
+		top: 29px
+		right: 1px
+	i
+		position: absolute
+		top: 8px
+		right: 5px
+		width: 29px
+		height: 19px
+		background-image: url("../img/subs_arrow.png")
 
+.footer__btn
+	display: none
+	+r(400)
+		display: inline-block
+		margin-top: 30px
+		margin-left: 10px
+		width: 36px
+		height: 26px
+		background-color: $n
+		background-image: url("../img/icons/burger__menu_480.png")
+.footer__nav
+	float: left
+	+clr
+.footer__menu
+	margin-right: 35px
+	float: left
+	margin-top: 15px
+	+r(400)
+		display: none
+	h5
+		display: inline-block
+		margin-bottom: 20px
+		a
+			color: #DCE9FB
+			font-size: 12px
+			text-decoration: underline
+			font-family: Arial, sans-serif
+			&:hover
+				text-decoration: none
+	a
+		display: block
+		font-size: 12px
+		color: #7BB4D8
+		line-height: 20px
+		font-family: Arial, sans-serif
+		&:hover
+			text-decoration: underline
+.footer__soc
+	float: right
+	margin-top: 25px
 
-
+.copy
+	font-size: 11px
+	margin-top: 15px
+	color: #7BB4D8
+	font-family: Arial, sans-serif
+.soc_vk
+	width: 17px
+	height: 10px
+	background-image: url("../img/icons/vk.png")
+.soc_tw
+	width: 14px
+	height: 10px
+	background-image: url("../img/icons/tw.png")
+.soc_f
+	width: 7px
+	height: 14px
+	background-image: url("../img/icons/f.png")
+.soc_you
+	width: 9px
+	height: 12px
+	background-image: url("../img/icons/you.png")
