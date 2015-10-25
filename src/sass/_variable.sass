@@ -28,3 +28,64 @@ a
 		background-color: #D64242
 		&:hover
 			background-color: lighten(#D64242, 10%)
+
+
+
+//  title
+
+
+.title__slider
+	position: relative
+	text-align: center
+	margin: 30px 0 20px
+	h6
+		position: relative
+		display: inline-block
+		font-size: 24px
+		text-transform: uppercase
+		color: #2C3A45
+		+ub
+		&:before
+			content: ""
+			position: absolute
+			top: 15px
+			left: -230px
+			width: 125px
+			height: 2px
+			background-image: url("../img/icons/slider_dot_l.png")
+		&:after
+			content: ""
+			position: absolute
+			top: 15px
+			right: -230px
+			width: 125px
+			height: 2px
+			background-image: url("../img/icons/slider_dot_r.png")
+
+
+
+// slider
+
+
+.slider_prev,
+.slider_next
+	margin: 0 40px 0 30px
+	position: relative
+	top: 7px
+	background-color: #D7E7F9
+	width: 30px
+	height: 30px
+	-webkit-border-radius: 100%
+	border-radius: 100%
+	&:hover
+		background-color: darken(#D7E7F9, 20%)
+	&:before
+		content: ""
+		+vcenter
+		background-image: url("../img/icons/slide_prev.png")
+		width: 13px
+		height: 13px
+.slider_next
+	margin: 0 30px 0 40px
+	&:before
+		background-image: url("../img/icons/slide_next.png")

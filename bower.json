@@ -11,7 +11,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "jquery": "2.*"
+    "jquery": "2.*",
+    "slick-carousel": "~1.5.8"
   },
   "devDependencies": {
     "jquery-validation": "~1.13.1"
