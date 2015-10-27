@@ -29,6 +29,44 @@ a
 		&:hover
 			background-color: lighten(#D64242, 10%)
 
+.btn__search
+	position: relative
+	padding: 0 20px
+	font-family: Arial, sans-serif
+	font-size: 14px
+	color: #4F4113
+	font-weight: bold
+	height: 40px
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	z-index: 5
+	+g(#f6ea79, #dbbc51)
+	&:hover
+		+g(#dbbc51, #f6ea79)
+	&:active
+		-webkit-box-shadow: inset 0 0 8px 0 #fff
+		box-shadow: inset 0 0 8px 0 #fff
+
+
+
+
+
+
+.line
+	position: relative
+	margin: 30px 0
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		width: 38%
+		top: 19px
+		height: 2px
+		background-color: #DFEBFB
+	&:before
+		left: 0
+	&:after
+		right: 0
 .role__up
 	position: absolute
 	top: 10px
@@ -65,12 +103,13 @@ a
 	font-size: 12px
 	font-family: Arial, sans-serif
 	margin-right: 5px
+	margin-bottom: 2px
 	&.is_active,
 	&:hover
 		color: #6F83A6
 		background-color: #d2e3f9
 		border-radius: 3px
-		box-shadow: inset 0.695px 0.719px 1px 0px rgba(54, 132, 227, 0.22);
+		box-shadow: inset 0.695px 0.719px 1px 0px rgba(54, 132, 227, 0.22)
 
 
 
@@ -119,6 +158,7 @@ a
 	font-family: Arial, sans-serif
 	text-align: left
 	font-weight: bold
+	padding-left: 5px
 
 
 
@@ -147,3 +187,18 @@ a
 	margin: 0 30px 0 40px
 	&:before
 		background-image: url("../img/icons/slide_next.png")
+
+.more
+	position: relative
+	color: #3684E3
+	font-size: 12px
+	font-family: Arial, sans-serif
+	&:after
+		content: ""
+		position: absolute
+		top: 5px
+		right: -10px
+		width: 5px
+		height: 3px
+		background-image: url("../img/icons/bird__top.png")
+		+rotate(90)

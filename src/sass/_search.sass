@@ -1,6 +1,6 @@
 .search
 	text-align: center
-	+g3(#deeafb 10%, #fff 40%, #e1edfb 100%)
+	+g3(#deeafb 4%, #fff 15%, #e1edfb 100%)
 	+clr
 .search__title
 	text-align: center
@@ -81,12 +81,12 @@
 			margin: 9px 10px 0 0
 			vertical-align: top
 
-.icon_film
+.icon_fil
 	background-image: url("../img/icons/icon_1.png")
 	width: 23px
 	height: 18px
 
-.icon_serial
+.icon_ser
 	background-image: url("../img/icons/icon_2.png")
 	width: 21px
 	height: 19px
@@ -96,12 +96,97 @@
 	width: 20px
 	height: 20px
 
-.icon_mult
+.icon_mul
 	background-image: url("../img/icons/icon_4.png")
 	width: 19px
 	height: 18px
 
-.icon_sport
+.icon_spor
 	background-image: url("../img/icons/icon_5.png")
 	width: 18px
 	height: 20px
+
+
+.year
+	margin: 0 0 35px 0
+	padding: 25px 0
+	overflow: hidden
+
+.year > span
+	font-size: 18px
+	line-height: 18px
+	color: #000
+	display: block
+	margin-bottom: 35px
+	font-family: Arial, sans-serif
+	font-weight: bold
+
+.ruler
+	float: right
+	position: relative
+	border-left: 1px solid #c6dcf7
+	width: 100%
+	height: 12px
+
+.noUi-background
+	background: url(../img/ruler_p.png) 0 0 repeat-x
+	height: 12px
+	border-radius: 3px
+	position: relative
+
+div.noUi-handle
+	display: block
+	position: absolute
+	top: -21px
+	left: -26px
+	width: 52px
+	height: 52px
+	border-radius: 50%
+	background-color: #f0f8fd
+	background: linear-gradient(135deg, #fff 0%, #eaf6fd 100%)
+	box-shadow: 2px 2px 5px rgba(137,161,191,0.4), 0 0 6px rgba(255,255,255,0.8) inset
+	font-size: 14px
+	line-height: 52px
+	font-weight: bold
+	color: #3888e4
+	text-align: center
+	cursor: pointer
+	z-index: 1
+
+div.noUi-handle:hover
+	background: #F6F9FE
+
+.noUi-target
+
+
+.noUi-base
+	width: 100%
+	height: 100%
+	position: relative
+
+.noUi-origin
+	position: absolute
+	right: 0
+	top: 0
+	left: 0
+	bottom: 0
+
+.noUi-stacking .noUi-handle
+	z-index: 10
+.noUi-stacking + .noUi-origin
+	*z-index: -1
+
+.noUi-state-tap .noUi-origin
+	-webkit-transition: left 0.3s, top 0.3s
+	transition: left 0.3s, top 0.3s
+
+.noUi-connect
+	height: 12px
+	border-radius: 3px
+	background: url(../img/ruler_a.png) 0 0 repeat-x
+	transition: background 450ms
+
+.noUi-dragable
+	cursor: w-resize
+.noUi-vertical .noUi-dragable
+	cursor: n-resize
