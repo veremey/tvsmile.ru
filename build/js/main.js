@@ -37,6 +37,10 @@ $(document).ready(function() {
 	});
 });
 
+
+	//  recomended slider
+
+
 $('.slider__recomend').slick({
 	infinite: true,
 	slidesToShow: 4,
@@ -45,5 +49,7 @@ $('.slider__recomend').slick({
 	adaptiveHeight: true,
 	variableWidth: true,
 	autoplay: true,
-	autoplaySpeed: 20000
+	autoplaySpeed: 20000,
+	prevArrow: $('.js-page__back'),
+	nextArrow: $('.js-page__next')
 });
