@@ -39,6 +39,14 @@ $(document).ready(function() {
 	$('.burger').on('click', function() {
 		$('.navigation').toggleClass('is_active');
 	});
+
+	// скрыть панель поиска
+
+	$('.role__up').on('click', function() {
+		$('.search_wraper').slideToggle();
+		return false;
+	});
+
 });
 
 

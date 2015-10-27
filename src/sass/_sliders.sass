@@ -51,15 +51,29 @@
 	+clr
 .slider__video_item
 	float: left
-	// width: 50%
-	width: 384px
-	padding-right: 10px
+	width: 50vw
+	max-width: 384px
+	// padding-right: 10px
+	margin-right: 10px
 	+box
 	+clr
 .video__img
+	position: relative
 	float: left
 	margin-right: 10px
 	max-width: 155px
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 99%
+		height: 99%
+		-webkit-border-radius: 25%
+		border-radius: 7%
+		-webkit-box-shadow: 0 0 8px 0 #9ab0ce
+		box-shadow: 0 0 8px 0 #9ab0ce
+		z-index: -1
 	img
 		max-width: 100%
 		vertical-align: top
