@@ -11,6 +11,18 @@ $(document).ready(function() {
 		return false;
 	});
 
+	// сортировка в каталог.хтмл
+
+	$('.sorting').click(function() {
+		$(this).toggleClass('is_active');
+		return false;
+	});
+	// sidebar catalog.html
+	$('.sidebar__catalog li a').click(function() {
+		$(this).toggleClass('is_active');
+		return false;
+	});
+
 });
 
 

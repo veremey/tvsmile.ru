@@ -28,6 +28,7 @@
 	text-align: center
 	padding: 15px 0px
 	white-space: pre-line
+	word-wrap: break-word
 	+box
 	+clr
 	strong
@@ -36,6 +37,7 @@
 		color: #000
 		font-weight: 100
 		letter-spacing: -.3px
+
 	p
 		font-family: Arial, sans-serif
 		font-size: 11px
@@ -114,3 +116,56 @@
 .slider__mult
 	margin-bottom: 30px
 	+clr
+
+
+// #####################
+// ---------------------
+// SlDER BLUE
+
+.slider_blue
+	background-color: #0B1A2C
+	padding-top: 1px
+	+clr
+	.title__slider
+		h6
+			color: #FFF
+			&:before,
+			&:after
+				display: none
+		span
+			text-transform: uppercase
+			color: #E8DB6B
+			font-size: 24px
+			+ub
+		.slider_next,
+		.slider_prev
+			background-color: #143051
+		.slider_next
+			&:before
+				background-image: url("../img/icons/pi_next.png")
+				width: 16px
+				height: 17px
+		.slider_next:hover::before
+			background-image: url("../img/icons/pi_next_h.png")
+			width: 19px
+			height: 19px
+
+		.slider_prev
+			&:before
+				background-image: url("../img/icons/pi_prev.png")
+				width: 15px
+				height: 17px
+		.slider_prev:hover::before
+			background-image: url("../img/icons/pi_prev_h.png")
+			width: 19px
+			height: 19px
+	.recomend__text
+		height: 93px
+		padding: 0
+		strong
+			color: #FFF
+			line-height: 1.2
+		p
+			font-size: 11px
+			line-height: 18px
+			+a
