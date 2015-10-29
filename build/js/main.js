@@ -111,6 +111,14 @@ $('.slider__mult').slick({
 	nextArrow: $('.js-mult__next')
 });
 
+$('.slider__great').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	autoplay: true,
+	autoplaySpeed: 10000
+});
+
 
 
 /* Слайдер для выбора года */

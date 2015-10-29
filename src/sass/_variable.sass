@@ -6,6 +6,10 @@ a
 	display: table
 	height: 0
 
+.hide600
+	+r(600)
+		display: none
+
 .breadcrumbs
 	background-color: #0b1a2c
 	+clr
@@ -16,12 +20,16 @@ a
 		line-height: 40px
 		margin-right: 15px
 		+a
+		+r(600)
+			font-size: 18px
 	span
 		font-size: 12px
 		color: #5B829A
 		line-height: 40px
 		margin-left: 15px
 		+a
+		+r(600)
+			font-size: 18px
 
 
 
@@ -83,7 +91,34 @@ a
 		color: #52AFE9
 		font-size: 14px
 		+a
+		+r(600)
+			font-size: 18px
 
+
+.btn_see
+	position: relative
+	width: 163px
+	height: 38px
+	margin-top: 15px
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	text-align: left
+	padding: 0 20px
+	color: #4E4013
+	font-size: 14px
+	+a
+	font-weight: bold
+	+g(#eedb6e, #dab94f)
+	&:hover
+		+g(#dab94f, #eedb6e)
+	&:after
+		content: ""
+		position: absolute
+		top: 7px
+		right: 20px
+		width: 23px
+		height: 23px
+		background-image: url("../img/icons/play.png")
 
 
 
@@ -207,6 +242,8 @@ a
 	font-size: 14px
 	color: #000
 	+a
+	+r(600)
+		font-size: 18px
 
 // slider
 
@@ -263,3 +300,5 @@ a
 	+a
 	strong
 		font-weight: bold
+	+r(600)
+		font-size: 16px

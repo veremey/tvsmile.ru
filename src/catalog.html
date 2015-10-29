@@ -16,25 +16,59 @@
 		</div>
 	</div>
 
-<!-- slider  +  input -->
-	//= includes/search_btn.html
-
-	//= includes/search_big.html
-
-	<div class="slider_blue">
-		<div class="title__slider">
-			<button class="slider_prev js-page__back"></button>
-			<h6>Лучшие <span>топ-10</span></h6>
-			<button class="slider_next js-page__next"></button>
+	<div class="slider__great">
+		<div class="slider__great_item">
+			<div class="slider__great_img">
+				<img src="img/me4.jpg" alt="Иллюстрация">
+			</div>
+			<div class="slider__great_text">
+				<h5>Игра престолов</h5>
+				<div class="slider__great_info">
+					<p class="country">Fury, США, 1994</p>
+					<span>8.4</span>
+					<button>Новинки</button>
+					<p class="slider__great_punkt">Военная драма. Стоит апрель 1945 года, и победа над немцами уже близка: союзники уверенно продвигаются вглубь вражеской территории, и оказываемое им сопротивление становится <a href="#" class="more">ещё...</a></p>
+				</div>
+				<button class="btn_see">К просмотру</button>
+			</div>
 		</div>
-		//= includes/slider_recomended.html
+		<div class="slider__great_item">
+			<div class="slider__great_img">
+				<img src="img/me4.jpg" alt="Иллюстрация">
+			</div>
+			<div class="slider__great_text">
+				<h5>Игра престолов</h5>
+				<div class="slider__great_info">
+					<p class="country">Fury, США, 1994</p>
+					<span>8.4</span>
+					<button>Новинки</button>
+					<p class="slider__great_punkt">Военная драма. Стоит апрель 1945 года, и победа над немцами уже близка: союзники уверенно продвигаются вглубь вражеской территории, и оказываемое им сопротивление становится <a href="#" class="more">ещё...</a></p>
+				</div>
+				<button class="btn_see">К просмотру</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="hide600">
+		//= includes/search_btn.html
+
+		//= includes/search_big.html
+
+		<div class="slider_blue">
+			<div class="title__slider">
+				<button class="slider_prev js-page__back"></button>
+				<h6>Лучшие <span>топ-10</span></h6>
+				<button class="slider_next js-page__next"></button>
+			</div>
+			//= includes/slider_recomended.html
+		</div>
 	</div>
 
 	<!-- begin container  -->
 	<div class="container">
 		<div class="title__slider">
 			<h6>Лучшие <span>топ-10</span></h6>
-			<div class="sorting is_active">
+			<div class="sorting is_active hide600">
 				<div class="sorting__wrap">
 					<a href="#" class="soting__link">
 						<span>Сортировать по</span>
@@ -50,7 +84,7 @@
 			</div>
 		</div>
 
-		<aside class="sidebar__catalog">
+		<aside class="sidebar__catalog hide600">
 			<ul>
 				<li><a href="#"><span>Мелодрама</span></a></li>
 				<li><a href="#"><span>Приключения</span></a></li>
