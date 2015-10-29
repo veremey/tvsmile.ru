@@ -22,6 +22,12 @@ $(document).ready(function() {
 		$(this).toggleClass('is_active');
 		return false;
 	});
+	// расширеный поиск
+	$('.search__go').click(function() {
+		$(this).toggleClass('is_active');
+		$('.search_big').slideToggle();
+		return false;
+	});
 
 });
 
