@@ -1,8 +1,8 @@
 $(document).ready(function() {
-	//хедер меню бутербродиком
-	$('.burger').on('click', function() {
-		$('.navigation').toggleClass('is_active');
-	});
+	// //хедер меню бутербродиком
+	// $('.burger').on('click', function() {
+	// 	$('.navigation').toggleClass('is_active');
+	// });
 
 	// скрыть панель поиска
 
@@ -27,6 +27,28 @@ $(document).ready(function() {
 		$(this).toggleClass('is_active');
 		$('.search_big').slideToggle();
 		return false;
+	});
+	// popup
+	$('.js_popup').on('click', function() {
+		$(this).removeClass('is_active');
+		$('.js_popup_enter').removeClass('is_active');
+		$('.js_popup_registr').removeClass('is_active');
+		$('.js_navigation').removeClass('is_active');
+	});
+	// popup входа
+	$('.js_enter').on('click', function() {
+		$('.js_popup').toggleClass('is_active');
+		$('.js_popup_enter').toggleClass('is_active');
+	});
+	// popup регистрации
+	$('.js_registr').on('click', function() {
+		$('.js_popup').toggleClass('is_active');
+		$('.js_popup_registr').toggleClass('is_active');
+	});
+	// popup регистрации
+	$('.js_burger').on('click', function() {
+		$('.js_popup').toggleClass('is_active');
+		$('.js_navigation').toggleClass('is_active');
 	});
 
 });

@@ -31,6 +31,9 @@ a
 		+r(600)
 			font-size: 18px
 
++selection
+	background-color: rgba(253, 191, 7, .4)
+	color: $blue
 
 
 
@@ -142,6 +145,25 @@ a
 	&:after
 		right: 50%
 		margin-right: -65%
+
+.linear
+	position: relative
+	width: 100%
+	height: 1px
+	background-color: #d6deea
+	margin: 30px 0
+	.liner_item
+		position: absolute
+		width: auto
+		top: -8px
+		left: 50%
+		transform: translateX(-50%)
+		padding: 0 10px
+		background-color: #fff
+		-ms-word-wrap: normal
+		word-wrap: normal
+		white-space: nowrap
+
 
 
 .role__up
@@ -302,3 +324,24 @@ a
 		font-weight: bold
 	+r(600)
 		font-size: 16px
+
+.icon-f,
+.icon-tw,
+.icon-vk,
+.icon-g
+	display: inline-block
+	width: 47px
+	height: 46px
+	vertical-align: top
+	margin-right: 10px
+	&:last-child
+		margin-right: 0
+.icon-f
+	background-image: url('../img/icons/icon-f.png')
+.icon-tw
+	background-image: url('../img/icons/icon-tw.png')
+.icon-vk
+	background-image: url('../img/icons/icon-vk.png')
+.icon-g
+	background-image: url('../img/icons/icon-g.png')
+

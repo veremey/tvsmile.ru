@@ -16,14 +16,14 @@
 		<div class="header__top">
 			<div class="container">
 				<div class="header__nav">
-					<button class="burger"></button>
+					<button class="burger js_burger"></button>
 					<a href="/" class="logo"><h1 >tvsmile</h1></a>
 					<form action="." class="form__header">
 						<input type="text" name="hederSearch" >
 						<button class="icon__lupa"></button>
 					</form>
 					<nav>
-						<ul class="navigation">
+						<ul class="navigation js_navigation">
 							<li class="navigation__item"><a href="#">Главная</a></li>
 							<li class="navigation__item"><a href="#">Кино</a></li>
 							<li class="navigation__item"><a href="#">Сериалы</a>
@@ -51,12 +51,12 @@
 				</div>
 				<div class="enter">
 					<a href="#" class="enter__box"></a>
-					<a href="#" class="enter__user">
+					<a href="#" class="enter__user js_registr">
 						<div class="user__ava">
 							<img src="img/icons/ava.png" alt="Иллюстрация">
 						</div>
 						<span>Наталья</span></a>
-					<a href="#" class="enter__exit">Выйти</a>
+					<a href="#" class="enter__exit js_enter">Выйти</a>
 				</div>
 			</div>
 		</div>
@@ -88,6 +88,7 @@
 			</ul>
 		</nav>
 	</header>
+
 	<div class="slider">
 		<div class="title__slider">
 			<button class="slider_prev js-page__back"></button>
@@ -476,6 +477,37 @@
 		</div>
 	</footer>
 </div>
+<!-- popup -->
+<div class="popup js_popup"></div>
+<div class="popup__box js_popup_registr">
+	<h3>Регистрация<i class="treagle_top"></i></h3>
+	<p>Зарегистрируйтесь если у вас нет логина и пароля</p>
+	<form action="/" >
+		<input type="text" name=","  placeholder="Логин" autocomplete="on" requred>
+		<input type="password" name="." placeholder="Пароль" requred>
+		<input type="email" name="emailC" id="frmEmailC" placeholder="E-mail" requred autocomplete="email">
+		<button type="submit">ЗареГИСтрироваться</button>
+		<div class="linear">
+			<p class="liner_item">Или войдите с помощью:</p>
+		</div>
+		<div class="socico">
+			<i class="icon-f"></i>
+			<i class="icon-tw"></i>
+			<i class="icon-vk"></i>
+			<i class="icon-g"></i>
+		</div>
+	</form>
+</div>
+<div class="popup__box js_popup_enter">
+	<h3>Войти <i class="treagle_top"></i></h3>
+	<p>Зарегистрируйтесь если у вас нет логина и пароля</p>
+	<form action="/" >
+		<input type="text" name="" id="" placeholder="Логин" autocomplete="on" requred>
+		<input type="password" name="" id="" placeholder="Пароль" requred>
+		<button type="submit">Войти на сайт <i class="icon__check"></i></button>
+	</form>
+</div>
+
 <script src="js/main.js"></script>
 </body>
 </html>

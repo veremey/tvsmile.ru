@@ -1,0 +1,79 @@
+.popup
+	+coverdiv
+	position: fixed
+	background-color: rgba(0, 0, 0, .6)
+	z-index: 300
+	display: none
+	&.is_active
+		display: block
+.popup__box
+	display: none
+	position: absolute
+	top: 100px
+	left: 50%
+	margin-left: -136px
+	padding: 24px 20px
+	text-align: center
+	z-index: 1000
+	background-color: #fff
+	width: 274px
+	+clr
+	&.is_active
+		display: block
+	h3
+		position: relative
+		font-size: 30px
+		color: #000
+		+ur
+		.treagle_top
+			display: inline-block
+			position: absolute
+			top: -34px
+			left: 50%
+			margin-left: -5px
+			+arr(10, 10, #fff, br)
+			+rotate(360)
+	p
+		font-size: 11px
+		color: #8A93A3
+		text-align: center
+		width: 190px
+		margin: 0 auto
+		+ur
+	form
+		margin-top: 15px
+		input,
+		button
+			width: 100%
+			height: 46px
+			text-align: center
+			border-radius: 46px
+			-webkit-border-radius: 46px
+		input
+			color: #fff
+			padding: 0 20px
+			background-color: #142841
+			margin-bottom: 10px
+			+placeholder
+				font-size: 12px
+				color: #8A93A3
+				+a
+		button
+			position: relative
+			text-transform: uppercase
+			color: #4E4013
+			vertical-align: top
+			line-height: 45px
+			+g(#f7ea7a, #d1ac47)
+			+ub
+			&:hover
+				+g(#d1ac47, #f7ea7a)
+			&:active
+				opacity: .7
+			.icon__check
+				display: inline-block
+				margin: 15px 0 0 10px
+				width: 16px
+				height: 16px
+				vertical-align: top
+				background-image: url("../img/icons/ent1.png")
