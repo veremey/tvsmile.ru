@@ -34,6 +34,7 @@ $(document).ready(function() {
 		$('.js_popup_enter').removeClass('is_active');
 		$('.js_popup_registr').removeClass('is_active');
 		$('.js_navigation').removeClass('is_active');
+		$('.crumbs600 li').removeClass('is_active');
 	});
 	// popup входа
 	$('.js_enter').on('click', function() {
@@ -49,6 +50,12 @@ $(document).ready(function() {
 	$('.js_burger').on('click', function() {
 		$('.js_popup').toggleClass('is_active');
 		$('.js_navigation').toggleClass('is_active');
+	});
+
+	// popup хлебные крошки
+	$('.js_crumbs').on('click', function() {
+		$('.js_popup').toggleClass('is_active');
+		$('.crumbs600 li').toggleClass('is_active');
 	});
 
 });
@@ -106,28 +113,3 @@ $('.slider__great').slick({
 });
 
 
-
-/* Слайдер для выбора года */
-
-var price_slider = $('.ruler').noUiSlider({
-	start: [1994, 2001],
-	step: 1,
-	connect: true,
-	range: {
-		'min': [1980],
-		'max': [2020]
-	},
-	format: wNumb({
-		decimals: 0,
-		thousand: '',
-		postfix: '',
-	})
-});
-
-price_slider.Link('lower').to($('input[name="year_start"]'));
-
-price_slider.Link('lower').to($('.noUi-handle-lower'), 'text');
-
-price_slider.Link('upper').to($('input[name="year_end"]'));
-
-price_slider.Link('upper').to($('.noUi-handle-upper'), 'text');
