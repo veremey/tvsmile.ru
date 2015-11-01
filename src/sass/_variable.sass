@@ -184,8 +184,25 @@ a
 		width: 23px
 		height: 23px
 		background-image: url("../img/icons/play.png")
-
-
+.btn_comment
+	padding: 0 10px
+	height: 24px
+	background-color: #DCE9FB
+	color: #6F83A6
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	i
+		display: inline-block
+		width: 10px
+		height: 8px
+		margin-left: 5px
+		background-image: url("../img/icons/arrow.png")
+	&:hover
+		opacity: 0.8
+	&:active
+		-webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .3)
+		box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .3)
+		opacity: 1
 
 .line
 	position: relative
@@ -329,6 +346,19 @@ a
 	+r(600)
 		font-size: 18px
 
+.title__text
+	font-size: 22px
+	color: #000
+	margin: 15px 0 10px //??????
+	+a
+.title__prise
+	font-size: 14px
+	color: #000
+	line-height: 1
+	+a
+
+
+
 // slider
 
 .slider_prev
@@ -375,6 +405,8 @@ a
 		height: 3px
 		background-image: url("../img/icons/bird__top.png")
 		+rotate(90)
+	&:hover
+		text-decoration: underline
 
 
 .just_text

@@ -23,3 +23,15 @@ price_slider.Link('lower').to($('.noUi-handle-lower'), 'text');
 price_slider.Link('upper').to($('input[name="year_end"]'));
 
 price_slider.Link('upper').to($('.noUi-handle-upper'), 'text');
+
+$(document).ready(function() {
+	$('.search__category li').on('click', function() {
+		$(this).addClass('is_active').siblings().removeClass('is_active');
+			return false;
+	});
+
+	$('.search .column .ganre__item').on('click', function() {
+		$(this).toggleClass('is_active');
+		return false;
+	});
+});

@@ -58,6 +58,13 @@ $(document).ready(function() {
 		$('.crumbs600 li').toggleClass('is_active');
 	});
 
+	// скрыть награды
+	$('.js_price__more').on('click', function() {
+		$('.js_prise_hide').slideToggle();
+		return false;
+	});
+
+
 });
 
 

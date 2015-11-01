@@ -1,6 +1,10 @@
 .actor__face
 	float: left
-	width: 215px
+	// width: 215px
+	// margin-right: 20px
+	width: 28%
+	margin-right: 2%
+	margin-bottom: 20px
 	+clr
 	img
 		max-width: 100%
@@ -24,13 +28,14 @@
 		line-height: 41px
 		padding: 0 15px
 		+a
-		box-shadow: inset -2px -2px 8px 0px #7ac03c
+		background: linear-gradient(135deg, #fff 0%, #feffff 50%, #cde8b7 100%)
+		box-shadow: 1px 1px 1px 1px #bed6aa
 		+tr(.3s)
 		&:hover
-			box-shadow: inset -2px -2px 12px 0px #7ac03c
+			background: linear-gradient(135deg, #fff 0%, #feffff 0%, #cde8b7 100%)
 		&:active
-			box-shadow: inset -2px -2px 40px 0px #7ac03c
-			+tr(.2s)
+			box-shadow: -1px 1px 1px 1px #bed6aa inset
+
 	&__down
 		position: relative
 		width: 50%
@@ -41,12 +46,14 @@
 		line-height: 41px
 		padding: 0 15px
 		+a
-		box-shadow: inset 2px -2px 8px 0px #DD4D4D
+		background: linear-gradient(45deg, #f2c0c0 0%, #feffff 50%, #fff 100%)
+		box-shadow: 1px 1px 1px 1px #c5a2a2
 		+tr(.3s)
 		&:hover
-			box-shadow: inset 2px -2px 12px 0px #DD4D4D
+			background: linear-gradient(45deg, #f2c0c0 0%, #feffff 100%, #fff 100%)
 		&:active
-			box-shadow: inset 2px -2px 40px 0px #DD4D4D
+			box-shadow: 1px 1px 1px 1px #c5a2a2 inset
+
 .icon-up,
 .icon-down
 	position: absolute
@@ -61,3 +68,185 @@
 	top: 7px
 	left: 20px
 	background-image: url("../img/icons/icon-down.png")
+
+// ##################
+// ------------------
+// info
+//  __________-
+
+.info
+	// overflow: hidden
+	+clr
+	hr
+		border: 1px solid $n
+		border-bottom: 1px solid #e8e9ed
+.info__name
+	padding-bottom: 5px
+	h2
+		font-size: 22px
+		line-height: 1
+		margin-bottom: 5px
+		color: #000
+		+um
+	h4
+		font-size: 11px
+		color: $gray
+		+um
+.info__birthday
+	display: inline-block
+	vertical-align: top
+	width: 70%
+	padding-bottom: 5px
+	border-bottom: 1px solid #e8e9ed
+	p
+		display: inline-block
+		min-width: 117px
+		vertical-align: top
+		font-size: 12px
+		color: #606060
+	span
+		// display: inline-block
+		font-size: 12px
+		color: #8A93A3
+		vertical-align: top
+		+a
+	+clr
+.info__text
+	hr
+		margin-top: 20px
+	h3
+		margin: 15px 0 10px
+	p
+		font-size: 12px
+		color: $gray
+		+a
+
+
+// ##############
+// ---------
+//  PRISE
+
+.prise
+	width: 100%
+	clear: both
+	float: left
+	margin-top: 10px
+	+clr
+	.title__text
+		float: left
+		margin-top: 5px
+		margin-right: 20px
+.prise__wrap
+	float: left
+	+clr
+.prise__item
+	display: inline-block
+	width: 170px
+	margin-left: 20px
+	margin-bottom: 10px
+	+clr
+.prise__img
+	float: left
+	vertical-align: top
+	width: 45px
+	margin-right: 10px
+	img
+		max-width: 100%
+		vertical-align: top
+.prise__text
+	padding: 5px 0
+	+clr
+	p
+		font-size: 12px
+		color: $gray
+		+a
+// .title__prise
+// 	margin-top: 5px
+
+.price__more
+	float: right
+	width: 110px
+	margin-top: 5px
+	padding: 0 0 0 20px
+	border-left: 1px solid #e8e9ed
+	color: $gray
+	font-size: 11px
+	+a
+
+
+.prise_hide
+	+clr
+	.prise__item:nth-child(4n+1)
+		margin-left: 0
+
+
+// ###############
+// ---------------
+// COMMENT
+
+.comment
+	margin-bottom: 25px
+	display: table
+	width: 100%
+	padding-bottom: 10px
+	border-bottom: 1px dashed #e5e5e5
+	+clr
+.comment__left
+	display: table-cell
+	padding: 0 20px
+	width: 155px
+	text-align: right
+	.title__prise
+		line-height: 1
+		margin-bottom: 5px
+	p
+		color: #B3B3B3
+		font-size: 11px
+		line-height: 18px
+	.rate
+		color: #B3B3B3
+.comment__right
+	display: table-cell
+	+clr
+.comment__text
+	font-size: 11px
+	color: $gray
+	padding-bottom: 20px
+	+a
+.comment__buttons
+	margin-bottom: 10px
+	+clr
+.comment__more
+	margin-left: 20px
+	color: #6f83a6
+	font-size: 11px
+	+a
+	&:hover
+		span
+			border-bottom: 1px solid $n
+	span
+		border-bottom: 1px dotted #6f83a6
+
+.comment__sub
+	&_wrap
+		margin: 15px 0 20px
+	strong
+		font-size: 13px
+		color: #000
+		+a
+	span
+		font-size: 10px
+		color: #B3B3B3
+		margin-left: 10px
+		+a
+.comment__sub_commit
+	position: relative
+	padding: 0 0 10px 40px
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 10px
+		width: 16px
+		height: 13px
+		background-image: url("../img/icons/arrow_2.png")
