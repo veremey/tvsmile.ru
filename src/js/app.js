@@ -92,6 +92,36 @@ $(document).ready(function() {
 
 	});
 
+	/* Скрипт для рейтинга */
+
+	$('.stars').each(function(){
+
+		var rating = $(this);
+		var rating_input = rating.parents('form').find('input[name="rating"]');
+		var stars = $('.star > span', rating);
+
+		rating.find('.descr').hover(function(){
+			stars.removeClass('active');
+			rating_input.val(0);
+		});
+
+		stars.each(function(index){
+
+			var current = index + 1;
+
+			$(this).hover (
+				function(){
+					stars.removeClass('active').slice(0, current).addClass('active');
+				},
+				function(){
+					rating_input.val(parseFloat($('.active', rating).length/2));
+				}
+			);
+
+		});
+
+	});
+
 
 });
 

@@ -244,7 +244,48 @@
 				</div>
 			</div>
 		</div>  		<!-- end comment -->
+		//= includes/pages.html
+		<div class="get__comment">
+			<div class="get__comment_top">
+				<h2 class="title__text">Оставить отзыв</h2>
+				<p>Опишите ваши впечетления от данного актера и оцените его</p>
+			</div>
+			<div class="comment__write">
+				<h5 class="title__prise">Иван Сидоров</h5>
+				<div class="comment__write_wrap">
+					<form action="/" >
+						<textarea placeholder="Ваш отзыв..."></textarea>
+					</form>
+					<div class="get__comment_rate">
+						<div class="stars">
+							<span class="descr">Моя оценка</span>
+							<span class="star">
+								<span class="star_l active"></span>
+								<span class="star_r active"></span>
+							</span>
+							<span class="star">
+								<span class="star_l active"></span>
+								<span class="star_r active"></span>
+							</span>
+							<span class="star">
+								<span class="star_l active"></span>
+								<span class="star_r active"></span>
+							</span>
+							<span class="star">
+								<span class="star_l active"></span>
+								<span class="star_r active"></span>
+							</span>
+							<span class="star">
+								<span class="star_l active"></span>
+								<span class="star_r"></span>
+							</span>
+						</div>
+						<input type="submit" value="Оставить отзыв" class="btn_yellow" />
+					</div>
+				</div>
+			</div>
 
+		</div>
 	</div>
 	<!-- end container -->
 
@@ -257,31 +298,6 @@
 //= includes/popup_registr.html
 //= includes/popup_enter.html
 <script src="js/main.js"></script>
-<script type="text/javascript">
-
-
-
-	$('.comment .add_comment').click(function(){
-
-		var button = $(this);
-		var comment = button.parents('.comment');
-		var form = $('.reply.mini');
-
-		if (button.hasClass('active')) {
-			button.text('Комментировать').removeClass('active');
-			form.slideUp(300);
-		} else {
-			$('.comment .add_comment').text('Комментировать').removeClass('active');
-			button.text('Скрыть').addClass('active');
-			form.slideUp(300, function(){
-				comment.after(form);
-				form.slideDown();
-			});
-		}
-
-	});
-
-</script>
 
 </body>
 </html>
