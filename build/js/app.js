@@ -64,6 +64,34 @@ $(document).ready(function() {
 		return false;
 	});
 
+	/* Разворачивание и сворачивание комментариев и формы ответа */
+	$('.comment__more').click(function() {
+		return false;
+	});
+
+	$('.comment__sub').each(function(){
+
+		var comment = $(this).parents('.comment');
+		var comments = $(this).children('.comment__sub_wrap');
+		var button = $(this).siblings().children('.comment__more');
+
+		button.click(function(){
+
+			if (comment.hasClass('extended')) {
+				comment.removeClass('extended');
+				comments./*slideToggle(300)show(300).*/slideUp(300);
+				button.html('<span>Показать комментарии</span> (' + comments.length + ')');
+				return false;
+			} else {
+				comment.addClass('extended');
+				comments/*.slideToggle(300)hide(300)*/.slideDown(300);
+				button.html('<span>Скрыть комментарии</span>');
+			}
+			return false;
+		});
+
+	});
+
 
 });
 

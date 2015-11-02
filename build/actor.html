@@ -315,12 +315,12 @@
 				</div>
 				<div class="comment__buttons">
 					<button class="btn_comment">Комментировать <i></i></button>
-					<a href="#" class="comment__more"><span>Показать комментарии</span> (1)</a>
+					<a class="comment__more"><span>Показать комментарии</span> </a>
 				</div>
 			</div>
 		</div>  		<!-- end comment -->
 		<!-- begin comment  -->
-		<div class="comment">
+		<div class="comment extended">
 			<div class="comment__left">
 				<h5 class="title__prise">Константин Бондаренко</h5>
 				<p>25 июля 2014</p>
@@ -331,30 +331,30 @@
 				</div>
 				<div class="comment__buttons">
 					<button class="btn_comment">Комментировать <i></i></button>
-					<a href="#" class="comment__more"><span>Скрыть комментарии</span> </a>
+					<a class="comment__more"><span>Скрыть комментарии</span> </a>
 				</div>
 
 				<div class="comment__sub">
 					<div class="comment__sub_wrap">
 						<strong class="comment__sub_name">Петр Власов</strong>
 						<span class="comment__sub_date">25 июля 2014</span>
+						<div></div>
+						<div class="comment__sub_commit">
+							<p>В результате он нашёл неоспоримый первоисточник Lorem Ipsum</p>
+						</div>
 					</div>
-					<div class="comment__sub_commit">
-						<p>В результате он нашёл неоспоримый первоисточник Lorem Ipsum</p>
-					</div>
-				</div>
 
-				<div class="comment__sub">
 					<div class="comment__sub_wrap">
 						<strong class="comment__sub_name">Петр Власов</strong>
 						<span class="comment__sub_date">25 июля 2014</span>
-					</div>
-					<div class="comment__sub_commit">
-						<p>Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. </p>
+						<div></div>
+						<div class="comment__sub_commit">
+							<p>Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. </p>
+						</div>
 					</div>
 				</div>
-
 			</div>
+
 		</div>  		<!-- end comment -->
 		<!-- begin comment  -->
 		<div class="comment">
@@ -368,29 +368,19 @@
 				</div>
 				<div class="comment__buttons">
 					<button class="btn_comment">Комментировать <i></i></button>
-					<a href="#" class="comment__more"><span>Показать комментарии</span> (1)</a>
+					<a class="comment__more"><span>Показать комментарии</span> (1)</a>
 				</div>
 
-				<div class="comment__sub">
+				<div class="comment__sub" >
 					<div class="comment__sub_wrap">
 						<strong class="comment__sub_name">Петр Власов</strong>
 						<span class="comment__sub_date">25 июля 2014</span>
-					</div>
-					<div class="comment__sub_commit">
-						<p>В результате он нашёл неоспоримый первоисточник Lorem Ipsum</p>
-					</div>
-				</div>
-
-				<div class="comment__sub">
-					<div class="comment__sub_wrap">
-						<strong class="comment__sub_name">Петр Власов</strong>
-						<span class="comment__sub_date">25 июля 2014</span>
-					</div>
-					<div class="comment__sub_commit">
-						<p>Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. </p>
+						<div></div>
+						<div class="comment__sub_commit">
+							<p>В результате он нашёл неоспоримый первоисточник Lorem Ipsum</p>
+						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>  		<!-- end comment -->
 
@@ -474,5 +464,31 @@
 	</form>
 </div>
 <script src="js/main.js"></script>
+<script type="text/javascript">
+
+
+
+	$('.comment .add_comment').click(function(){
+
+		var button = $(this);
+		var comment = button.parents('.comment');
+		var form = $('.reply.mini');
+
+		if (button.hasClass('active')) {
+			button.text('Комментировать').removeClass('active');
+			form.slideUp(300);
+		} else {
+			$('.comment .add_comment').text('Комментировать').removeClass('active');
+			button.text('Скрыть').addClass('active');
+			form.slideUp(300, function(){
+				comment.after(form);
+				form.slideDown();
+			});
+		}
+
+	});
+
+</script>
+
 </body>
 </html>

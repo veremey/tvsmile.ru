@@ -169,8 +169,9 @@ gulp.task('sprite:build', function() {
             .pipe(spritesmith({
                 imgName: 'sprite.png',
                 cssName: '_sprite.sass',
+                imgPath: '../img/sprite.png',//add
                 cssFormat: 'sass',
-                algorithm: 'binary-tree',
+                // algorithm: 'binary-tree', old
                 cssTemplate: 'sass.template.mustache',
                 cssVarMap: function(sprite) {
                     sprite.name = sprite.name

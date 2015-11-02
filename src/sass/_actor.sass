@@ -184,6 +184,7 @@
 // ---------------
 // COMMENT
 
+
 .comment
 	margin-bottom: 25px
 	display: table
@@ -191,6 +192,14 @@
 	padding-bottom: 10px
 	border-bottom: 1px dashed #e5e5e5
 	+clr
+	&.extended
+		.comment__sub_wrap
+			// +tr(.3s)
+			display: block
+			// display: none
+
+
+
 .comment__left
 	display: table-cell
 	padding: 0 20px
@@ -220,6 +229,7 @@
 	margin-left: 20px
 	color: #6f83a6
 	font-size: 11px
+	cursor: pointer
 	+a
 	&:hover
 		span
@@ -229,6 +239,7 @@
 
 .comment__sub
 	&_wrap
+		display: none
 		margin: 15px 0 20px
 	strong
 		font-size: 13px
