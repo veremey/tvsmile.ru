@@ -208,17 +208,17 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts))
 });
 
-gulp.task('build', [
-    'html:build',
-    'jade:build',
-    // 'css:build',
-    'js:build',
-    'sass:build',
-    'sprite:build',
-    'fonts:build',
-    'image:build',
-    'svg:build'
-]);
+// gulp.task('build', [
+//     'html:build',
+//     'jade:build',
+//     // 'css:build',
+//     'js:build',
+//     'sass:build',
+//     'sprite:build',
+//     'fonts:build',
+//     'image:build',
+//     'svg:build'
+// ]);
 
 
 gulp.task('watch', function(){
@@ -253,4 +253,16 @@ gulp.task('watch', function(){
 });
 
 
-gulp.task('default', ['build', 'webserver', 'watch', 'copycss']);
+gulp.task('default', ['build', 'webserver', 'watch', 'copycss'], function() {});
+
+gulp.task('build', [
+    'html:build',
+    'jade:build',
+    // 'css:build',
+    'js:build',
+    'sass:build',
+    'sprite:build',
+    'fonts:build',
+    'image:build',
+    'svg:build'
+], function() {});

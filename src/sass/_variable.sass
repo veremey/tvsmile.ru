@@ -12,7 +12,13 @@ a
 .hide600
 	+r(600)
 		display: none
-
+.hide_740
+	+r(740)
+		display: none
+.show_740
+	display: none
+	+r(740)
+		display: block
 .breadcrumbs
 	background-color: #0b1a2c
 	+clr
@@ -102,125 +108,122 @@ a
 
 // buttons
 
-.btn__soc
-	position: relative
-	display: inline-block
-	vertical-align: top
-	margin-right: 10px
-	width: 30px
-	height: 30px
-	-webkit-border-radius: 100%
-	border-radius: 100%
-	background-color: #25343F
-	+tr(.3s)
-	&:hover
-		background-color: lighten(#25343F, 60%)
-	&:active
-		-webkit-box-shadow: 0 0 5px 0px #fff inset, 0 0 9px #fff
-		box-shadow: 0 0 5px 0px #fff inset, 0 0 9px #fff
-	&:last-child
-		margin-right: 0
-	i
-		+vcenter
-	&_you
-		@extend .btn__soc
-		background-color: #D64242
+
+.btn
+	&__soc
+		position: relative
+		display: inline-block
+		vertical-align: top
+		margin-right: 10px
+		width: 30px
+		height: 30px
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		background-color: #25343F
+		+tr(.3s)
 		&:hover
-			background-color: lighten(#D64242, 10%)
-
-.btn__search
-	position: relative
-	padding: 0 20px
-	font-family: Arial, sans-serif
-	font-size: 14px
-	color: #4F4113
-	font-weight: bold
-	height: 40px
-	-webkit-border-radius: 3px
-	border-radius: 3px
-	z-index: 5
-	+g(#f6ea79, #dbbc51)
-	&:hover
-		+g(#dbbc51, #f6ea79)
-	&:active
-		-webkit-box-shadow: inset 0 0 8px 0 #fff
-		box-shadow: inset 0 0 8px 0 #fff
-
-.btn__more
-	padding: 0 15px
-	height: 38px
-	background-color: #d2e3f9
-	border-radius: 3px
-	box-shadow: inset 1.695px 1.719px 1px 0px rgba(54, 132, 227, 0.22)
-	span
-		color: #52AFE9
+			background-color: lighten(#25343F, 60%)
+		&:active
+			-webkit-box-shadow: 0 0 5px 0px #fff inset, 0 0 9px #fff
+			box-shadow: 0 0 5px 0px #fff inset, 0 0 9px #fff
+		&:last-child
+			margin-right: 0
+		i
+			+vcenter
+		&_you
+			@extend .btn__soc
+			background-color: #D64242
+			&:hover
+				background-color: lighten(#D64242, 10%)
+	&__search
+		position: relative
+		padding: 0 20px
+		font-family: Arial, sans-serif
+		font-size: 14px
+		color: #4F4113
+		font-weight: bold
+		height: 40px
+		-webkit-border-radius: 3px
+		border-radius: 3px
+		z-index: 5
+		+g(#f6ea79, #dbbc51)
+		&:hover
+			+g(#dbbc51, #f6ea79)
+		&:active
+			-webkit-box-shadow: inset 0 0 8px 0 #fff
+			box-shadow: inset 0 0 8px 0 #fff
+	&__more
+		padding: 0 15px
+		height: 38px
+		background-color: #d2e3f9
+		border-radius: 3px
+		box-shadow: inset 1.695px 1.719px 1px 0px rgba(54, 132, 227, 0.22)
+		span
+			color: #52AFE9
+			font-size: 14px
+			+a
+			+r(600)
+				font-size: 18px
+	&_see
+		position: relative
+		width: 163px
+		height: 38px
+		margin-top: 15px
+		-webkit-border-radius: 3px
+		border-radius: 3px
+		text-align: left
+		padding: 0 20px
+		color: #4E4013
 		font-size: 14px
 		+a
-		+r(600)
-			font-size: 18px
-
-
-.btn_see
-	position: relative
-	width: 163px
-	height: 38px
-	margin-top: 15px
-	-webkit-border-radius: 3px
-	border-radius: 3px
-	text-align: left
-	padding: 0 20px
-	color: #4E4013
-	font-size: 14px
-	+a
-	font-weight: bold
-	+g(#eedb6e, #dab94f)
-	&:hover
-		+g(#dab94f, #eedb6e)
-	&:after
-		content: ""
-		position: absolute
-		top: 7px
-		right: 20px
-		width: 23px
-		height: 23px
-		background-image: url("../img/icons/play.png")
-.btn_comment
-	padding: 0 10px
-	height: 24px
-	background-color: #DCE9FB
-	color: #6F83A6
-	-webkit-border-radius: 3px
-	border-radius: 3px
-	i
+		font-weight: bold
+		+g(#eedb6e, #dab94f)
+		&:hover
+			+g(#dab94f, #eedb6e)
+		&:after
+			content: ""
+			position: absolute
+			top: 7px
+			right: 20px
+			width: 23px
+			height: 23px
+			background-image: url("../img/icons/play.png")
+	&_comment
+		padding: 0 10px
+		height: 24px
+		background-color: #DCE9FB
+		color: #6F83A6
+		-webkit-border-radius: 3px
+		border-radius: 3px
+		i
+			display: inline-block
+			width: 10px
+			height: 8px
+			margin-left: 5px
+			background-image: url("../img/icons/arrow.png")
+		&:hover
+			opacity: 0.8
+		&:active
+			-webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .3)
+			box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .3)
+			opacity: 1
+	&_yellow
 		display: inline-block
-		width: 10px
-		height: 8px
-		margin-left: 5px
-		background-image: url("../img/icons/arrow.png")
-	&:hover
-		opacity: 0.8
-	&:active
-		-webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .3)
-		box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .3)
-		opacity: 1
-
-.btn_yellow
-	display: inline-block
-	padding: 9px 23px 10px 23px
-	background-color: #f6e979
-	background: linear-gradient(to bottom right, #f6e979 0%, #ebd768 50%, #d0a945 100%)
-	font-size: 14px
-	height: 43px
-	-webkit-border-radius: 43px
-	border-radius: 43px
-	color: #4e4013
-	font-weight: bold
-	position: relative
-	text-transform: uppercase
-.btn_yellow:hover
-	background: #eedd67
-	border-top: 1px solid #cdbd5a
-	padding-top: 8px
+		padding: 9px 23px 10px 23px
+		background-color: #f6e979
+		background: linear-gradient(to bottom right, #f6e979 0%, #ebd768 50%, #d0a945 100%)
+		font-size: 14px
+		height: 43px
+		-webkit-border-radius: 43px
+		border-radius: 43px
+		color: #4e4013
+		font-weight: bold
+		position: relative
+		text-transform: uppercase
+		&:hover
+			background: #eedd67
+			border-top: 1px solid #cdbd5a
+			padding-top: 8px
 
 
 
@@ -326,6 +329,9 @@ a
 		font-size: 24px
 		text-transform: uppercase
 		color: #2C3A45
+		padding: 0 80px
+		vertical-align: middle
+		text-align: center
 		+ub
 		&:before
 			content: ""
@@ -345,6 +351,16 @@ a
 			width: 125px
 			height: 2px
 			background-image: url("../img/icons/slider_dot_r.png")
+	.slider_next,
+	.slider_prev
+		position: absolute
+		top: 50%
+		margin-top: -16px
+	.slider_next
+			right: 0
+	.slider_prev
+		left: 0
+
 
 .title__small
 	font-size: 19px
