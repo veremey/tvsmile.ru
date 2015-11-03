@@ -106,17 +106,63 @@
 		<div class="profile">
 			<div class="profile__name">
 				<h2>Наталья Сергеевна</h2>
-				<p>nataliasergeevna@mail.ru</p>
+				<a  href="#">nataliasergeevna@mail.ru</a>
 			</div>
 			<div class="profile__photo">
+				<button class="btn_close"></button>
 				<img src="img/ava_2.png" alt="Иллюстрация">
-
+				<a href="#" class="alse__photo"></a>
 			</div>
 			<div class="profile__info">
 				<h6>Обо мне</h6>
 				<p>Двухметровый необразованный Джон Коффи (Майкл Кларк Дункан) обвиняется</p>
 			</div>
 		</div>
+
+		<div class="control">
+			<a href="#" class="is_active">
+				<p class="control_wraper"><i class="icon-7"></i><span>Настройки профиля</span></p>
+			</a>
+			<a href="#">
+				<p  class="control_wraper"><i class="icon-8"></i><span>Просмотренное</span></p>
+			</a>
+			<a href="#">
+				<p class="control_wraper"><i class="icon-9"></i><span>Отложеное</span></p>
+			</a>
+			<a href="#">
+				<p class="control_wraper"><i class="icon-10"></i><span>Рицензии</span></p>
+			</a>
+		</div>
+		<form action="/" class="contol__form">
+			<div class="control__item  width_first" >
+				<div class="control__input">
+					<p>Имя</p>
+					<input type="text" placeholder="Наталья">
+				</div>
+				<div class="control__input">
+					<p>Фамилия</p>
+					<input type="text" placeholder="Сергеевна">
+				</div>
+			</div>
+			<div class="control__item width_second">
+				<div class="control__input">
+					<p>Старый пароль</p>
+					<input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+				</div>
+				<div class="control__input">
+					<p>Новый пароль</p>
+					<input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+				</div>
+			</div>
+			<div class="control__item width_third">
+				<div class="control__input">
+					<p>Обо мне</p>
+					<textarea placeholder="Двухметровый необразованный Джон Коффи (Майкл Кларк Дункан) обвиняется в страшном преступлении обвиняется в "></textarea>
+				</div>
+			</div>
+
+
+		</form>
 
 	</div>
 	<!-- end container -->
