@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<title>search</title>
+	//= includes/head.html
+</head>
+<body>
+<!-- BEGIN out-->
+<div class="out">
+	//= includes/header.html
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<ul class="crumbs">
+				<li><a href="/">Главная</a><i></i></li>
+				<li><span>Личный кабинет</span></li>
+			</ul>
+			<ul class="crumbs600">
+				<li class="visible js_crumbs"><span>Личный кабинет <i></i></span></li>
+				<li><a href="/">Главная</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- begin container  -->
+	//= includes/search_btn.html
+	<div class="search ">
+		<div class="container">
+			<div class="search_wraper is_active js_search_open">
+				<div class="search__check">
+					<label class="radio"  >
+						<input type="radio" name="online">
+						<span>Онлайн просмотр</span>
+					</label>
+					<label class="radio"  >
+						<input type="radio" name="was" checked>
+						<span>Бесплатные</span>
+					</label>
+				</div>
+				<ul class="search__category">
+					<li class="is_active">
+						<a href="#"><i class="icon_fil"></i>
+						<span>Фильм</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="icon_ser"></i>
+						<span>Сериал</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="icon_show"></i>
+						<span>Телешоу</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="icon_mul"></i>
+						<span>Мультфильм</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="icon_spor"></i>
+						<span>Спорт</span></a>
+					</li>
+				</ul>
+				<div class="year">
+					<span>Год выпуска</span>
+					<div class="ruler"></div>
+					<input type="hidden" name="year_start" value="" />
+					<input type="hidden" name="year_end" value="" />
+				</div>
+				<div class="column get__left">
+					<h6 class="title__genre">Жанр:</h6>
+					<div class="ganre__wrap">
+						<a href="#" class="ganre__item">драма</a>
+						<a href="#" class="ganre__item">комедия</a>
+						<a href="#" class="ganre__item">мелодрама</a>
+						<a href="#" class="ganre__item is_active">триллер</a>
+						<a href="#" class="ganre__item">боевик</a>
+						<a href="#" class="ganre__item">криминал</a>
+						<a href="#" class="ganre__item">ужасы</a>
+						<a href="#" class="ganre__item is_active">приключения</a>
+						<a href="#" class="ganre__item">семейный</a>
+						<a href="#" class="ganre__item">фэнтези</a>
+						<a href="#" class="ganre__item">фантастика </a>
+						<a href="#" class="more">еще</a>
+					</div>
+				</div>
+				<div class="column get__right">
+					<h6 class="title__genre">Страна:</h6>
+					<div class="ganre__wrap">
+						<a href="#" class="ganre__item">США</a>
+						<a href="#" class="ganre__item">Россия</a>
+						<a href="#" class="ganre__item is_active">СССР</a>
+						<a href="#" class="ganre__item">Франция</a>
+						<a href="#" class="ganre__item">Великобритания</a>
+						<a href="#" class="ganre__item">Беларусь</a>
+						<a href="#" class="ganre__item">Германия</a>
+						<a href="#" class="ganre__item">Гонконг</a>
+						<a href="#" class="ganre__item">Индия</a>
+						<a href="#" class="ganre__item">Испания</a>
+						<a href="#" class="ganre__item">Италия</a>
+						<a href="#" class="ganre__item">Казахстан </a>
+						<a href="#" class="more">еще</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="line line_100" >
+					<button class="btn__search ">Подобрать</button>
+					<p class="searched">Найдeно<span>45</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		//= includes/propose.html
+		//= includes/propose.html
+		//= includes/propose.html
+		//= includes/propose.html
+		//= includes/propose.html
+		//= includes/propose.html
+
+		//= includes/pages.html
+	</div>
+	<!-- end container -->
+
+	<div class="push"></div>
+	//= includes/footer.html
+</div> <!-- END OUT -->
+
+<!-- popup -->
+<div class="popup js_popup"></div>
+//= includes/popup_registr.html
+//= includes/popup_enter.html
+
+<script src="js/main.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

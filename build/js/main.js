@@ -61,7 +61,7 @@ $(document).ready(function() {
 	// расширеный поиск
 	$('.search__go').click(function() {
 		$(this).toggleClass('is_active');
-		$('.search_big').slideToggle();
+		$('.js_search_open').slideToggle();
 		return false;
 	});
 	// popup

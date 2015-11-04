@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
-	<title>otlozeno</title>
+	<title>search</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="icon" type="image/png" href="img/favicon.png">
@@ -102,65 +102,102 @@
 	</div>
 
 	<!-- begin container  -->
+	<div class="search_btn">
+		<div class="container">
+			<form action="/" class="search__place">
+				<input type="text" name="." placeholder="Введите название фильма, сериала или передачи">
+				<button >Найти </button>
+			</form>
+			<a href="#" class="search__go is_active"><span>Расширеный </span><br> <span>поиск</span></a>
+		</div>
+	</div>
+	<div class="search ">
+		<div class="container">
+			<div class="search_wraper is_active js_search_open">
+				<div class="search__check">
+					<label class="radio"  >
+						<input type="radio" name="online">
+						<span>Онлайн просмотр</span>
+					</label>
+					<label class="radio"  >
+						<input type="radio" name="was" checked>
+						<span>Бесплатные</span>
+					</label>
+				</div>
+				<ul class="search__category">
+					<li class="is_active">
+						<a href="#"><i class="icon_fil"></i>
+						<span>Фильм</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="icon_ser"></i>
+						<span>Сериал</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="icon_show"></i>
+						<span>Телешоу</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="icon_mul"></i>
+						<span>Мультфильм</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="icon_spor"></i>
+						<span>Спорт</span></a>
+					</li>
+				</ul>
+				<div class="year">
+					<span>Год выпуска</span>
+					<div class="ruler"></div>
+					<input type="hidden" name="year_start" value="" />
+					<input type="hidden" name="year_end" value="" />
+				</div>
+				<div class="column get__left">
+					<h6 class="title__genre">Жанр:</h6>
+					<div class="ganre__wrap">
+						<a href="#" class="ganre__item">драма</a>
+						<a href="#" class="ganre__item">комедия</a>
+						<a href="#" class="ganre__item">мелодрама</a>
+						<a href="#" class="ganre__item is_active">триллер</a>
+						<a href="#" class="ganre__item">боевик</a>
+						<a href="#" class="ganre__item">криминал</a>
+						<a href="#" class="ganre__item">ужасы</a>
+						<a href="#" class="ganre__item is_active">приключения</a>
+						<a href="#" class="ganre__item">семейный</a>
+						<a href="#" class="ganre__item">фэнтези</a>
+						<a href="#" class="ganre__item">фантастика </a>
+						<a href="#" class="more">еще</a>
+					</div>
+				</div>
+				<div class="column get__right">
+					<h6 class="title__genre">Страна:</h6>
+					<div class="ganre__wrap">
+						<a href="#" class="ganre__item">США</a>
+						<a href="#" class="ganre__item">Россия</a>
+						<a href="#" class="ganre__item is_active">СССР</a>
+						<a href="#" class="ganre__item">Франция</a>
+						<a href="#" class="ganre__item">Великобритания</a>
+						<a href="#" class="ganre__item">Беларусь</a>
+						<a href="#" class="ganre__item">Германия</a>
+						<a href="#" class="ganre__item">Гонконг</a>
+						<a href="#" class="ganre__item">Индия</a>
+						<a href="#" class="ganre__item">Испания</a>
+						<a href="#" class="ganre__item">Италия</a>
+						<a href="#" class="ganre__item">Казахстан </a>
+						<a href="#" class="more">еще</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="line line_100" >
+					<button class="btn__search ">Подобрать</button>
+					<p class="searched">Найдeно<span>45</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="container">
-		<div class="profile">
-			<div class="profile__name">
-				<h2>Наталья Сергеева</h2>
-				<a  href="#">nataliasergeevna@mail.ru</a>
-			</div>
-			<div class="profile__photo">
-				<button class="btn_close"></button>
-				<img src="img/ava_2.png" alt="Иллюстрация">
-				<a href="#" class="alse__photo"></a>
-			</div>
-			<div class="profile__info">
-				<h6>Обо мне</h6>
-				<p>Двухметровый необразованный Джон Коффи (Майкл Кларк Дункан) обвиняется</p>
-			</div>
-		</div>
-		<div class="control">
-			<a href="#">
-				<p class="control_wraper"><i class="icon-7"></i><span>Настройки профиля</span></p>
-			</a>
-			<a href="#">
-				<p  class="control_wraper"><i class="icon-8"></i><span>Просмотренное</span></p>
-			</a>
-			<a href="#"  class="is_active">
-				<p class="control_wraper"><i class="icon-9"></i><span>Отложеное</span></p>
-			</a>
-			<a href="#">
-				<p class="control_wraper"><i class="icon-10"></i><span>Рицензии</span></p>
-			</a>
-		</div>
-		<nav>
-			<ul class="type">
-				<li>
-					<a href="#">
-						<span>Фильмы</span>
-					</a>
-				</li>
-				<li class="is_active">
-					<a href="#">
-						<span>Сериалы</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span>Мультфильмы</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span>Телепередачи</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span>Спорт</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
+
 		<div class="propose">
 			<div class="propose__item">
 				<div class="propose__img">
@@ -366,6 +403,7 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/search.js"></script>
 
 </body>
 </html>

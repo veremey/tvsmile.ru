@@ -49,6 +49,7 @@
 		float: right
 		margin-top: 28px
 .propose__item
+	position: relative
 	float: left
 	+clr
 .propose__img
@@ -66,7 +67,32 @@
 		font-size: 22px
 		color: #000
 		+ur
+
 .wrap_info
 	margin: 5px 0 10px
 	.rate
 		margin-left: 10px
+
+.notice
+	border-bottom: 1px solid #DDE1E5
+	background-color: #F4F9FF
+	padding: 10px
+	+clr
+	h4
+		display: inline-block
+		margin-right: 20px
+	.wrap_info
+		display: inline-block
+		margin-bottom: 5px
+	.propose__img
+		position: absolute
+	.propose__content
+		float: left
+		margin-left: 90px
+.notice__text
+	display: inline-block
+	width: calc(100% - 90px)
+	p
+		font-size: 11px
+		color: #6F83A6
+		+a
