@@ -1,0 +1,72 @@
+.type
+	background-color: #6f83a6
+	width: 100%
+	font-size: 0
+	+clr
+	.is_active
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -4px
+			+arr(8, 5, #fff, t)
+		span
+			border-bottom: $n
+	li
+		display: inline-block
+		position: relative
+		height: 43px
+		vertical-align: top
+		&:first-child
+			a
+				padding-left: 10px
+	a
+		display: block
+		padding: 0 22px
+		line-height: 43px
+		font-size: 12px
+		color: #FFF
+		&:hover
+			span
+				border-bottom: $n
+	span
+		border-bottom: 1px dotted #fff
+
+.propose
+	cursor: pointer
+	border-bottom: 1px solid #DDE1E5
+	background-color: #F4F9FF
+	padding: 10px
+	+box
+	+clr
+	&:hover
+		background-color: #EDF4FE
+	+ .pages
+		margin: 25px auto
+	button
+		float: right
+		margin-top: 28px
+.propose__item
+	float: left
+	+clr
+.propose__img
+	display: inline-block
+	vertical-align: top
+	width: 65px
+	margin-right: 25px
+	img
+		max-width: 100%
+		vertical-align: top
+.propose__content
+	display: inline-block
+	vertical-align: top
+	h4
+		font-size: 22px
+		color: #000
+		+ur
+.wrap_info
+	margin: 5px 0 10px
+	.rate
+		margin-left: 10px

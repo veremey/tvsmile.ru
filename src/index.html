@@ -53,25 +53,6 @@
 
 <script src="js/main.js"></script>
 <script src="js/search.js"></script>
-<script >
-	(function (w, d) {
-	  var viewport = d.querySelector('#viewport'),
-	      	viewports = {
-	    		default:  viewport.getAttribute('content'),
-	    		small: 'width=480'
-	  		};
-
-	  var viewport_set = function() {
-	        screen.width <= 480 ?  viewport.setAttribute( 'content', viewports.small) :  viewport.setAttribute( 'content', viewports.default );
-	  }
-	  //При загрузке
-	  viewport_set('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">');
-	  // При изменении
-	  w.onresize = function() {
-	  		viewport_set('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">');
-	  }
-	}(window, document));
-</script>
 
 </body>
 </html>
