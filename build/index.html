@@ -91,9 +91,11 @@
 
 	<div class="slider">
 		<div class="title__slider">
-			<button class="slider_prev js-page__back"></button>
-			<h6>мы РеКомендуем</h6>
-			<button class="slider_next js-page__next"></button>
+			<div class="title__slider_wrap">
+				<button class="slider_prev js-page__back"></button>
+				<h6>мы РеКомендуем</h6>
+				<button class="slider_next js-page__next"></button>
+			</div>
 		</div>
 		<div class="slider__recomend">
 			<div class="slider__recomend_item">
@@ -247,9 +249,11 @@
 	</div>
 
 	<div class="title__slider">
-		<button class="slider_prev js-video__back"></button>
-		<h6>Фильмы</h6>
-		<button class="slider_next js-video__next"></button>
+		<div class="title__slider_wrap">
+			<button class="slider_prev js-video__back"></button>
+			<h6>Фильмы</h6>
+			<button class="slider_next js-video__next"></button>
+		</div>
 	</div>
 	<div class="slider__video">
 		<div class="slider__video_item">
@@ -339,9 +343,11 @@
 	</div>
 
 	<div class="title__slider">
-		<button class="slider_prev js-mult__back"></button>
-		<h6>МУльтфильмы</h6>
-		<button class="slider_next js-mult__next"></button>
+		<div class="title__slider_wrap">
+			<button class="slider_prev js-mult__back"></button>
+			<h6>МУльтфильмы</h6>
+			<button class="slider_next js-mult__next"></button>
+		</div>
 	</div>
 
 	<div class="slider__mult">
@@ -510,6 +516,25 @@
 
 <script src="js/main.js"></script>
 <script src="js/search.js"></script>
+<script >
+	(function (w, d) {
+	  var viewport = d.querySelector('#viewport'),
+	      	viewports = {
+	    		default:  viewport.getAttribute('content'),
+	    		small: 'width=480'
+	  		};
+
+	  var viewport_set = function() {
+	        screen.width <= 480 ?  viewport.setAttribute( 'content', viewports.small) :  viewport.setAttribute( 'content', viewports.default );
+	  }
+	  //При загрузке
+	  viewport_set('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">');
+	  // При изменении
+	  w.onresize = function() {
+	  		viewport_set('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">');
+	  }
+	}(window, document));
+</script>
 
 </body>
 </html>
