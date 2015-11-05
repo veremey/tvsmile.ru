@@ -27,6 +27,16 @@
 			+a
 		&:hover
 			text-decoration: underline
+	p
+		color: #8A93A3
+		font-size: 11px
+		> a
+			display: inline-block
+			text-decoration: underline
+			font-size: 11px
+			+a
+			&:hover
+				text-decoration: none
 .profile__photo
 	position: relative
 	width: 14%
@@ -157,6 +167,27 @@
 			position: relative
 			top: 50%
 			transform: translateY(25%)
+
+.enter__soc
+	display: table-cell
+	width: 27%
+	vertical-align: middle
+	.socio
+		a
+			margin-right: 5px
+			float: left
+			&:last-child
+				margin-right: 0
+.enter__info
+	display: table-cell
+	width: 23%
+	vertical-align: middle
+	padding-left: 10px
+	p
+		font-size: 11px
+		color: #8A93A3
+		margin-top: 10px
+		+a
 
 
 .icon-7
@@ -303,12 +334,22 @@
 	.btn_yellow
 		width: 230px
 		float: right
-			+ub
+		+ub
 		+r(600)
 			width: 100%
 			margin-top: 15px
 			font-size: 20px
 			+ub
+	.podlozka
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			left: -20px
+			width: 20px
+			height: 100%
+			background-color: #FFF
+			background-image: none
 .subscribe__check
 	margin-top: 10px
 	float: left
