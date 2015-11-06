@@ -2,12 +2,15 @@
 	display: table
 	width: 100%
 	margin: 28px 0
+
+.enter__name,
 .profile__name,
 .profile__photo,
 .profile__info
 	display: table-cell
 	table-layout: fixed
 	vertical-align: middle
+.enter__name,
 .profile__name
 	width: 43%
 	text-align: right
@@ -99,7 +102,8 @@
 			opacity: 0.8
 			-webkit-box-shadow: inset 0 0 3px 0 #fff
 			box-shadow: inset 0 0 3px 0 #fff
-.profile__info
+.profile__info,
+.enter__info
 	width: 43%
 	padding-left: 25px
 	text-align: left
@@ -167,27 +171,6 @@
 			position: relative
 			top: 50%
 			transform: translateY(25%)
-
-.enter__soc
-	display: table-cell
-	width: 27%
-	vertical-align: middle
-	.socio
-		a
-			margin-right: 5px
-			float: left
-			&:last-child
-				margin-right: 0
-.enter__info
-	display: table-cell
-	width: 23%
-	vertical-align: middle
-	padding-left: 10px
-	p
-		font-size: 11px
-		color: #8A93A3
-		margin-top: 10px
-		+a
 
 
 .icon-7
@@ -358,21 +341,3 @@
 		text-align: center
 	+r(520)
 		text-align: left
-.hr_line
-	height: 1px
-	background-color: #cedbec
-	display: inline-block
-	width: 35%
-	margin: 20px 15px 0
-	+r(762)
-		width: 32%
-	+r(719)
-		width: 29%
-	+r(690)
-		width: 25%
-	+r(655)
-		width: 22%
-	+r(630)
-		width: 19%
-	+r(600)
-		display: none

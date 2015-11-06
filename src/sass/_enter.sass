@@ -1,0 +1,96 @@
+.enter_me
+	+clr
+	+r(600)
+		display: block
+		padding: 50px 0
+		text-align: center
+	h3
+		text-align: center
+		position: relative
+		font-size: 36px
+		color: #000
+		+ur
+	p
+		font-size: 20px
+		color: #8A93A3
+		text-align: center
+		margin: 0 auto
+		+ur
+	form
+		margin-top: 30px
+		input,
+		button
+			width: 100%
+			height: 46px
+			text-align: center
+			border-radius: 46px
+			-webkit-border-radius: 46px
+		input
+			color: #fff
+			background-color: #142841
+			margin-bottom: 10px
+			font-size: 20px
+			+placeholder
+				font-size: 20px
+				color: #53749e
+				+a
+		button
+			position: relative
+			text-transform: uppercase
+			color: #4E4013
+			vertical-align: top
+			font-size: 20px
+			line-height: 45px
+			+g(#f7ea7a, #d1ac47)
+			+ub
+			&:hover
+				+g(#d1ac47, #f7ea7a)
+			&:active
+				opacity: .7
+			.icon__check
+				display: inline-block
+				margin: 15px 0 0 10px
+				width: 16px
+				height: 16px
+				vertical-align: top
+				background-image: url("../img/icons/ent1.png")
+	.linear
+		margin-top: 70px
+	p.liner_item
+		top: -13px
+.enter__soc
+	display: table-cell
+	width: 27%
+	vertical-align: middle
+	.socio
+		a
+			margin-right: 5px
+			float: left
+			&:last-child
+				margin-right: 0
+.enter__info
+	display: table-cell
+	width: 23%
+	vertical-align: middle
+	padding-left: 10px
+	p
+		font-size: 11px
+		color: #8A93A3
+		margin-top: 10px
+		+a
+.enter__name
+	width: 47%
+	+r(745)
+		width: 45%
+	+r(710)
+		width: 43%
+		padding-right: 15px
+	+r(680)
+		width: 40%
+.enter__soc
+	+r(745)
+		width: 29%
+	+r(710)
+		width: 31%
+	+r(680)
+		width: 35%
