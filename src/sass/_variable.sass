@@ -12,6 +12,10 @@ a
 .hide600
 	+r(600)
 		display: none
+.show600
+	display: none
+	+r(600)
+		display: block
 .hide_740
 	+r(740)
 		display: none
@@ -247,6 +251,36 @@ a
 			background: #eedd67
 			border-top: 1px solid #cdbd5a
 			padding-top: 8px
+	&__bg
+		background-image: url("../img/btn.jpg")
+		background-position: cover
+		height: 46px
+		width: 40%
+		margin-left: 10px
+		text-align: left
+		padding-right: 15px
+		padding-left: 30px
+		vertical-align: middle
+		line-height: 46px
+		font-size: 14px
+		color: #4E4013
+		-webkit-border-radius: 3px
+		border-radius: 3px
+		+a
+		&:hover
+			-webkit-box-shadow: 2px 1px 0 1px rgba(0, 0, 0, .2) inset
+			box-shadow: 2px 1px 0 1px rgba(0, 0, 0, .2) inset
+		&:active
+			opacity: 0.7
+		span
+			float: right
+			font-size: 31px
+			color: #fff
+			sub
+				font-size: 11px
+				text-align: bottom
+
+
 
 .line
 	position: relative
@@ -286,41 +320,10 @@ a
 		margin: 0
 		right: 0
 		left: 0
-	&.hide_480
-		+r(600)
-			&:after
-				content: none
-	button
-		float: left
-		position: relative
-		z-index: 5
-		&:after
-			content: ""
-			position: absolute
-			top: 0
-			right: -20px
-			width: 20px
-			height: 100%
-			+g(#E5EFFB, #E3EEFB)
+	// .hide_480
+	// 	+r(600)
+	// 		&:after
 
-.hr_line
-	height: 1px
-	background-color: #cedbec
-	display: inline-block
-	width: 35%
-	margin: 20px 15px 0
-	+r(762)
-		width: 32%
-	+r(719)
-		width: 29%
-	+r(690)
-		width: 25%
-	+r(655)
-		width: 22%
-	+r(630)
-		width: 19%
-	+r(600)
-		display: none
 
 .searched
 	position: relative
@@ -584,6 +587,11 @@ a
 .icon-g
 	background-image: url('../img/icons/icon-g.png')
 
+
+
+
+
+
 .pages
 	text-align: center
 	margin: 0 auto
@@ -610,38 +618,53 @@ a
 	vertical-align: middle
 	display: inline-block
 	cursor: default
-.stars .descr
-	font-size: 11px
-	line-height: 130%
-	color: #8a93a3
-	display: inline-block
-	vertical-align: middle
-	padding-right: 12px
-	padding-top: 1px
+// .stars .descr
+// 	font-size: 11px
+// 	line-height: 130%
+// 	color: #8a93a3
+// 	display: inline-block
+// 	vertical-align: middle
+// 	padding-right: 12px
+// 	padding-top: 1px
 
-.stars .star
+
+
+
+.get__comment_rate
+	.stars
+		border: 0
+		&:after
+			content: none
+	.descr
+		width: auto
+		padding-top: 4px
+		margin-right: 5px
+
+.star
 	display: inline-block
 	vertical-align: middle
 	width: 19px
 	height: 18px
-.stars .star_l
+.star_l
 	display: block
 	float: left
 	width: 9px
 	height: 18px
-	background: url(../img/star_p.png) 0 0 no-repeat
+	background: url(../img/star_p.png)
 	cursor: pointer
-.stars .star_r
+.star_r
 	display: block
 	float: left
 	width: 10px
 	height: 18px
 	background: url(../img/star_p.png) 100% 0 no-repeat
 	cursor: pointer
-.stars .star_l.active
+.star_l.active
 	background: url(../img/star_a.png) 0 0 no-repeat
-.stars .star_r.active
+.star_r.active
 	background: url(../img/star_a.png) 100% 0 no-repeat
+
+
 .checkbox
 	display: inline-block
 	color: #8a93a3

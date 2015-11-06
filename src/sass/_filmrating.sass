@@ -1,0 +1,126 @@
+.film_rating
+	position: relative
+	overflow: hidden
+	margin: 12px 0
+	background: linear-gradient(135deg, #7db5d9 0%, #99c5e3 84%, #bfd9f1 100%)
+	+clr
+	+r(600)
+		width: 100%
+
+.voice
+	display: block
+	float: left
+	width: 24%
+	height: 38px
+	padding-top: 4px
+	text-align: center
+	border: 2px solid #79bc38
+	background-color: #FFF
+	+r(710)
+		width: 26%
+	+r(610)
+		width: 27%
+.voice_1
+	font-size: 16px
+	line-height: 130%
+	color: #8a93a3
+	padding-left: 25px
+	background: url(../img/star_a.png) 0 50% no-repeat
+	display: inline-block
+	vertical-align: middle
+	margin-right: 10px
+	+r(665)
+		padding-left: 20px
+		margin-right: 5px
+.voice_2
+	font-size: 11px
+	color: #8a93a3
+	line-height: 1
+	width: 50px
+	display: inline-block
+	vertical-align: middle
+	text-align: left
+
+.rank
+	position: relative
+	float: left
+	width: 23%
+	height: 38px
+	padding-top: 4px
+	text-align: center
+	border: 2px solid #1e3450
+	border-left: none
+	background-color: #FFF
+	span
+		font-size: 16px
+		color: #1E3450
+		margin-left: 7px
+	i
+		display: inline-block
+		vertical-align: text-bottom
+		width: 55px
+		height: 22px
+		background-image: url("../img/icons/rank.png")
+
+.stars
+	position: relative
+	float: left
+	width: 37%
+	height: 38px
+	padding-top: 4px
+	text-align: center
+	border-bottom: 2px solid #1e3450
+	border-top: 2px solid #1e3450
+	z-index: 2
+	background-color: #FFF
+	&:after
+		content: ' '
+		position: absolute
+		top: -2px
+		right: -16px
+		width: 16px
+		height: 38px
+		background: url(../img/icons/rate_triagle.png)
+.descr
+	width: 50px
+	text-align: left
+	line-height: 1
+	display: inline-block
+	vertical-align: top
+.result
+	display: block
+	float: left
+	width: 12.2%
+	padding-left: 2%
+	height: 38px
+	color: #1E3450
+	font-size: 20px
+	text-align: center
+	// background-color: #99c5e3
+	// background: linear-gradient(135deg, #7db5d9 0%, #99c5e3 50%, #bfd9f1 100%)
+	line-height: 38px
+	+a
+
+.stars__rank
+	display: none
+
+.shared
+	margin: 25px 0
+
+.soda
+	float: right
+	margin-top: 15px
+	+clr
+	p
+		color: #606060
+		font-size: 11px
+		float: left
+		+a
+		margin-right: 10px
+.soda_soc
+	width: 170px
+	height: 18px
+	float: left
+	vertical-align: top
+	background-image: url("../img/soc1.jpg")
+	+clr

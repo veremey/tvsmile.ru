@@ -34,7 +34,8 @@
 	span
 		border-bottom: 1px dotted #fff
 
-.propose
+.propose,
+.notice
 	cursor: pointer
 	border-bottom: 1px solid #DDE1E5
 	background-color: #F4F9FF
@@ -77,18 +78,24 @@
 	border-bottom: 1px solid #DDE1E5
 	background-color: #F4F9FF
 	padding: 10px
+	min-height: 120px
 	+clr
 	h4
 		display: inline-block
 		margin-right: 20px
+	.propose__item
+		min-height: 98px
 	.wrap_info
 		display: inline-block
 		margin-bottom: 5px
+		margin-right: 20px
 	.propose__img
 		position: absolute
 	.propose__content
 		float: left
 		margin-left: 90px
+		padding-top: 5px// de;l
+		transform: translateY(50%)//del
 .notice__text
 	display: inline-block
 	width: calc(100% - 90px)
