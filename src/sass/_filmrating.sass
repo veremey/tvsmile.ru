@@ -61,7 +61,6 @@
 		width: 55px
 		height: 22px
 		background-image: url("../img/icons/rank.png")
-
 .stars
 	position: relative
 	float: left
@@ -128,28 +127,59 @@
 
 // ################
 // ################
-//   DETALE
+// DETALE
 
+.get_detale
+	width: 100%
+	+clr
+	a
+		display: inline-block
+		padding: 5px 8px
+		background-color: #D7E9F9
+		-webkit-border-radius: 3px 3px 0 0
+		border-radius: 3px 3px 0 0
+		&.is_active
+			i
+				+rotate(0)
+		span
+			color: #3888E4
+			font-size: 11px
+			border-bottom: 1px solid #3888E4
+			+a
+		i
+			margin-left: 3px
+			display: inline-block
+			width: 5px
+			height: 3px
+			margin-bottom: 2px
+			background-image: url("../img/icons/bird__top.png")
+			+rotate(90)
+	&:hover
+		span
+			border-bottom: $n
 .detale
-	padding: 15px 20px
+	padding: 15px
 	width: 100%
 	background-image: url("../img/filmBG.jpg")
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: 0 25%
+	-webkit-border-radius: 0 3px 3px 3px
+	border-radius: 0 3px 3px 3px
 	+clr
 	p
-		margin-bottom: 10px
-		&:last-child
-			margin-bottom: 0
+		display: table-row
 	strong
+		display: table-cell
 		padding-right: 10px
 		font-size: 12px
 		color: #494848
 		font-family: Arial, sans-serif
 	span
+		display: table-cell
 		font-size: 12px
 		color: #7D7D7D
+		padding-bottom: 6px
 		+a
 	a
 		display: inline
@@ -160,14 +190,163 @@
 		&:hover
 			text-decoration: none
 .detale__left
+	display: table
 	float: left
-	padding-right: 35px
+	max-width: 43%
+	padding-right: 30px
 	margin-right: 40px
 	border-right: 1px solid #b9d9f1
 	strong
 		min-width: 105px
-		display: inline-block
+		// display: inline-block
+
 .detale__right
+	display: table
 	strong
 		min-width: 160px
+		// display: inline-block
+
+
+// ################
+
+.tab
+	+clr
+.tab__name
+	cursor: pointer
+	height: 32px
+	background-color: #DCE9FB
+	padding: 0 10px
+	margin: 3px 0 10px
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	&.is_active
+		i
+			+rotate(180)
+	span
+		color: #1E3450
+		font-size: 13px
+		margin-right: 10px
+		line-height: 32px
+		+a
+		font-weight: bold
+	i
 		display: inline-block
+		width: 5px
+		height: 3px
+		margin-bottom: 2px
+		background-image: url("../img/icons/bird__top.png")
+		+rotate(0)
+.tab__contant
+	+clr
+	.comment
+		border-bottom: $n
+		margin-bottom: 10px
+	.comment__text
+		padding-right: 30px
+
+
+.tab_slider2,
+.tab_slider3
+	text-align: center
+	padding-left: 23px
+	+clr
+.pack
+	width: 155px
+	// margin: 0 10px
+	margin-bottom: 10px
+	float: left
+	+clr
+.pack__img
+	width: 155px
+	img
+		max-width: 100%
+		vertical-align: top
+.pack__text
+	width: 155px
+	text-align: center
+	margin: 7px 0
+	h4
+		font-size: 14px
+		line-height: 1
+		color: #000
+		+a
+	span
+		font-size: 11px
+		color: #8A93A3
+
+
+.comic
+	display: block
+	width: 210px
+	height: 85px
+	margin: 15px 0 20px
+	padding-right: 20px
+	+clr
+.comic__img
+	width: 83px
+	height: 83px
+	margin-right: 20px
+	float: left
+	-webkit-border-radius: 100%
+	border-radius: 100%
+	overflow: hidden
+	img
+		max-width: 100%
+		vertical-align: top
+.comic__text
+	float: left
+	vertical-align: middle
+	height: 85px
+	padding-top: 25px
+	strong,
+	span
+		display: block
+	strong
+		text-transform: uppercase
+		font-size: 14px
+		color: #000
+		+ur
+	span
+		font-size: 11px
+		color: #8A93A3
+		+ur
+
+.trailer
+	padding: 0 25px 15px 25px
+	+clr
+.trailer__img
+	width: 45%
+	margin-right: 20px
+	vertical-align: top
+	position: relative
+	float: left
+	&:before
+		content: ""
+		+coverdiv
+		background-color: rgba(0, 0, 0, .5)
+		+tr(.5s)
+	&:hover::before
+		background-color: rgba(0, 0, 0, .0)
+		+tr(.5s)
+	img
+		max-width: 100%
+		vertical-align: top
+	.btn__play
+		+vcenter
+
+.trailer__text
+	+clr
+.trailer__text_wrap
+	position: relative
+	top: 50%
+	transform: translateY(50%)
+	strong
+		font-size: 14px
+		+ur
+		color: #000
+		font-weight: bold
+		margin-bottom: 5px
+	p
+		font-size: 11px
+		color: #8A93A3
+		+ur
