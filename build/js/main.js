@@ -266,7 +266,15 @@ $('.tab_slider4').slick({
 	infinite: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	// centerMode: true,
+	autoplay: true,
+	autoplaySpeed: 8000
+});
+
+
+$('.tab_slider5').slick({
+	infinite: true,
+	slidesToShow: 4,
+	slidesToScroll: 1,
 	autoplay: true,
 	autoplaySpeed: 8000
 });
