@@ -6,6 +6,11 @@
 	+clr
 	+r(600)
 		width: 100%
+		overflow: visible
+		display: table
+		background: linear-gradient($n, $n)
+		.star
+			display: none
 
 .voice
 	display: block
@@ -20,6 +25,8 @@
 		width: 26%
 	+r(610)
 		width: 27%
+	+r(600)
+		height: 64px
 .voice_1
 	font-size: 16px
 	line-height: 130%
@@ -32,6 +39,12 @@
 	+r(665)
 		padding-left: 20px
 		margin-right: 5px
+	+r(600)
+		display: block
+		font-size: 18px
+		color: #8A93A3
+		text-align: center
+		background-position: 38% 50%
 .voice_2
 	font-size: 11px
 	color: #8a93a3
@@ -40,7 +53,12 @@
 	display: inline-block
 	vertical-align: middle
 	text-align: left
-
+	+r(600)
+		display: block
+		width: 100%
+		text-align: center
+		font-size: 18px
+		color: #8A93A3
 .rank
 	position: relative
 	float: left
@@ -51,16 +69,25 @@
 	border: 2px solid #1e3450
 	border-left: none
 	background-color: #FFF
+	+r(600)
+		height: 64px
+		padding-top: 0
 	span
 		font-size: 16px
 		color: #1E3450
 		margin-left: 7px
+		+r(600)
+			line-height: 64px
+			font-size: 22px
+			color: #1E3450
 	i
 		display: inline-block
 		vertical-align: text-bottom
 		width: 55px
 		height: 22px
 		background-image: url("../img/icons/rank.png")
+		+r(600)
+			line-height: 64px
 .stars
 	position: relative
 	float: left
@@ -80,12 +107,27 @@
 		width: 16px
 		height: 38px
 		background: url('../img/icons/rate_triagle.png')
+	+r(600)
+		height: 64px
+		&:after
+			top: -2px
+			right: -19px
+			width: 21px
+			height: 64px
+			background: url('../img/icons/rate_triagle-480.png')
+		&.is_active .stars__rank
+			display: block
 .descr
 	width: 50px
 	text-align: left
 	line-height: 1
 	display: inline-block
 	vertical-align: top
+	+r(600)
+		width: auto
+		color: #8A93A3
+		font-size: 18px
+		line-height: 60px
 .result
 	display: block
 	float: left
@@ -95,17 +137,85 @@
 	color: #1E3450
 	font-size: 20px
 	text-align: center
-	// background-color: #99c5e3
-	// background: linear-gradient(135deg, #7db5d9 0%, #99c5e3 50%, #bfd9f1 100%)
 	line-height: 38px
 	+a
+	+r(600)
+		background: linear-gradient(135deg, #7db5d9 0%, #99c5e3 84%, #bfd9f1 100%)
+		line-height: 64px
+		height: 64px
 
 .stars__rank
 	display: none
-
+	+clr
+	+r(600)
+		position: absolute
+		width: 101%
+		// display: block
+		top: 58px
+		left: -2px
+		vertical-align: top
+		padding-bottom: 10px
+		border: 2px solid #000
+		border-top: 0px solid #000
+		background-color: #FFF
+		z-index: 10
+		.radio
+			span
+				font-size: 18px
+				color: #8A93A3
+				vertical-align: top
+			input
+				&:checked
+					+ span
+						&:after
+							left: -22px
+							top: 7px
+							z-index: 12
+							background-image: url("../img/icons/check.png")
+							width: 9px
+							height: 10px
+		.icon-star
+			display: inline-block
+			width: 19px
+			height: 18px
+			// margin-top: 3px
+			vertical-align: middle
+			background-image: url("../img/icons/star_a.png")
 .shared
 	margin: 25px 0
-
+	.btn__bg
+		background-color: #1D3553
+		+r(720)
+			background-position: -9px 50%
+		+r(695)
+			background-position: -22px 50%
+			padding-right: 5px
+		+r(635)
+			background-position: -40px 50%
+			padding-left: 15px
+		+r(600)
+			background-position: 0px 50%
+			width: 100%
+			font-size: 16px
+			padding: 0 30px 0 70px
+			margin: 0
+			height: 38px
+			line-height: 38px
+			background-image: url("../img/btn1.jpg")
+			+box
+			span
+				font-size: 29px
+				line-height: 38px
+		+r(435)
+			background-position: -34px 50%
+		+r(400)
+			background-position: -68px 50%
+		+r(375)
+			background-position: -95px 50%
+			padding: 0 20px 0 30px
+		+r(330)
+			background-position: -115px 50%
+			// padding: 0 20px 0 30px
 .soda
 	float: right
 	margin-top: 15px
@@ -196,6 +306,11 @@
 	padding-right: 30px
 	margin-right: 40px
 	border-right: 1px solid #b9d9f1
+	+r(600)
+		max-width: 100%
+		width: 100%
+		float: none
+		border-right: 0
 	strong
 		min-width: 105px
 		// display: inline-block
@@ -259,18 +374,18 @@
 	padding-left: 23px
 	+clr
 .pack
-	width: 155px
+	width: 155px ///del
 	// margin: 0 10px
 	margin-bottom: 10px
 	float: left
 	+clr
 .pack__wallpaper
-	width: 215px
+	width: 215px /////del
 	img
 		max-width: 100%
 		vertical-align: top
 .pack__img
-	width: 155px
+	width: 155px // del
 	img
 		max-width: 100%
 		vertical-align: top
@@ -333,19 +448,23 @@
 	vertical-align: top
 	position: relative
 	float: left
+	z-index: 5
 	&:before
 		content: ""
 		+coverdiv
 		background-color: rgba(0, 0, 0, .5)
 		+tr(.5s)
+		z-index: 4
 	&:hover::before
 		background-color: rgba(0, 0, 0, .0)
 		+tr(.5s)
 	img
 		max-width: 100%
+		width: 100%
 		vertical-align: top
 	.btn__play
 		+vcenter
+		z-index: 6
 
 .trailer__text
 	+clr
@@ -365,9 +484,9 @@
 		+ur
 
 
-
-
-
+// ##############################
+// ##############################
+// .soundtracks
 
 .soundtracks
 	position: relative
@@ -386,26 +505,7 @@
 		max-width: 100%
 		vertical-align: top
 		width: 100%
-	// &:before
-	// 	display: block
-	// 	content: ''
-	// 	width: 248px
-	// 	height: 45px
-	// 	background: url('../img/soundtracks_upper.png') 0 0 no-repeat
-	// 	position: absolute
-	// 	left: 50%
-	// 	margin-left: -124px
-	// 	top: -45px
-	// &:after
-	// 	display: block
-	// 	content: ''
-	// 	width: 420px
-	// 	height: 101px
-	// 	background: url('../img/soundtracks_lower.png') 0 0 no-repeat
-	// 	position: absolute
-	// 	left: 50%
-	// 	margin-left: -210px
-	// 	bottom: -95px
+
 
 .playlist
 	float: right
@@ -489,18 +589,6 @@
 	background-image: url("../img/icons/sound_pause.png")
 
 
-// jspHorizontalBar
-// jspHorizontalBar
-// jspHorizontalBar
-// jspHorizontalBar
-// jspHorizontalBar
-// jspHorizontalBar
-// jspHorizontalBar
-// jspHorizontalBar
-
-
-
-
 .jspContainer
 	overflow: hidden
 	position: relative
@@ -510,7 +598,7 @@
 	position: absolute
 	top: 0
 	right: 0
-	width: 10px
+	width: 5px
 	height: 100%
 	background: $n
 	border-radius: 3px
@@ -533,8 +621,8 @@
 	background: #478fc0
 	position: relative
 	top: 0
-	left: -3px
-	width: 8px
+	left: -1px
+	width: 5px
 	cursor: pointer
 	border-radius: 4px
 .jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag

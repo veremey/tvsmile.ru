@@ -148,6 +148,10 @@ $(document).ready(function() {
 	// стилизацйия скрола
 	$('.scroll-pane').jScrollPane();
 
+	// выпадалка на звезды карточка фильма
+	$('.js_stars').on('click', function() {
+		$(this).toggleClass('is_active');
+	});
 
 });
 
@@ -217,7 +221,21 @@ $('.tab_slider2').slick({
 	slidesToScroll: 1,
 	// centerMode: true,
 	autoplay: true,
-	autoplaySpeed: 13000
+	autoplaySpeed: 13000,
+	responsive: [
+	{
+		breakpoint: 685,
+		settings: {
+			slidesToShow: 3,
+		}
+	},
+	{
+		breakpoint: 600,
+		settings: {
+			slidesToShow: 2,
+		}
+	}
+	]
 });
 
 
@@ -227,7 +245,21 @@ $('.tab_slider3').slick({
 	slidesToScroll: 1,
 	// centerMode: true,
 	autoplay: true,
-	autoplaySpeed: 8000
+	autoplaySpeed: 8000,
+	responsive: [
+	{
+		breakpoint: 685,
+		settings: {
+			slidesToShow: 3,
+		}
+	},
+	{
+		breakpoint: 600,
+		settings: {
+			slidesToShow: 2,
+		}
+	}
+	]
 });
 
 $('.tab_slider4').slick({
@@ -244,5 +276,19 @@ $('.tab_slider5').slick({
 	slidesToShow: 4,
 	slidesToScroll: 1,
 	autoplay: true,
-	autoplaySpeed: 8000
+	autoplaySpeed: 8000,
+	responsive: [
+	{
+		breakpoint: 685,
+		settings: {
+			slidesToShow: 3,
+		}
+	},
+	{
+		breakpoint: 600,
+		settings: {
+			slidesToShow: 2,
+		}
+	}
+	]
 });
