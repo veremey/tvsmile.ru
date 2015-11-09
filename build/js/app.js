@@ -145,6 +145,10 @@ $(document).ready(function() {
 		return false;
 	});
 
+	// стилизацйия скрола
+	$('.scroll-pane').jScrollPane();
+
+
 });
 
 
@@ -203,7 +207,7 @@ $('.tab_slider1').slick({
 	infinite: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	autoplay: true,
+	autoplay: false,
 	autoplaySpeed: 10000
 });
 
