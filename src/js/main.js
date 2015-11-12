@@ -6,4 +6,6 @@
 
 //= partials/jquery.nouislider.all.min.js
 
+
+
 //= app.js

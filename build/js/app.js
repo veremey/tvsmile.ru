@@ -146,6 +146,9 @@ $(document).ready(function() {
 	});
 
 
+	//  ../../bower_components/tether/dist/js/tether.min.js
+
+	// ../../bower_components/tether-select/dist/js/select.min.js
 
 	// выпадалка на звезды карточка фильма
 	$('.js_stars').on('click', function() {
