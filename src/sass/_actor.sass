@@ -31,6 +31,10 @@
 		background: linear-gradient(135deg, #fff 0%, #feffff 50%, #cde8b7 100%)
 		box-shadow: 1px 1px 1px 1px #bed6aa
 		+tr(.3s)
+		+r(625)
+			padding-left: 5px
+		+r(400)
+			font-size: 0
 		&:hover
 			background: linear-gradient(135deg, #fff 0%, #feffff 0%, #cde8b7 100%)
 		&:active
@@ -49,6 +53,10 @@
 		background: linear-gradient(45deg, #f2c0c0 0%, #feffff 50%, #fff 100%)
 		box-shadow: 1px 1px 1px 1px #c5a2a2
 		+tr(.3s)
+		+r(625)
+			padding: 0 5px
+		+r(400)
+			font-size: 0
 		&:hover
 			background: linear-gradient(45deg, #f2c0c0 0%, #feffff 100%, #fff 100%)
 		&:active
@@ -60,14 +68,30 @@
 	display: inline-block
 	width: 23px
 	height: 23px
+	+r(625)
+		width: 18px
+		height: 18px
 .icon-up
 	right: 20px
 	top: 5px
 	background-image: url("../img/icons/icon-up.png")
+	+r(625)
+		top: 8px
+		background-image: url("../img/icons/icon-up-480.png")
+		right: 10px
+	+r(440)
+		right: 5px
+	+r(399)
+		right: 10px
 .icon-down
-	top: 7px
+	top: 10px
 	left: 20px
 	background-image: url("../img/icons/icon-down.png")
+	+r(625)
+		top: 13px
+		left: 10px
+		background-image: url("../img/icons/icon-down-480.png")
+
 
 
 
@@ -94,10 +118,18 @@
 		margin-bottom: 5px
 		color: #000
 		+um
+		+r(600)
+			font-size: 24px
+		+r(400)
+			font-size: 18px
 	h4
 		font-size: 11px
 		color: $gray
 		+um
+		+r(600)
+			font-size: 18px
+		+r(400)
+			font-size: 12px
 	.countrie
 		margin-right: 45px
 .info__birthday
@@ -115,6 +147,13 @@
 		vertical-align: top
 		font-size: 12px
 		color: #606060
+		+r(600)
+			font-size: 16px
+			width: 145px//!!!!!!!!!!
+			+a
+		+r(400)
+			font-size: 12px
+			width: 115px //!!!!!!
 	span
 		// display: inline-block
 		display: table-cell
@@ -123,6 +162,10 @@
 		color: #8A93A3
 		vertical-align: top
 		+a
+		+r(600)
+			font-size: 18px
+		+r(400)
+			font-size: 14px
 	+clr
 .info__text
 	hr
@@ -133,6 +176,7 @@
 		font-size: 12px
 		color: $gray
 		+a
+
 	// .more
 	// 	+r(600)
 	// 		background-color: #DCE9FB
@@ -155,10 +199,16 @@
 		float: left
 		margin-top: 5px
 		margin-right: 20px
+		+r(600)
+			font-size: 18px
+		+r(400)
+			font-size: 14px
 .prise__wrap
 	float: left
 	+r(740)
 		width: 100%
+	+r(600)
+		margin-top: 15px
 	+clr
 .prise__item
 	display: inline-block
@@ -166,6 +216,10 @@
 	margin-left: 20px
 	margin-bottom: 10px
 	+clr
+	+r(410)
+		margin-left: 0
+	+r(367)
+		width: 145px
 .prise__img
 	float: left
 	vertical-align: top
@@ -195,14 +249,22 @@
 	+a
 	+r(740)
 		float: left
-	&.show_740
-		+r(345)
-			display: none
-	&.hide_740
-		+r(345)
-			display: block
-			width: 100%
-			margin-bottom: 10px
+	+r(600)
+		font-size: 16px
+		width: 150px //!!!!!!!!
+		margin-top: -3px //!!!!!!!
+	+r(400)
+		font-size: 12px
+		width: 115px
+		margin-top: 0
+	// &.show_740
+	// 	+r(345)
+	// 		display: none
+	// &.hide_740
+	// 	+r(345)
+	// 		display: block
+	// 		width: 100%
+	// 		margin-bottom: 10px
 .prise_hide
 	+clr
 	.prise__item:nth-child(4n+1)
@@ -215,6 +277,10 @@
 			margin-left: 20px
 		.prise__item:nth-child(3n+1)
 			margin-left: 20px
+	+r(410)
+		.prise__item:nth-child(3n+1),
+		.prise__item:nth-child(4n+1)
+			margin-left: 0
 
 
 // ###############
@@ -250,8 +316,14 @@
 		color: #B3B3B3
 		font-size: 11px
 		line-height: 18px
+		+r(600)
+			font-size: 16px
 	.rate
 		color: #B3B3B3
+		+r(600)
+			font-size: 16px
+			&:before
+				top: 2px
 .comment__right
 	display: table-cell
 	+clr
@@ -260,6 +332,9 @@
 	color: $gray
 	padding-bottom: 20px
 	+a
+	+r(600)
+		font-size: 16px
+		line-height: 1.1
 .comment__buttons
 	margin-bottom: 10px
 	+clr
@@ -269,6 +344,11 @@
 	font-size: 11px
 	cursor: pointer
 	+a
+	+r(600)
+		font-size: 16px
+		display: block
+		margin-left: 0
+		margin-top: 10px
 	&:hover
 		span
 			border-bottom: 1px solid $n
@@ -283,14 +363,21 @@
 		font-size: 13px
 		color: #000
 		+a
+		+r(600)
+			font-size: 18px
 	span
 		font-size: 10px
 		color: #B3B3B3
 		margin-left: 10px
 		+a
+		+r(600)
+			font-size: 17px
 .comment__sub_commit
 	position: relative
 	padding: 0 0 10px 40px
+	+r(600)
+		font-size: 16px
+		line-height: 1.2
 	&:before
 		content: ""
 		position: absolute
@@ -316,21 +403,33 @@
 	padding-bottom: 15px
 	margin-bottom: 20px
 	border-bottom: #d5deea
+	+r(600)
+		width: 80%
+		margin: 0 auto
+		h2
+			margin-bottom: 0
+			line-height: 1
 	p
 		font-size: 12px
 		color: #8A93A3
 		+ur
+		+r(600)
+			font-size: 16px
 .comment__write
 	+clr
 	.title__prise
 		text-align: right
 		float: left
 		width: 15%
+		+r(600)
+			width: 20%
 .comment__write_wrap
 	position: relative
 	float: right
 	width: 85%
 	padding: 0 10px 20px 15px
+	+r(600)
+		width: 80%
 	&:after
 		content: ""
 		position: absolute
@@ -356,11 +455,22 @@
 			font-size: 12px
 			color: $gray
 			+a
+			+r(600)
+				font-size: 16px
 .get__comment_rate
 	margin-top: 20px
 	+clr
 	.stars
 		margin-top: 13px
+		margin-left: 14%
+		+r(600)
+			margin-left: 10px
+			margin-top: 7px
+			width: 215px
+			vertical-align: top
+			.descr
+				line-height: 1
 	.btn_yellow
 		float: right
+		margin-right: 10px
 		+ub
