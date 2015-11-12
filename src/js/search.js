@@ -1,4 +1,22 @@
 
+// = ../../bower_components/tether/dist/js/tether.min.js
+
+//= ../../bower_components/tether-select/dist/js/select.min.js
+
+
+
+// new Select({
+// 	  el: 'red'
+// 	});
+Select.init({selector: '.red'})//
+// Select.init({className: 'red'})
+
+// let selectInstance = new Select({
+//   el: document.querySelector('select.select-target'),
+//   className: 'select-theme-default'
+// })
+
+
 /* Слайдер для выбора года */
 
 var price_slider = $('.ruler').noUiSlider({

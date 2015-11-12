@@ -153,9 +153,9 @@ $(document).ready(function() {
 	});
 
 
-	new Select({
-	  el: red
-	});
+	// new Select({
+	//   el: red
+	// });
 
 
 
