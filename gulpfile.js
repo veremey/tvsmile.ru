@@ -56,6 +56,18 @@ var path = {
     clean: './build'
 };
 
+
+//** dest paths **
+// var dest = {
+//     root : 'build',
+//     html : 'build',
+//     css  : 'build/css',
+//     js   : 'build/js',
+//     img  : 'build/img'
+// };
+
+
+
 var config = {
     server: {
         baseDir: "./build"
@@ -72,9 +84,29 @@ gulp.task('copycss', function() {
     .pipe(gulp.dest(path.build.css + 'css'));
 })
 
+
 gulp.task('webserver', function () {
     browserSync(config);
 });
+
+//webserver
+// gulp.task('webserver', function() {
+//     browserSync({
+//         server: {
+//             baseDir: dest.root,
+//             // directory: true,
+//             // index: 'index.html'
+//         },
+//         files: [dest.html + '/*.html', dest.css + '/*.css', dest.js + '/*.js'],
+//         port: 3080,
+//         notify: false,
+//         ghostMode: false,
+//         online: false,
+//         tunnel: true,
+//         open: true
+//     });
+// });
+
 
 gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);

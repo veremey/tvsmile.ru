@@ -145,13 +145,19 @@ $(document).ready(function() {
 		return false;
 	});
 
-	// стилизацйия скрола
-	$('.scroll-pane').jScrollPane();
+
 
 	// выпадалка на звезды карточка фильма
 	$('.js_stars').on('click', function() {
 		$(this).toggleClass('is_active');
 	});
+
+
+	new Select({
+	  el: red
+	});
+
+
 
 });
 
@@ -191,6 +197,7 @@ $('.slider__mult').slick({
 	slidesToShow: 2,
 	slidesToScroll: 1,
 	// speed: 600,
+	// centerMode: false,
 	adaptiveHeight: true,
 	variableWidth: true,
 	autoplay: true,

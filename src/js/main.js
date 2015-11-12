@@ -6,4 +6,8 @@
 
 //= partials/jquery.nouislider.all.min.js
 
+//= ../../bower_components/tether/dist/js/tether.min.js
+
+//= ../../bower_components/tether-select/dist/js/select.min.js
+
 //= app.js
