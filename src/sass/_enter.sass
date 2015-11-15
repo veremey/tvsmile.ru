@@ -62,6 +62,8 @@
 	display: table-cell
 	width: 27%
 	vertical-align: middle
+	+r(760)
+		width: 28%
 	.socio
 		a
 			margin-right: 5px
@@ -82,15 +84,98 @@
 	width: 47%
 	+r(745)
 		width: 45%
-	+r(710)
+	+r(727)
 		width: 43%
 		padding-right: 15px
-	+r(680)
+	+r(687)
 		width: 40%
+	+r(610)
+		width: 39%
 .enter__soc
 	+r(745)
 		width: 29%
-	+r(710)
+	+r(727)
 		width: 31%
-	+r(680)
+	+r(687)
 		width: 35%
+	+r(610)
+		width: 36%
+
+
+.enterance,
+.registration
+	padding: 30px 0
+	background-color: #F4F9FF
+	+clr
+	input
+		width: 155px
+		height: 45px
+		padding: 0 15px
+		-webkit-border-radius: 3px
+		border-radius: 3px
+		border: 1px solid #ededed
+		border-bottom: 0
+		border-right: 0
+	.enterance__login
+		float: left
+		width: 50%
+		text-align: right
+		padding-right: 20px
+	.enterance__pass
+		float: left
+		width: 50%
+		text-align: left
+		padding-left: 20px
+.enterance__login,
+.enterance__pass,
+.enterance__mail
+	span
+		margin-right: 8px
+		font-size: 11px
+		color: #8A93A3
+		+a
+.registration
+	.enterance__login
+		width: 29%
+		float: left
+		margin-left: 20px
+		padding-right: 0
+		+r(740)
+			margin-left: 0
+		+r(715)
+			width: 32%
+	.enterance__pass
+		width: 38%
+		float: left
+		padding: 0 35px
+		+r(760)
+			padding: 0 25px
+		+r(715)
+			width: 35%
+			padding: 0 10px
+		+r(680)
+			width: 35%
+	.enterance__mail
+		width: 30%
+		float: right
+		margin: 0
+		+r(740)
+			width: 33%
+		input
+			float: right
+			margin-right: 20px
+			+r(715)
+				margin-right: 10px
+		span
+			margin-top: 15px
+			display: inline-block
+
+.registration
+	.enterance__login,
+	.enterance__pass,
+	.enterance__mail
+		input
+			+r(680)
+				width: 135px
+			+r(620)
+				width: 129px

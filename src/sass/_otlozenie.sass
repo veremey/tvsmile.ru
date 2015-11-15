@@ -2,7 +2,8 @@
 	background-color: #6f83a6
 	width: 100%
 	font-size: 0
-	+clr
+	+r(600)
+		+justify
 	.is_active
 		position: relative
 		&:after
@@ -19,6 +20,8 @@
 		position: relative
 		height: 43px
 		vertical-align: top
+		+r(600)
+			text-align: center
 		&:first-child
 			a
 				padding-left: 10px
@@ -28,6 +31,12 @@
 		line-height: 43px
 		font-size: 12px
 		color: #FFF
+		+r(600)
+			padding: 0
+			&:last-child
+				padding-right: 10px
+		+r(400)
+			font-size: 8px
 		&:hover
 			span
 				border-bottom: $n
@@ -36,6 +45,7 @@
 
 .propose,
 .notice
+	position: relative
 	cursor: pointer
 	border-bottom: 1px solid #DDE1E5
 	background-color: #F4F9FF
@@ -47,11 +57,15 @@
 	+ .pages
 		margin: 25px auto
 	button
-		float: right
+		position: absolute
 		margin-top: 28px
+		top: 50%
+		margin-top: -19px
+		right: 10px
 .propose__item
 	position: relative
 	float: left
+	margin-right: 145px
 	+clr
 .propose__img
 	display: inline-block
@@ -94,51 +108,10 @@
 	.propose__content
 		float: left
 		margin-left: 90px
-		padding-top: 5px// de;l
-		transform: translateY(50%)//del
 .notice__text
 	display: inline-block
-	width: calc(100% - 90px)
+	width: 98%
 	p
 		font-size: 11px
 		color: #6F83A6
 		+a
-
-.enterance,
-.registration
-	padding: 30px 0
-	background-color: #F4F9FF
-	+clr
-	input
-		width: 155px
-		height: 45px
-		padding: 0 15px
-		-webkit-border-radius: 3px
-		border-radius: 3px
-		border: 1px solid #ededed
-		border-bottom: 0
-		border-right: 0
-	.enterance__login
-		float: left
-		width: 50%
-		text-align: right
-		padding-right: 20px
-	.enterance__pass
-		float: left
-		width: 50%
-		text-align: left
-		padding-left: 20px
-.enterance__login,
-.enterance__pass,
-.enterance__mail
-	span
-		margin-right: 8px
-		font-size: 11px
-		color: #8A93A3
-		+a
-.registration
-	.enterance__login,
-	.enterance__pass,
-	.enterance__mail
-		width: 33%
-		float: left

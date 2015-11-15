@@ -102,101 +102,182 @@
 	</div>
 
 	<!-- begin container  -->
-	<div class="search_btn">
-		<div class="container">
-			<form action="/" class="search__place">
-				<input type="text" name="." placeholder="Введите название фильма, сериала или передачи">
-				<button >Найти </button>
-			</form>
-			<a href="#" class="search__go is_active"><span>Расширеный </span><br> <span>поиск</span></a>
+	<div class="hide600" >
+		<div class="search_btn">
+			<div class="container">
+				<form action="/" class="search__place">
+					<input type="text" name="." placeholder="Введите название фильма, сериала или передачи">
+					<button >Найти </button>
+				</form>
+				<a href="#" class="search__go is_active"><span>Расширеный </span>
+				<br> <span>поиск</span></a>
+			</div>
 		</div>
-	</div>
-	<div class="search ">
-		<div class="container">
-			<div class="search_wraper is_active js_search_open">
-				<div class="search__check">
-					<label class="radio"  >
-						<input type="radio" name="online">
-						<span>Онлайн просмотр</span>
-					</label>
-					<label class="radio"  >
-						<input type="radio" name="was" checked>
-						<span>Бесплатные</span>
-					</label>
-				</div>
-				<ul class="search__category">
-					<li class="is_active">
-						<a href="#"><i class="icon_fil"></i>
-						<span>Фильм</span></a>
-					</li>
-					<li>
-						<a href="#"><i class="icon_ser"></i>
-						<span>Сериал</span></a>
-					</li>
-					<li>
-						<a href="#"><i class="icon_show"></i>
-						<span>Телешоу</span></a>
-					</li>
-					<li>
-						<a href="#"><i class="icon_mul"></i>
-						<span>Мультфильм</span></a>
-					</li>
-					<li>
-						<a href="#"><i class="icon_spor"></i>
-						<span>Спорт</span></a>
-					</li>
-				</ul>
-				<div class="year">
-					<span>Год выпуска</span>
-					<div class="ruler"></div>
-					<input type="hidden" name="year_start" value="" />
-					<input type="hidden" name="year_end" value="" />
-				</div>
-				<div class="column get__left">
-					<h6 class="title__genre">Жанр:</h6>
-					<div class="ganre__wrap">
-						<a href="#" class="ganre__item">драма</a>
-						<a href="#" class="ganre__item">комедия</a>
-						<a href="#" class="ganre__item">мелодрама</a>
-						<a href="#" class="ganre__item is_active">триллер</a>
-						<a href="#" class="ganre__item">боевик</a>
-						<a href="#" class="ganre__item">криминал</a>
-						<a href="#" class="ganre__item">ужасы</a>
-						<a href="#" class="ganre__item is_active">приключения</a>
-						<a href="#" class="ganre__item">семейный</a>
-						<a href="#" class="ganre__item">фэнтези</a>
-						<a href="#" class="ganre__item">фантастика </a>
-						<a href="#" class="more">еще</a>
-					</div>
-				</div>
-				<div class="column get__right">
-					<h6 class="title__genre">Страна:</h6>
-					<div class="ganre__wrap">
-						<a href="#" class="ganre__item">США</a>
-						<a href="#" class="ganre__item">Россия</a>
-						<a href="#" class="ganre__item is_active">СССР</a>
-						<a href="#" class="ganre__item">Франция</a>
-						<a href="#" class="ganre__item">Великобритания</a>
-						<a href="#" class="ganre__item">Беларусь</a>
-						<a href="#" class="ganre__item">Германия</a>
-						<a href="#" class="ganre__item">Гонконг</a>
-						<a href="#" class="ganre__item">Индия</a>
-						<a href="#" class="ganre__item">Испания</a>
-						<a href="#" class="ganre__item">Италия</a>
-						<a href="#" class="ganre__item">Казахстан </a>
-						<a href="#" class="more">еще</a>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<div class="line line_100" >
-					<button class="btn__search ">Подобрать</button>
-					<p class="searched">Найдeно<span>45</span></p>
+		<div class="search ">
+			<div class="container">
+				<div class="search_wraper is_active js_search_open">
+						<div class="search__check">
+							<label class="radio"  >
+								<input type="checkbox" name="online">
+								<span>Онлайн просмотр</span>
+							</label>
+							<label class="radio"  >
+								<input type="checkbox" name="was" checked>
+								<span>Бесплатные</span>
+							</label>
+						</div>
+						<ul class="search__category">
+							<li class="is_active">
+								<a href="#"><i class="icon_fil"></i>
+								<span>Фильм</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="icon_ser"></i>
+								<span>Сериал</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="icon_show"></i>
+								<span>Телешоу</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="icon_mul"></i>
+								<span>Мультфильм</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="icon_spor"></i>
+								<span>Спорт</span></a>
+							</li>
+						</ul>
+						<div class="year">
+							<span>Год выпуска</span>
+							<div class="ruler"></div>
+							<input type="hidden" name="year_start" value="" />
+							<input type="hidden" name="year_end" value="" />
+						</div>
+						<div class="column get__left">
+							<h6 class="title__genre">Жанр:</h6>
+							<div class="ganre__wrap">
+								<a href="#" class="ganre__item">драма</a>
+								<a href="#" class="ganre__item">комедия</a>
+								<a href="#" class="ganre__item">мелодрама</a>
+								<a href="#" class="ganre__item is_active">триллер</a>
+								<a href="#" class="ganre__item">боевик</a>
+								<a href="#" class="ganre__item">криминал</a>
+								<a href="#" class="ganre__item">ужасы</a>
+								<a href="#" class="ganre__item is_active">приключения</a>
+								<a href="#" class="ganre__item">семейный</a>
+								<a href="#" class="ganre__item">фэнтези</a>
+								<a href="#" class="ganre__item">фантастика </a>
+								<a href="#" class="more">еще</a>
+							</div>
+						</div>
+						<div class="column get__right">
+							<h6 class="title__genre">Страна:</h6>
+							<div class="ganre__wrap">
+								<a href="#" class="ganre__item">США</a>
+								<a href="#" class="ganre__item">Россия</a>
+								<a href="#" class="ganre__item is_active">СССР</a>
+								<a href="#" class="ganre__item">Франция</a>
+								<a href="#" class="ganre__item">Великобритания</a>
+								<a href="#" class="ganre__item">Беларусь</a>
+								<a href="#" class="ganre__item">Германия</a>
+								<a href="#" class="ganre__item">Гонконг</a>
+								<a href="#" class="ganre__item">Индия</a>
+								<a href="#" class="ganre__item">Испания</a>
+								<a href="#" class="ganre__item">Италия</a>
+								<a href="#" class="ganre__item">Казахстан </a>
+								<a href="#" class="more">еще</a>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<div class="line line_100" >
+							<button class="btn__search ">Подобрать</button>
+							<p class="searched">Найдeно<span>45</span></p>
+						</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+
+
+<div class="search_btn  center">
 	<div class="container">
+		<form action="/" class="search__place">
+			<input type="text" name="." placeholder="Введите название фильма, сериала или передачи">
+			<button >Найти </button>
+		</form>
+		<a href="#" class="search__go is_active"><span>Расширеный </span>
+		<span>поиск</span></a>
+	</div>
+</div>
+
+	<div class="container">
+
+
+		<div class="show600">
+			<div class="search__small js_search_open">
+				<div class="search__check">
+					<label class="radio"  >
+						<input type="checkbox" name="online">
+						<span>Онлайн просмотр</span>
+					</label>
+					<label class="radio"  >
+						<input type="checkbox" name="was" checked>
+						<span>Бесплатные</span>
+					</label>
+				</div>
+				<div class="selecttable">
+					<select class="select_list" data-className="select-theme-dark">
+						<option value="11"  selected="selected">Категория</option>
+						<option value="22">Комедия</option>
+						<option value="33">Сериал</option>
+						<option value="11">Мульфильм</option>
+						<option value="22">Просто</option>
+						<option value="33">Драма</option>
+					</select>
+				</div>
+				<div class="selecttable">
+					<select class="select_list" data-className="select-theme-dark" >
+						<option value="year" selected="selected" >Год</option>
+						<option value="1992">1992</option>
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+						<option value="1995">1995</option>
+						<option value="1996">1996</option>
+						<option value="1997">1997</option>
+						<option value="1998">1998</option>
+					</select>
+				</div>
+				<div class="selecttable">
+					<select class="select_list" data-className="select-theme-dark">
+						<option value="11"  selected="selected">Жанр</option>
+						<option value="22">Драма</option>
+						<option value="33">Мелодрама</option>
+						<option value="11">Комедия</option>
+						<option value="22">Поржать</option>
+						<option value="33">Покушать</option>
+						<option value="11">Грустные</option>
+						<option value="22">Не плачь</option>
+						<option value="33">романтика</option>
+					</select>
+				</div>
+				<div class="selecttable">
+					<select class="select_list" data-className="select-theme-dark">
+						<option value="11"  selected="selected">Страна</option>
+						<option value="22">Россия</option>
+						<option value="33">Украина</option>
+						<option value="11">Финляндия</option>
+						<option value="22">Германия</option>
+						<option value="33">Чад</option>
+						<option value="11">Япония</option>
+						<option value="22">Уганда</option>
+						<option value="33">Белорусия</option>
+					</select>
+				</div>
+			</div>
+
+		</div>
 
 		<div class="propose">
 			<div class="propose__item">
