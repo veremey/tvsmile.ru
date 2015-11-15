@@ -56,28 +56,55 @@
 		background-color: #EDF4FE
 	+ .pages
 		margin: 25px auto
+	.ganre__item
+		margin-bottom: 5px
 	button
 		position: absolute
-		margin-top: 28px
 		top: 50%
 		margin-top: -19px
 		right: 10px
+		// margin-top: 28px
+		// float: right
+		+r(500)
+			position: static
+			margin: 15px 0 0 190px
+
+.propose
+	min-height: 120px//!!!
+	+r(500)
+		min-height: 240px
 .propose__item
 	position: relative
 	float: left
 	margin-right: 145px
 	+clr
+	+r(500)
+		margin-right: 0
+
 .propose__img
-	display: inline-block
-	vertical-align: top
+	// display: inline-block
+	// vertical-align: top
+	// float: left
+	position: absolute//+
+	top: 10px//+
+	left: 10px//+
 	width: 65px
 	margin-right: 25px
+	+r(500)
+		width: 155px
 	img
 		max-width: 100%
+		width: 100%
+		max-height: 110px //!!!!!
 		vertical-align: top
+		+r(500)
+			max-height: 220px
 .propose__content
 	display: inline-block
 	vertical-align: top
+	margin-left: 90px
+	+r(500)
+		margin-left: 190px
 	h4
 		font-size: 22px
 		color: #000

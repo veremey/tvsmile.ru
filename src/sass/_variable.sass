@@ -417,6 +417,8 @@ a
 	font-family: Arial, sans-serif
 	margin-right: 5px
 	margin-bottom: 2px
+	+r(600)
+		font-size: 16px
 	&.is_active,
 	&:hover
 		color: #6F83A6
@@ -624,7 +626,33 @@ a
 	background-image: url('../img/icons/icon-g.png')
 
 
+.rate
+	position: relative
+	+a
+	font-size: 12px
+	color: #8A93A3
+	padding-left: 20px
+	+r(600)
+		font-size: 16px
 
+	&:before
+		content: ""
+		position: absolute
+		top: 0px
+		left: 0
+		width: 13px
+		height: 12px
+		background-image: url("../img/icons/star.png")
+		+r(600)
+			width: 15px
+			height: 15px
+			background-image: url("../img/icons/star-1.png")
+.countrie
+	font-size: 11px
+	color: #8A93A3
+	+a
+	+r(600)
+		font-size: 16px
 
 
 
