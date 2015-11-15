@@ -15,12 +15,18 @@
 	width: 43%
 	text-align: right
 	padding-right: 25px
+	+r(600)
+		padding-right: 15px
+	+r(460)//!!!!!!!!!!!!!!!!!!!!!!!
+		padding-right: 7px
 	h2
 		font-size: 22px
 		color: #000
 		+um
 		+r(600)
 			font-size: 18px
+		+r(460)//!!!!!!!!!!!!!!!!!!!!!!!
+			font-size: 12px
 	a
 		color: #8A93A3
 		font-size: 12px
@@ -30,6 +36,8 @@
 			+a
 		&:hover
 			text-decoration: underline
+		+r(460)//!!!!!!!!!!!!!!!!!!!!!!!
+			font-size: 10px
 	p
 		color: #8A93A3
 		font-size: 11px
@@ -107,12 +115,18 @@
 	width: 43%
 	padding-left: 25px
 	text-align: left
+	+r(600)
+		padding-left: 15px
+	+r(460)
+		padding-left: 7px
 	h6
 		font-size: 14px
 		color: #000
 		+ul
 		+r(600)
 			font-size: 18px
+		+r(460)//!!!!!!!!!!!!!!!!!!!!!!!
+			font-size: 12px
 	p
 		color: #606060
 		font-size: 11px
@@ -123,6 +137,10 @@
 			max-height: 34px
 			overflow: hidden
 			line-height: 1
+		+r(460)//!!!!!!!!!!!!!!!!!!!!!!!
+			font-size: 10px
+			height: 42px
+			max-height: 42px
 
 .control
 	-webkit-border-radius: 3px 3px 0 0
@@ -166,6 +184,10 @@
 			+a
 			+r(600)
 				font-size: 18px
+			+r(413)//!!!!!!!!!!!!!!!!!!!!!!!
+				font-size: 15px
+			+r(375)//!!!!!!!!!!!!!!!!!!!!!!!
+				font-size: 13px
 		i
 			display: inline-block
 			position: relative
@@ -226,7 +248,7 @@
 		padding-right: 10px
 		font-size: 11px
 		color: #8A93A3
-		width: 90px
+		width: 75px
 		text-align: right
 		vertical-align: top
 		+a
@@ -341,3 +363,8 @@
 		text-align: center
 	+r(520)
 		text-align: left
+	.checkbox span
+		+r(600)
+			margin-left: 35px
+		+r(400)
+			font-size: 16px

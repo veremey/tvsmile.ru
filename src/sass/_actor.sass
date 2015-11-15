@@ -309,6 +309,9 @@
 	+r(480)
 		width: 145px
 		padding: 0 15px
+	+r(380)
+		width: 120px
+		padding: 0 15px 0 0
 	.title__prise
 		line-height: 1
 		margin-bottom: 5px
@@ -338,6 +341,9 @@
 .comment__buttons
 	margin-bottom: 10px
 	+clr
+	.comment__more
+		+r(380)
+			font-size: 14px
 .comment__more
 	margin-left: 20px
 	color: #6f83a6
@@ -359,6 +365,10 @@
 	&_wrap
 		display: none
 		margin: 15px 0 20px
+		+r(600)
+			margin-left: -30px
+		+r(380)
+			margin-left: -55px
 	strong
 		font-size: 13px
 		color: #000
@@ -407,7 +417,7 @@
 		width: 80%
 		margin: 0 auto
 		h2
-			margin-bottom: 0
+			margin-bottom: 5px
 			line-height: 1
 	p
 		font-size: 12px
@@ -415,6 +425,8 @@
 		+ur
 		+r(600)
 			font-size: 16px
+			font-family: Arial, sans-serif
+			line-height: 18px
 .comment__write
 	+clr
 	.title__prise
@@ -423,6 +435,8 @@
 		width: 15%
 		+r(600)
 			width: 20%
+		+r(380)
+			width: 25%
 .comment__write_wrap
 	position: relative
 	float: right
@@ -430,6 +444,8 @@
 	padding: 0 10px 20px 15px
 	+r(600)
 		width: 80%
+	+r(380)
+		width: 75%
 	&:after
 		content: ""
 		position: absolute
@@ -460,6 +476,8 @@
 .get__comment_rate
 	margin-top: 20px
 	+clr
+	+r(440)
+		text-align: center
 	.stars
 		margin-top: 13px
 		margin-left: 14%
@@ -468,9 +486,18 @@
 			margin-top: 7px
 			width: 215px
 			vertical-align: top
-			.descr
-				line-height: 1
+		+r(440)
+			float: none
+			height: 40px
+	.descr
+		+r(600)
+			line-height: 1
+			font-size: 16px
+		+r(440)
+			font-size: 16px
 	.btn_yellow
 		float: right
 		margin-right: 10px
 		+ub
+		+r(440)
+			float: none
