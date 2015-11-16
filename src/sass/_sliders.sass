@@ -16,6 +16,7 @@
 	// float: left
 	// height: 193px
 	box-shadow: 0px 22px 43px 0px rgba(44, 77, 121, 0.31)
+	margin-bottom: 10px
 	img
 		max-width: 100%
 		vertical-align: top
@@ -30,12 +31,10 @@
 	word-wrap: break-word
 	+box
 	+clr
-	+r(400)
-		padding: 5px 0
 	strong
 		font-size: 18px
 		font-family: Arial, sans-serif
-		color: #000
+		color: #000s
 		font-weight: 100
 		letter-spacing: -.3px
 	p
@@ -86,9 +85,13 @@
 		-webkit-box-shadow: 0 0 8px 0 #9ab0ce
 		box-shadow: 0 0 8px 0 #9ab0ce
 		z-index: -1
+		+r(600)
+			display: none
 	img
 		max-width: 100%
 		vertical-align: top
+		+r(600)
+			margin: 0 auto
 .video__text
 	float: left
 	+r(600)
@@ -167,11 +170,10 @@
 			width: 19px
 			height: 19px
 	.recomend__text
-		height: 93px
 		padding: 0
 		strong
 			color: #FFF
-			line-height: 1.2
+			line-height: 1
 		p
 			font-size: 11px
 			line-height: 18px

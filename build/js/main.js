@@ -274,7 +274,7 @@ $('.tab_slider2').slick({
 	{
 		breakpoint: 755,
 		settings: {
-			slidesToShow: 3,
+			slidesToShow: 2,
 		}
 	},
 	{
