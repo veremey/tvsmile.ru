@@ -71,10 +71,9 @@
 	float: left
 	margin-right: 10px
 	max-width: 155px
-	// +r(600)
-	// 	float: none
-	// 	display: inline-block
-	// 	margin: 0 auto
+	+r(600)
+		float: none
+		margin: 0 auto
 	&:after
 		content: ""
 		position: absolute
@@ -92,8 +91,10 @@
 		vertical-align: top
 .video__text
 	float: left
-	// +r(600)
-	// 	float: none
+	+r(600)
+		float: none
+		margin: 0 auto
+		text-align: center
 	strong
 		display: block
 		font-size: 18px
@@ -107,9 +108,9 @@
 		box-shadow: inset 0.695px 0.719px 1px 0px rgba(54, 132, 227, 0.22)
 	.rate
 		margin: 7px 0
-		// +r(600)
-		// 	width: 50px
-		// 	margin: 0 auto
+		+r(600)
+			display: inline-block
+			margin: 10px auto 0
 
 
 .slider__mult

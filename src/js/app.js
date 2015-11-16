@@ -234,7 +234,7 @@ $('.tab_slider2').slick({
 	autoplaySpeed: 13000,
 	responsive: [
 	{
-		breakpoint: 685,
+		breakpoint: 755,
 		settings: {
 			slidesToShow: 3,
 		}
@@ -258,15 +258,16 @@ $('.tab_slider3').slick({
 	autoplaySpeed: 8000,
 	responsive: [
 	{
-		breakpoint: 685,
+		breakpoint: 755,
 		settings: {
-			slidesToShow: 3,
+			slidesToShow: 2,
 		}
 	},
 	{
-		breakpoint: 600,
+		breakpoint: 520,
 		settings: {
 			slidesToShow: 2,
+			// centerMode: true,
 		}
 	}
 	]

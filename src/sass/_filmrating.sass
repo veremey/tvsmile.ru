@@ -27,6 +27,15 @@
 		width: 27%
 	+r(600)
 		height: 64px
+	+r(480)
+		width: 30%
+	+r(440)
+		width: 32%
+		min-width: 125px
+	+r(390)
+		min-width: 90px
+	+r(350)
+		width: 28%
 .voice_1
 	font-size: 16px
 	line-height: 130%
@@ -45,6 +54,8 @@
 		color: #8A93A3
 		text-align: center
 		background-position: 38% 50%
+	// +r(390)
+	// 	font-size: 12px
 .voice_2
 	font-size: 11px
 	color: #8a93a3
@@ -59,6 +70,9 @@
 		text-align: center
 		font-size: 18px
 		color: #8A93A3
+	+r(390)
+		font-size: 13px
+		margin-top: 5px
 .rank
 	position: relative
 	float: left
@@ -72,6 +86,13 @@
 	+r(600)
 		height: 64px
 		padding-top: 0
+	+r(480)
+		width: 30%
+	+r(440)
+		width: 20%
+		min-width: 80px
+	+r(390)
+		min-width: 70px
 	span
 		font-size: 16px
 		color: #1E3450
@@ -80,6 +101,12 @@
 			line-height: 64px
 			font-size: 22px
 			color: #1E3450
+		+r(440)
+			position: absolute
+			bottom: 7px
+			left: 50%
+			margin-left: -18px
+			line-height: 1
 	i
 		display: inline-block
 		vertical-align: text-bottom
@@ -88,6 +115,11 @@
 		background-image: url("../img/icons/rank.png")
 		+r(600)
 			line-height: 64px
+		+r(440)
+			position: absolute
+			top: 5px
+			left: 50%
+			margin-left: -26px
 .stars
 	position: relative
 	float: left
@@ -117,6 +149,13 @@
 			background: url('../img/icons/rate_triagle-480.png')
 		&.is_active .stars__rank
 			display: block
+	+r(480)
+		width: 27%
+	+r(460)
+		width: 25%
+		min-width: 100px
+	+r(390)
+		min-width: 83px
 .descr
 	width: 50px
 	text-align: left
@@ -128,6 +167,10 @@
 		color: #8A93A3
 		font-size: 18px
 		line-height: 60px
+	+r(480)
+		line-height: 55px
+	+r(390)
+		font-size: 14px
 .result
 	display: block
 	float: left
@@ -143,6 +186,11 @@
 		background: linear-gradient(135deg, #7db5d9 0%, #99c5e3 84%, #bfd9f1 100%)
 		line-height: 64px
 		height: 64px
+		min-width: 56px
+	+r(350)
+		min-width: 54px
+		width: 54px
+		padding-left: 20px
 
 .stars__rank
 	display: none
@@ -220,6 +268,8 @@
 	float: right
 	margin-top: 15px
 	+clr
+	+r(600)
+		display: none
 	p
 		color: #606060
 		font-size: 11px
@@ -379,28 +429,49 @@
 	margin-bottom: 10px
 	float: left
 	+clr
+
 .pack__wallpaper
-	width: 215px /////del
+	//width: 215px /////del
 	img
 		max-width: 100%
 		vertical-align: top
+		+r(480)
+			max-width: 40vw
+		+r(350)
+			max-width: 35vw
 .pack__img
-	width: 155px // del
+	// width: 155px // del
+	+r(600)
+		margin: 0 auto
 	img
 		max-width: 100%
 		vertical-align: top
+		+r(480)
+			max-width: 40vw
+		+r(350)
+			max-width: 35vw
 .pack__text
 	width: 155px
 	text-align: center
 	margin: 7px 0
+	+r(600)
+		margin: 7px auto 0
+	+r(480)
+		max-width: 40vw
+	+r(350)
+		max-width: 35vw
 	h4
 		font-size: 14px
 		line-height: 1
 		color: #000
+		+r(600)
+			font-size: 18px
 		+a
 	span
 		font-size: 11px
 		color: #8A93A3
+		+r(600)
+			font-size: 16px
 
 
 .comic
@@ -410,6 +481,9 @@
 	margin: 15px 0 20px
 	padding-right: 20px
 	+clr
+	+r(600)
+		text-align: center
+		height: 165px
 .comic__img
 	width: 83px
 	height: 83px
@@ -418,6 +492,9 @@
 	-webkit-border-radius: 100%
 	border-radius: 100%
 	overflow: hidden
+	+r(600)
+		margin: 0 auto
+		float: none
 	img
 		max-width: 100%
 		vertical-align: top
@@ -426,6 +503,8 @@
 	vertical-align: middle
 	height: 85px
 	padding-top: 25px
+	+r(600)
+		float: none
 	strong,
 	span
 		display: block
@@ -434,10 +513,14 @@
 		font-size: 14px
 		color: #000
 		+ur
+		+r(600)
+			font-size: 16px
 	span
 		font-size: 11px
 		color: #8A93A3
 		+ur
+		+r(600)
+			font-size: 16px
 
 .trailer
 	padding: 0 25px 15px 25px
@@ -449,6 +532,11 @@
 	position: relative
 	float: left
 	z-index: 5
+	+r(600)
+		width: 100%
+		margin-right: 0
+		float: none
+		margin-bottom: 10px
 	&:before
 		content: ""
 		+coverdiv
@@ -472,16 +560,24 @@
 	position: relative
 	top: 50%
 	transform: translateY(50%)
+	+r(600)
+		top: 0
+		transform: translateY(0)
 	strong
 		font-size: 14px
 		+ur
 		color: #000
 		font-weight: bold
 		margin-bottom: 5px
+		+r(600)
+			font-size: 18px
 	p
 		font-size: 11px
 		color: #8A93A3
 		+ur
+		+r(600)
+			font-size: 16px
+			line-height: 1.1
 
 
 // ##############################
@@ -501,6 +597,8 @@
 	height: auto
 	position: relative
 	padding: 0 20px 0 50px
+	+r(600)
+		display: none
 	img
 		max-width: 100%
 		vertical-align: top
@@ -511,7 +609,9 @@
 	float: right
 	width: 50%
 	height: 345px
-// 	margin-left: 500px
+	// 	margin-left: 500px
+	+r(600)
+		width: 100%
 .playlist_inner
 	position: relative
 	width: 100%
@@ -523,6 +623,7 @@
 	display: block
 	position: relative
 	margin-right: 25px
+	+clr
 .track:nth-child(2n+1)
 	background: #f2f4f7
 .track_slider
@@ -544,39 +645,78 @@
 	vertical-align: middle
 	height: 30px
 	position: relative
+	+r(600)
+		display: block
+		float: left
+		height: 50px
+		+clr
 .track_number
 	width: 50px
 	font-size: 11px
 	line-height: 130%
 	color: #8198b3
 	text-align: center
+	+r(600)
+		font-size: 14px
+		line-height: 50px
+	+r(350)
+		font-size: 12px
+		width: 30px
 .track_author,
 .track_time,
 .track_name
 	font-size: 11px
 	color: #8198b3
 	line-height: 1
+	+r(600)
+		font-size: 16px
+	+r(385)
+		font-size: 13px
 .track_name
 	font-size: 11px
 	color: #000
+	+r(600)
+		font-size: 16px
+	+r(385)
+		font-size: 13px
 .track_time
 	position: absolute
 	height: 14px
 	right: 0
 	top: 50%
 	margin-top: -7px
+	+r(600)
+		font-size: 14px
+	+r(385)
+		font-size: 12px
 .track_info
 	width: 340px
 	padding: 5px 0
 	height: 20px
+	+r(600)
+		width: 60vw
+		padding: 10px 0
+		height: 50px
+	+r(440)
+		width: 55vw
+	// +r(385)
+	// 	width: 53vw
 .track_buttons
 	width: 30px
 	text-align: center
+	+r(600)
+		float: right
+		margin-right: 30px
+		vertical-align: top
+	+r(385)
+		margin-right: 15px
 
 .track_play,
 .track_pause
 	display: inline-block
 	cursor: pointer
+	+r(600)
+		margin-top: 20px
 .track_play
 	width: 11px
 	height: 12px
