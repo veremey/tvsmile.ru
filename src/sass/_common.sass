@@ -172,6 +172,10 @@ $gray: #8a93a3
 		padding: 0 40px 0 15px
 		+r(710)
 			width: 180px
+		+placeholder
+			color: #5B829A
+			font-size: 13px
+			+a
 .icon__lupa
 	position: absolute
 	top: 2px
@@ -346,8 +350,9 @@ $gray: #8a93a3
 	position: absolute
 	top: 84px
 	left: 0
-	min-width: 100%
-	max-width: 200px
+	right: 0
+	max-width: 100%
+	// max-width: 200px
 	height: auto
 	padding: 10px 0
 	background-color: #7eb6d9
@@ -370,7 +375,10 @@ $gray: #8a93a3
 				background-color: #71a4c5
 				text-decoration: underline
 
-
+.menu__pad_1
+	min-width: 63px
+	+r(505)
+		min-width: 0px
 .menu__pad_1,
 .menu__pad_2,
 .menu__pad_3
@@ -391,35 +399,27 @@ $gray: #8a93a3
 		width: 36%
 .menu__pad_4
 	+r(505)
-		width: 27%
+		width: 49%
 		text-align: center !important
+		border-left: 0 !important
+		&:before
+			content: none
+			display: none
+		i
+			left: 30px !important
+			top: 7px !important
 	+r(365)
-		width: 30%
+		width: 45%
+		i
+			left: 12px !important
+			top: 7px !important
+
 .menu__pad_5
 	+r(505)
 		width: 50%
 		text-align: center !important
 	+r(365)
-		width: 52%
-	// +iphone5
-	// 	width: 50%
-	// 	text-align: center !important
-.menu__pad_6
-	text-align: center!important
-	+r(505)
-		width: 22%
-	+r(365)
-		width: 18%
-	// +r(768)
-	// 	display: none!important
-	// +iphone5
-	// 	width: 22%
-.menu__pad_4
-	+r(505)
-		border-left: 0!important
-		&:before
-			content: none
-			display: none
+		width: 55%
 
 .icon_kino
 	width: 24px

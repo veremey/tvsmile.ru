@@ -106,12 +106,18 @@
 	hr
 		border: 1px solid $n
 		border-bottom: 1px solid #e8e9ed
+.info__name.cot
+	+r(400)
+		width: 68%
+		float: left
 .info__name
 	padding-bottom: 5px
 	.ganre__wrap
-		display: inline-block
+		display: inline
 		+r(620)
 			margin-top: 10px
+			a
+				margin-bottom: 5px
 	h2
 		font-size: 22px
 		line-height: 1
@@ -132,6 +138,10 @@
 			font-size: 12px
 	.countrie
 		margin-right: 45px
+		+r(400)
+			display: block
+			margin-right: 0
+			margin-bottom: 10px
 .info__birthday
 	// display: inline-block
 	// vertical-align: top
@@ -216,6 +226,11 @@
 	margin-left: 20px
 	margin-bottom: 10px
 	+clr
+	+r(590)
+		margin-left: 10px//++
+		width: 145px//++
+	+r(480)
+		width: 170px
 	+r(410)
 		margin-left: 0
 	+r(367)
@@ -277,6 +292,14 @@
 			margin-left: 20px
 		.prise__item:nth-child(3n+1)
 			margin-left: 20px
+	+r(600)
+		.prise__item:nth-child(4n+1)
+			margin-left: 20px
+		.prise__item:nth-child(3n+1)
+			margin-left: 10px
+	+r(590)
+		.prise__item:nth-child(4n+1)
+			margin-left: 10px
 	+r(410)
 		.prise__item:nth-child(3n+1),
 		.prise__item:nth-child(4n+1)
@@ -420,7 +443,7 @@
 			margin-bottom: 5px
 			line-height: 1
 	p
-		font-size: 12px
+		font-size: 16px
 		color: #8A93A3
 		+ur
 		+r(600)
@@ -467,6 +490,8 @@
 		border-bottom: none
 		border-right: none
 		resize: none
+		+r(600)
+			font-size: 16px
 		+placeholder
 			font-size: 12px
 			color: $gray

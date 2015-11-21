@@ -16,7 +16,7 @@
 	// float: left
 	// height: 193px
 	box-shadow: 0px 22px 43px 0px rgba(44, 77, 121, 0.31)
-	margin-bottom: 10px
+	// margin-bottom: 10px
 	img
 		max-width: 100%
 		vertical-align: top
@@ -26,17 +26,19 @@
 	height: 84px
 	width: 100%
 	text-align: center
-	padding: 15px 0px
+	// padding: 15px 0px
 	white-space: pre-line
 	word-wrap: break-word
+	vertical-align: top
 	+box
 	+clr
 	strong
 		font-size: 18px
 		font-family: Arial, sans-serif
-		color: #000s
+		color: #000
 		font-weight: 100
 		letter-spacing: -.3px
+		line-height: .5
 	p
 		font-family: Arial, sans-serif
 		font-size: 11px
@@ -53,18 +55,19 @@
 .slider__video
 	margin-bottom: 30px
 	+clr
+	+r(600)
+		padding-right: 2px//+++++
 .slider__video_item
 	float: left
 	width: 50vw
 	max-width: 384px
-	// padding-right: 10px
 	margin-right: 10px
 	+box
 	+clr
 	+r(600)
 		margin-top: 0
-		padding-right: 10px
-	// 	text-align: center
+		margin-right: 0px//++++++++
+		// padding-right: 10px//+++++++++
 .video__img
 	position: relative
 	float: left
@@ -92,6 +95,7 @@
 		vertical-align: top
 		+r(600)
 			margin: 0 auto
+			width: 100%//+++++++++++
 .video__text
 	float: left
 	+r(600)
@@ -118,6 +122,8 @@
 
 .slider__mult
 	margin-bottom: 30px
+	+r(600)
+		padding-right: 2px//+++++
 	+clr
 
 

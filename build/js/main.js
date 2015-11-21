@@ -227,6 +227,7 @@ $('.slider__video').slick({
 	// speed: 600,
 	adaptiveHeight: true,
 	variableWidth: true,
+	centerMode: false,
 	autoplay: true,
 	autoplaySpeed: 20000,
 	prevArrow: $('.js-video__back'),
