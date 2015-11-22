@@ -25,6 +25,8 @@
 		&:first-child
 			a
 				padding-left: 10px
+				+r(400)
+					padding-left: 5px
 	a
 		display: block
 		padding: 0 22px
@@ -35,8 +37,11 @@
 			padding: 0
 			&:last-child
 				padding-right: 10px
+				+r(400)
+					padding-right: 5px
 		+r(400)
-			font-size: 8px
+			padding-right: 5px
+			font-size: 11px
 		&:hover
 			span
 				border-bottom: $n
@@ -68,6 +73,8 @@
 		+r(500)
 			position: static
 			margin: 15px 0 0 190px
+		+r(330)
+			margin-left: 170px
 
 .propose
 	min-height: 120px//!!!
@@ -121,6 +128,8 @@
 	padding: 10px
 	min-height: 120px
 	+clr
+	+r(600)
+		min-height: 200px
 	h4
 		display: inline-block
 		margin-right: 20px
@@ -132,9 +141,20 @@
 		margin-right: 20px
 	.propose__img
 		position: absolute
+		+r(600)
+			width: 120px
+			margin: 0
+			img
+				max-height: 190px
+		+r(380)
+			width: 90px
 	.propose__content
 		float: left
 		margin-left: 90px
+		+r(600)
+			margin-left: 130px
+		+r(380)
+			margin-left: 100px
 .notice__text
 	display: inline-block
 	width: 98%

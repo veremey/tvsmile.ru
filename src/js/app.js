@@ -27,6 +27,7 @@ $(document).ready(function() {
 	$('.search__go').click(function() {
 		$(this).toggleClass('is_active');
 		$('.js_search_open').slideToggle();
+		$('.search_btn').toggleClass('is_hide');
 		return false;
 	});
 
