@@ -80,13 +80,21 @@
 .sidebar__catalog
 	width: 130px
 	float: left
+	height: 100%
 	padding: 0 5px
 	vertical-align: top
-	margin-top: -5px
+	position: absolute
+	top: 0
+	left: 0
 	+clr
 	li
 		position: relative
+		// height: 27px
 	.has__sub
+		> a.is_active
+			&::before,
+			&::after
+				display: none
 		&:hover
 			.sidebar__subcatalog
 				display: block
@@ -94,8 +102,7 @@
 				+rotate(0)
 	a
 		position: relative
-		height: 27px
-		line-height: 27px
+		line-height: 27px //------
 		display: inline-block
 		i
 			position: absolute
@@ -106,11 +113,10 @@
 			display: inline-block
 			background-image: url("../img/icons/str-down.png")
 			+rotate(-90)
-
 		span
 			position: relative
 			top: 0//-25%
-			transform: translateY(-50%)
+			// transform: translateY(-50%)
 			color: #3888E4
 			font-size: 12px
 			// line-height: 27px
@@ -156,10 +162,14 @@
 
 
 .catalog
-	margin-left: 132px
+	position: relative
+	margin-left: 140px
+	float: left
+	width: calc(100% - 150px)
 	+clr
 	+r(600)
 		margin-left: 0
+		width: 100%
 	.line
 		+r(600)
 			&:before
@@ -169,7 +179,8 @@
 
 .catalog__item
 	width: 31%
-	display: inline-block
+	// display: inline-block //---
+	float: left
 	margin-bottom: 26px
 	margin-left: 3%
 	vertical-align: top
