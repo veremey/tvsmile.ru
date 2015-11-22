@@ -107,11 +107,12 @@
 		border: 1px solid $n
 		border-bottom: 1px solid #e8e9ed
 .info__name.cot
-	+r(400)
+	+r(500)
 		width: 68%
 		float: left
 .info__name
 	padding-bottom: 5px
+	display: inline-block
 	.ganre__wrap
 		display: inline
 		+r(620)
@@ -137,11 +138,22 @@
 		+r(400)
 			font-size: 12px
 	.countrie
-		margin-right: 45px
+		display: block
+		// margin-right: 45px //---
 		+r(400)
 			display: block
 			margin-right: 0
 			margin-bottom: 10px
+.times
+	font-size: 11px
+	color: #8A93A3
+	display: none
+	+r(600)
+		font-size: 16px
+	+r(400)
+		display: block
+		margin-right: 0
+		margin-bottom: 10px
 .info__birthday
 	// display: inline-block
 	// vertical-align: top
@@ -186,7 +198,21 @@
 		font-size: 12px
 		color: $gray
 		+a
-
+	.btn_comment
+		display: none
+		position: relative
+		margin-top: 10px
+		padding: 3px 10px 5px 10px
+		+r(600)
+			display: inline-block
+		span
+			border-bottom: 1px solid #6F83A6
+		.icon-arrow
+			width: 5px
+			height: 3px
+			margin-bottom: 3px
+			background-image: url("../img/icons/bird__top.png")
+			+rotate(90)
 	// .more
 	// 	+r(600)
 	// 		background-color: #DCE9FB
