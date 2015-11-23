@@ -95,6 +95,11 @@ $(document).ready(function() {
 		$('.js_popup').toggleClass('is_active');
 		$('.js_navigation').toggleClass('is_active');
 	});
+	// при клике на'.js_burger' страница прокруч вверх
+	$(document).on('click', '.js_burger', function() {
+      $('html, body').animate({ scrollTop: $('.header').offset().top }, 1000 );
+      return false;
+    });
 
 	// popup хлебные крошки
 	$('.js_crumbs').on('click', function() {
