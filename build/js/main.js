@@ -107,9 +107,22 @@ $(document).ready(function() {
 		$('.crumbs600 li').toggleClass('is_active');
 	});
 
-	// скрыть награды
+	// // скрыть награды
+	// $('.js_price__more').on('click', function() {
+	// 	$('.js_prise_hide').slideToggle();
+	// 	return false;
+	// });
+	// скрыть карточку фильма инфо награды
 	$('.js_price__more').on('click', function() {
-		$('.js_prise_hide').slideToggle();
+		if($(this).hasClass('is_active')){
+			$(this).toggleClass('is_active');
+			$(this).html(' Показать все награды актера')
+			$('.js_prise_hide').slideToggle();
+		} else {
+			$(this).toggleClass('is_active');
+			$(this).html('Скрыть все награды актера');
+			$('.js_prise_hide').slideToggle();
+		}
 		return false;
 	});
 
@@ -126,6 +139,22 @@ $(document).ready(function() {
 		}
 		return false;
 	});
+
+	// скрыть или показать изменяем текст
+	$('.role__up').on('click', function() {
+		if($(this).hasClass('is_active')){
+			$(this).toggleClass('is_active');
+			$(this).html('<span> Показать <i class="icon-arrow"></i> </span>')
+			$('.js_detale_open').slideToggle();
+		} else {
+			$(this).toggleClass('is_active');
+			$(this).html('<span> Свернуть <i class="icon-arrow"></i> </span>');
+			$('.js_detale_open').slideToggle();
+		}
+		return false;
+	});
+
+
 
 	/* Разворачивание и сворачивание комментариев и формы ответа */
 	$('.comment__more').click(function() {

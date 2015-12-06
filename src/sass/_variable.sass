@@ -86,7 +86,7 @@ a
 			display: block
 			&.is_active
 				i
-					+rotate(0)
+					+rotate(90)
 		&.is_active
 			display: block
 	span
@@ -102,7 +102,7 @@ a
 			right: -30px
 			display: inline-block
 			+arr(8, 5, #DCE9FB, t)
-			+rotate(90)
+			+rotate(180)
 	a
 		font-size: 18px
 		color: #7BB4D8
@@ -388,6 +388,9 @@ a
 	right: 15px
 	padding-right: 10px
 	text-decoration: underline
+	&.is_active
+		i
+			+rotate(0)
 	span
 		position: relative
 		i
@@ -397,6 +400,7 @@ a
 			width: 5px
 			height: 3px
 			background-image: url("../img/icons/bird__top.png")
+			+rotate(180)
 	&:hover
 		text-decoration: none
 
@@ -842,3 +846,24 @@ a
 		background-color: #FFF
 		background-image: none
 		z-index: -1
+
+.variable
+	padding-bottom: 30px
+	+g($n 85%, #e8f1fc)
+	.btn__search
+		width: 100%
+		height: 50px
+		color: #4F4113
+		+g(#f5e872, #d6b34d)
+	.title__slider
+		+g(#e0ebfb, $n)
+	h6
+		padding: 0 10px
+		line-height: 3
+		&:before,
+		&:after
+			display: none
+		+r(460)
+			font-size: 15px
+		+r(355)
+			font-size: 13px

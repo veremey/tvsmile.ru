@@ -31,6 +31,11 @@
 				top: 0
 .search__small
 	padding: 1px 0 20px
+	.btn__search
+		width: 100%
+		height: 50px
+		color: #4F4113
+		+g(#f5e872, #d6b34d)
 .search__place
 	position: relative
 	float: left
@@ -136,6 +141,27 @@
 	&.is_active
 		height: auto
 		overflow: visible
+	.line.cor
+		.btn__search
+			float: left
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				top: 0
+				height: 100%
+				width: 10px
+				right: -10px
+				background-color: #E5EFFB
+.show600
+	.line
+		margin: 10px 0 0
+		.searched
+			+g(#fff, #fafcfe)
+			float: none
+			background-color: $n
+
+
 .search__title
 	text-align: center
 	position: relative
