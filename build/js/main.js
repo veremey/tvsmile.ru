@@ -208,7 +208,6 @@ $(document).ready(function() {
 			);
 
 		});
-
 	});
 
 	// TАБЫ
@@ -233,6 +232,32 @@ $(document).ready(function() {
 	//   el: red
 	// });
 
+		$('.more, .btn_comment').on('click', function(){
+			if($(this).siblings('.more__text, .more__text_film').hasClass('is_visible')){
+				$(this).siblings('.more__text, .more__text_film').toggleClass('is_visible');
+				$(this).html(' Показать <i class="icon-arrow"></i>')
+
+			} else{
+				$(this).siblings('.more__text, .more__text_film').toggleClass('is_visible');
+				$(this).html(' Свернуть <i class="icon-arrow"></i>');
+			}
+			return false;
+			// $(this).siblings('.more__text, .more__text_film').toggleClass('is_visible');
+			// return false;
+		});
+
+		// $('.role__up').on('click', function() {
+		// 	if($(this).hasClass('is_active')){
+		// 		$(this).toggleClass('is_active');
+		// 		$(this).html('<span> Показать <i class="icon-arrow"></i> </span>')
+		// 		$('.js_detale_open').slideToggle();
+		// 	} else {
+		// 		$(this).toggleClass('is_active');
+		// 		$(this).html('<span> Свернуть <i class="icon-arrow"></i> </span>');
+		// 		$('.js_detale_open').slideToggle();
+		// 	}
+		// 	return false;
+		// });
 
 
 });
