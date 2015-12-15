@@ -1,52 +1,3 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)
-// =book
-// 	font-family: "book", Arial, sans-serif
-// insert pics into css
-// div
-// 	+pic("blabla.png")
-// span
-// 	+png(blabla)
-// p
-// 	+jpg(bla)
-
 =osl
 	font-family: 'Open Sans', Arial, sans-serif
 	font-weight: 300
@@ -117,14 +68,14 @@ $gray: #8a93a3
 	display: inline-block
 	margin-top: 10px
 	width: 30px
-	height: 27px
+	height: 29px
 	background-image: url("../img/icons/burger__menu.png")
 	// +s($burger__menu)
 	position: relative
 	z-index: 350
 	+r(400)
 		width: 36px
-		height: 26px
+		height: 28px
 		background-color: $n
 		background-image: url("../img/icons/burger__menu_480.png")
 
@@ -224,12 +175,14 @@ $gray: #8a93a3
 		margin-top: 5px
 		display: inline-block
 		background-image: url("../img/icons/account_icon_1.png")
-		+r(360)
+		+r(500)
 			display: none
 	&__user
 		display: inline-block
 		float: left
 		+clr
+		+r(500)
+			display: none
 		span
 			display: inline-block
 			color: #FFF
@@ -240,11 +193,23 @@ $gray: #8a93a3
 			span
 				text-decoration: none
 	&__exit
+		float: right
+		position: relative
 		padding-left: 5px
-		border-left: 1px solid #243244
+		// border-left: 1px solid #243244
 		color: #5B829A
 		line-height: 32px
 		vertical-align: top
+		&:after
+			content: ""
+			position: absolute
+			top: 6px
+			left: -2px
+			width: 1px
+			height: 19px
+			background-color: #243244
+			+r(500)
+				display: none
 		&:hover
 			color: lighten(#5B829A, 15%)
 
