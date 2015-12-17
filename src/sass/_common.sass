@@ -281,20 +281,24 @@ $gray: #8a93a3
 			color: #000
 			text-transform: uppercase
 			position: relative
-			text-align: left
+			// text-align: left
 			+ub
 			+r(505)
 				height: 45px
 				line-height: 45px
 				font-size: 18px
-				padding-left: 10px
-			+r(460)
-				padding-left: 20px
-			+r(425)
-				padding-left: 30px
+				padding-left: 45px
+				// padding-left: 10px//17.12
+				// +r(460)
+				// 	padding-left: 20px
+				// +r(425)
+				// 	padding-left: 30px
 			+r(400)
-				padding-left: 30px
+				// padding-left: 30px
 				font-size: 14px
+			+iphone5-portrait
+				a
+					padding-left: 45px
 			i
 				display: inline-block
 				position: absolute
@@ -355,6 +359,12 @@ $gray: #8a93a3
 	// +iphone5
 	// 	width: 33%
 	// 	text-align: center !important
+	+r(360)
+		a
+			padding-left: 30px !important
+	+iphone5-portrait
+		a
+			padding-left: 30px !important //17.12.
 .menu__pad_1
 	+r(365)
 		width: 27%
@@ -383,6 +393,9 @@ $gray: #8a93a3
 	a
 		+r(400)
 			padding-left: 45px !important
+	+iphone5-portrait
+		a
+			padding-left: 45px !important //17.12.
 
 .menu__pad_5
 	+r(505)
@@ -393,6 +406,9 @@ $gray: #8a93a3
 	a
 		+r(400)
 			padding-left: 40px !important
+	+iphone5-portrait
+		a
+			padding-left: 40px !important //17.12.
 
 .icon_kino
 	width: 24px

@@ -7,6 +7,10 @@ $units: 1px !default
 =max-screen($res)
 	@media screen and (max-width: if(unitless($res), $res * $units, $res))
 		@content
+// =r($res)
+// 	@media screen and (max-width: if(unitless($res), $res * $units, $res))
+// 		@content
+
 =r($res)
 	@media screen and (max-width: if(unitless($res), $res * $units, $res))
 		@content
