@@ -253,6 +253,9 @@ $gray: #8a93a3
 			display: inline-block
 			height: 45px
 			float: left
+		+r(320)
+			display: block
+			text-align: left//add 20.12
 		&:hover
 			+gh3(#7eb5d9, #afd0eb, #7eb5d9)
 			.menu__bottom_submenu
@@ -272,7 +275,7 @@ $gray: #8a93a3
 		&:first-child:before
 			content: none
 		> a
-			// padding: 0 15px
+			position: relative
 			display: block
 			width: 100%
 			font-size: 14px
@@ -280,28 +283,19 @@ $gray: #8a93a3
 			line-height: 110px
 			color: #000
 			text-transform: uppercase
-			position: relative
-			text-align: center
+			//text-align: center//del 20.12
 			+ub
 			+r(505)
 				height: 45px
 				line-height: 45px
 				font-size: 18px
-				//padding-left: 45px//++++++++++++++
-
-				// padding-left: 10px//17.12
-				// +r(460)
-				// 	padding-left: 20px
-				// +r(425)
-				// 	padding-left: 30px
 			+r(400)
-				// padding-left: 30px
 				font-size: 14px
 				span
 					padding-left: 20px
-				//+++++++++++++++++++++++++
-			// +iphone5-portrait
-			// 	padding-left: 45px
+			+r(320)
+				position: static
+				text-align: left
 			i
 				display: inline-block
 				position: absolute
@@ -348,7 +342,6 @@ $gray: #8a93a3
 			&:hover
 				background-color: #71a4c5
 				text-decoration: underline
-
 .menu__pad_1
 	min-width: 63px
 	+r(505)
@@ -358,17 +351,8 @@ $gray: #8a93a3
 .menu__pad_3
 	+r(505)
 		width: 33%
-		// text-align: center !important
-	// +iphone5
-	// 	width: 33%
-	// 	text-align: center !important
-	//++++++++++++++++++++++++++
-	// +r(360)
-	// 	> a
-	// 		padding-left: 30px !important
-	// +iphone5-portrait
-	// 	> a
-	// 		padding-left: 30px !important //17.12.
+	+r(320)
+		padding-left: 15px
 
 .menu__pad_1
 	+r(365)
@@ -382,7 +366,6 @@ $gray: #8a93a3
 .menu__pad_4
 	+r(505)
 		width: 49%
-		// text-align: center !important
 		border-left: 0 !important
 		&:before
 			content: none
@@ -395,23 +378,17 @@ $gray: #8a93a3
 		i
 			left: 12px !important
 			top: 7px !important
-	// > a
-	// 	+r(400)
-	// 		padding-left: 45px !important
-	// 	+iphone5-portrait
-	// 		padding-left: 45px !important //17.12.
+	+r(320)
+		padding-left: 25px
+
 
 .menu__pad_5
 	+r(505)
 		width: 50%
-		// text-align: center !important
 	+r(365)
 		width: 55%
-	// > a
-	// 	+r(400)
-	// 		padding-left: 40px !important
-	// 	+iphone5-portrait
-	// 		padding-left: 40px !important //17.12.
+	+r(320)
+		padding-left: 25px
 
 .icon_kino
 	width: 24px
