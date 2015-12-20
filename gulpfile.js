@@ -74,7 +74,7 @@ var config = {
     },
     tunnel: false,
     host: 'localhost',
-    port: 8070,
+    port: 4070,
     logPrefix: "Veremey"
 };
 
