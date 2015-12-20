@@ -294,7 +294,6 @@ $gray: #8a93a3
 				span
 					padding-left: 20px
 			+r(320)
-				position: static
 				text-align: left
 			i
 				display: inline-block
@@ -345,14 +344,18 @@ $gray: #8a93a3
 .menu__pad_1
 	min-width: 63px
 	+r(505)
-		min-width: 0px
+		min-width: 0
 .menu__pad_1,
 .menu__pad_2,
 .menu__pad_3
 	+r(505)
 		width: 33%
 	+r(320)
-		padding-left: 15px
+		span
+			position: absolute
+			top: 50%
+			left: 15px
+			transform: translateY(-50%)
 
 .menu__pad_1
 	+r(365)
@@ -379,7 +382,11 @@ $gray: #8a93a3
 			left: 12px !important
 			top: 7px !important
 	+r(320)
-		padding-left: 25px
+		span
+			position: absolute
+			top: 50%
+			left: 25px
+			transform: translateY(-50%)
 
 
 .menu__pad_5
@@ -388,7 +395,11 @@ $gray: #8a93a3
 	+r(365)
 		width: 55%
 	+r(320)
-		padding-left: 25px
+		span
+			position: absolute
+			top: 50%
+			left: 20px
+			transform: translateY(-50%)
 
 .icon_kino
 	width: 24px
