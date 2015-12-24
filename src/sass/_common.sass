@@ -250,13 +250,9 @@ $gray: #8a93a3
 		height: 84px
 		// border-left: 1px solid #bbd6f2
 		+r(505)
-			display: inline-block
 			height: 45px
 			float: left
-		+r(320)
-			display: block
 			text-align: left
-			+g(#356, #FF8600)//add 20.12
 		&:hover
 			+gh3(#7eb5d9, #afd0eb, #7eb5d9)
 			.menu__bottom_submenu
@@ -284,19 +280,21 @@ $gray: #8a93a3
 			line-height: 110px
 			color: #000
 			text-transform: uppercase
-			//text-align: center//del 20.12
 			+ub
 			+r(505)
 				height: 45px
 				line-height: 45px
 				font-size: 18px
-			+r(400)
+				will-change: transform
+				span
+					+vcenter
+					padding-left: 15px
+			+r(415)
 				font-size: 14px
 				span
 					padding-left: 20px
 			+r(320)
 				text-align: left
-				color: #fff
 			i
 				display: inline-block
 				position: absolute
@@ -352,12 +350,6 @@ $gray: #8a93a3
 .menu__pad_3
 	+r(505)
 		width: 33%
-	+r(320)
-		span
-			position: absolute
-			top: 50%
-			left: 15px
-			transform: translateY(-50%)
 
 .menu__pad_1
 	+r(365)
@@ -385,12 +377,7 @@ $gray: #8a93a3
 			top: 7px !important
 	+r(320)
 		span
-			position: absolute
-			top: 50%
 			left: 25px
-			transform: translateY(-50%)
-
-
 .menu__pad_5
 	+r(505)
 		width: 50%
@@ -398,10 +385,8 @@ $gray: #8a93a3
 		width: 55%
 	+r(320)
 		span
-			position: absolute
-			top: 50%
 			left: 20px
-			transform: translateY(-50%)
+
 
 .icon_kino
 	width: 24px
