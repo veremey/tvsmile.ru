@@ -233,25 +233,32 @@ $gray: #8a93a3
 	width: 100%
 	+g(#fff, #d5e6f9)
 	+clr
-	+r(505)
+	+r(510)
 		+g4(#fff 5%, #d5e6f9 50%, #fff 50%, #d5e6f9 100%)
 
 .menu__bottom
 	position: relative
 	top: 0
 	left: 0
-	width: 100%
-	display: table
+	font-size: 0
 	+clr
+	&.menu__bottom_first
+		width: 58%
+		float: left
+		+r(510)
+			width: 100%
+	&.menu__bottom_last
+		width: 42%
+		float: left
+		+r(510)
+			width: 100%
 	> li
-		display: table-cell
+		float: left
 		position: relative
 		text-align: center
 		height: 84px
-		// border-left: 1px solid #bbd6f2
-		+r(505)
+		+r(510)
 			height: 45px
-			float: left
 			text-align: left
 		+iphone5-portrait
 			float: left
@@ -269,21 +276,16 @@ $gray: #8a93a3
 			left: -1px
 			width: 1px
 			background-color: #cae0f3
-			// background: linear-gradient(to bottom, #e5f0f7, #bbd6f2)
-			// +g(#bbd6f2, #e5f0f7
-		&:first-child:before
-			content: none
 		> a
 			position: relative
 			display: block
-			width: 100%
 			font-size: 14px
 			height: 84px
 			line-height: 110px
 			color: #000
 			text-transform: uppercase
 			+ub
-			+r(505)
+			+r(510)
 				height: 45px
 				line-height: 45px
 				font-size: 18px
@@ -291,30 +293,26 @@ $gray: #8a93a3
 				span
 					+vcenter
 					padding-left: 15px
-			+r(415)
-				font-size: 14px
+			+r(440)
+				font-size: 15px
+			+r(360)
 				span
-					padding-left: 20px
-			+r(320)
-				text-align: left
+					padding-left: 25px
+
 			i
 				display: inline-block
 				position: absolute
 				top: 12px
 				left: 50%
 				transform: translate(-50%, 0)
-				+r(505)
+				+r(510)
 					top: 5px
 					left: 5px
 					transform: translate(0, 0)
-				+iphone5-portrait
-					top: 10px
-				// +r(490)
-					// +scale(.7)
-				// +r(340)
-					// +scale(.5)
-					// +scale(.5)
-					// left: 0
+				+r(380)
+					+scale(.7)
+				+r(330)
+					left: 2px
 			&:hover
 				+gh3(#7eb5d9, #afd0eb, #7eb5d9)
 .menu__bottom_submenu
@@ -332,7 +330,7 @@ $gray: #8a93a3
 	border-radius: 0 0 3px 3px
 	box-shadow: 0 18px 22px rgba(0,0,0,0.6)
 	display: none
-	+r(505)
+	+r(510)
 		top: 44px
 	li
 		a
@@ -348,101 +346,72 @@ $gray: #8a93a3
 				text-decoration: underline
 .menu__pad_1
 	min-width: 63px
-	+r(505)
+	&:before
+		content: none
+	+r(510)
 		min-width: 0
 .menu__pad_1,
 .menu__pad_2,
 .menu__pad_3
-	+r(505)
-		width: 33%
+	width: 33.3%
 
 .menu__pad_1
-	+r(365)
+	+r(440)
 		width: 27%
-	+iphone5-portrait
-		width: 87px
+
 .menu__pad_2
-	+r(365)
+	+r(440)
 		width: 36%
-	+iphone5-portrait
-		width: 115px
+	// +r(330)
+	// 	i
+	// 		+scale(.6) !important
 .menu__pad_3
-	+r(365)
+	+r(440)
 		width: 36%
-	+iphone5-portrait
-		width: 115px
+
+
 .menu__pad_4
-	+r(505)
-		width: 49%
-		border-left: 0 !important
+	width: 60%
+	+r(510)
+		border-left: 0
 		&:before
 			content: none
 			display: none
 		i
-			left: 30px !important
-			top: 7px !important
-	+r(365)
-		width: 45%
+			left: 30px
+			top: 7px
+	+r(440)
 		i
-			left: 12px !important
-			top: 7px !important
-	+r(320)
-		span
-			left: 25px
-	+iphone5-portrait
-		width: 144px
+			left: 12px
+			top: 7px
+
+
 .menu__pad_5
-	+r(505)
-		width: 50%
-	+r(365)
-		width: 55%
-	+r(320)
-		span
-			left: 20px
-	+iphone5-portrait
-		width: 176px
+	width: 40%
+
+
 
 
 .icon_kino
 	width: 24px
 	height: 34px
 	background-image: url("../img/icons/icon_kino.png")
-	+iphone5-portrait
-		background-image: url(../img/icons/icon_mult_320.png)
-		width: 24px
-		height: 21px
 .icon_serial
 	width: 30px
 	height: 32px
 	background-image: url("../img/icons/icon_serial.png")
-	+iphone5-portrait
-		background-image: url(../img/icons/icon_mult_320.png)
-		width: 24px
-		height: 21px
 .icon_tele
 	width: 27px
 	height: 30px
 	background-image: url("../img/icons/icon_tele.png")
-	+iphone5-portrait
-		background-image: url(../img/icons/icon_mult_320.png)
-		width: 24px
-		height: 21px
 .icon_sport
 	width: 30px
 	height: 30px
 	background-image: url("../img/icons/icon_sport.png")
-	+iphone5-portrait
-		background-image: url(../img/icons/icon_mult_320.png)
-		width: 24px
-		height: 21px
 .icon_mult
 	width: 37px
 	height: 33px
 	background-image: url("../img/icons/icon_mult.png")
-	+iphone5-portrait
-		background-image: url(../img/icons/icon_mult_320.png)
-		width: 24px
-		height: 21px
 
 .menu__bottom
 	li:hover
