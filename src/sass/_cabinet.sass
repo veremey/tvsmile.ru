@@ -304,7 +304,7 @@
 			width: 35%
 	textarea
 		height: 93px
-		width: 180px
+		width: calc(100% - 64px)
 		float: right
 		margin-right: 10px
 		vertical-align: top
@@ -316,6 +316,8 @@
 		border: 1px solid #ededed
 		border-bottom: 0
 		border-right: 0
+		+r(768)
+			width: 180px
 		+r(764)
 			width: calc(100% - 64px)
 		+r(600)
